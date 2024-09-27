@@ -52,3 +52,12 @@ main {
     padding-bottom: 2rem;
   }
 }
+
+nav .logo img {
+  background-color: #343434;
+}
+
+nav .nav-link {
+  background-color: #343434;
+  color: white;
+}
