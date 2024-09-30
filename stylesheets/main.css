@@ -11,6 +11,26 @@ body {
   display: none;
 }
 
+.disappear{
+  animation-name: disappear;
+  animation-duration: 1s;
+}
+
+.appear{
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+@keyframes appear{
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+@keyframes disappear{
+  from {opacity: 100%;}
+  to {opacity: 0%;}
+}
+
 .page-title{
   font-family: "Kanit", sans-serif;
   font-weight: 700;
@@ -50,6 +70,14 @@ body {
   background-color: #343434;
   padding: 10px 40px 10px 40px;
   border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#iniciar:hover{
+  background-color: white;
+  color: #343434;
+  transform: scale(1.05);
 }
 
 .hidden-div{
@@ -72,30 +100,30 @@ body {
 
 .retangulo {
   left: 81%;
-  width: 150px; /* Largura do retângulo */
-  height: 37px; /* Altura do retângulo */
-  background-color: #343434; /* Cor de fundo */
-  border: 3px solid #F1F1E9; /* Bordas brancas */
-  border-top: none; /* Remove a borda superior */
-  border-radius: 0 0 15px 15px; /* Arredondamento das bordas inferiores */
-  position: relative; /* Para posicionar as linhas */
+  width: 150px; 
+  height: 37px; 
+  background-color: #343434; 
+  border: 3px solid #F1F1E9; 
+  border-top: none; 
+  border-radius: 0 0 15px 15px; 
+  position: relative; 
 }
 
 .linhas {
-  width: 2px; /* Espessura das linhas */
-  height: 100%; /* Altura das linhas */
-  background-color: #F1F1E9; /* Cor das linhas */
+  width: 2px; 
+  height: 100%; 
+  background-color: #F1F1E9; 
   position: absolute;
-  top: 50%; /* Centraliza verticalmente */
-  transform: translateY(-50%); /* Ajusta o alinhamento */
+  top: 50%; 
+  transform: translateY(-50%); 
 }
 
 .linhas:first-of-type {
-  left: 30%; /* Posição da primeira linha */
+  left: 30%; 
 }
 
 .linhas:last-of-type {
-  left: 70%; /* Posição da segunda linha */
+  left: 70%; 
 }
 
 .menu-title{
@@ -112,7 +140,13 @@ body {
   margin-left: 55px;
 }
 
-.asserção-razão{
+#asserção-1{
+  padding-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+#asserção-2{
   padding-top: 10px;
   width: 100px;
   height: 100px;
@@ -129,6 +163,8 @@ body {
   text-align: center;
   padding: 50px 30px 50px 30px;
   border: 3px solid #343434;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .text-1{
@@ -139,7 +175,18 @@ body {
   padding-top: 30px;
 }
 
-.lacuna{
+.bloco-1:hover{
+  background-color: #343434;
+  color: #FFB5FF;
+}
+
+#lacuna-1{
+  padding-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+#lacuna-2{
   padding-top: 10px;
   width: 100px;
   height: 100px;
@@ -157,6 +204,8 @@ body {
   padding: 50px 30px 50px 30px;
   border: 3px solid #343434;
   border-left: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .text-2{
@@ -167,7 +216,18 @@ body {
   padding-top: 30px;
 }
 
-.associação{
+.bloco-2:hover{
+  background-color: #343434;
+  color: #f9ffb5;
+}
+
+#associação-1{
+  padding-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+#associação-2{
   padding-top: 10px;
   width: 100px;
   height: 100px;
@@ -185,6 +245,8 @@ body {
   padding: 50px 30px 50px 30px;
   border: 3px solid #343434;
   border-left: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .text-3{
@@ -195,8 +257,19 @@ body {
   padding-top: 30px;
 }
 
+.bloco-3:hover{
+  background-color: #343434;
+  color: #B5FBB9;
+}
 
-.resposta-unica{
+
+#resposta-unica-1{
+  padding-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+#resposta-unica-2{
   padding-top: 10px;
   width: 100px;
   height: 100px;
@@ -214,6 +287,8 @@ body {
   padding: 50px 30px 50px 30px;
   border: 3px solid #343434;
   border-left: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .text-4{
@@ -224,11 +299,23 @@ body {
   padding-top: 30px;
 }
 
-.multiplas{
+.bloco-4:hover{
+  background-color: #343434;
+  color: #b5f2ff;
+}
+
+#multiplas-1{
   padding-top: 10px;
   width: 100px;
   height: 100px;
 }
+
+#multiplas-2{
+  padding-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
 
 .bloco-5 {
   width: 200px;
@@ -242,6 +329,8 @@ body {
   padding: 50px 30px 50px 30px;
   border: 3px solid #343434;
   border-left: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .text-5{
@@ -250,4 +339,9 @@ body {
   font-size: 14px;
   width: 100%;
   padding-top: 30px;
+}
+
+.bloco-5:hover{
+  background-color: #343434;
+  color: #D5D3FF;
 }

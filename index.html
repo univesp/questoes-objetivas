@@ -126,32 +126,55 @@
           </div>
           <h1 class="menu-title">Navegue livremente pelos tipos de questão:</h1>
           <div class="imagens">
-            <div class="bloco-1">
-              <img class="asserção-razão" src="assets/1. asserção razão.svg" alt="primeira opção">
+            <div class="bloco-1" onmouseover="invertAsserção()" onmouseout="convertAsserção()"
+              onclick="questãoAsserção()">
+              <img id="asserção-1" src="assets/1. asserção razão.svg" alt="primeira opção">
+              <img id="asserção-2" class="hidden-div" src="assets/6. asserção razão-invert.svg"
+                alt="primeira opção invertida">
               <p class="text-1">ASSERÇÃO-RAZÃO</p>
             </div>
-            <div class="bloco-2">
-              <img class="lacuna" src="assets/2. lacuna.svg" alt="segunda opção">
+            <div class="bloco-2" onmouseover="invertLacuna()" onmouseout="convertLacuna()" onclick="questãoLacuna()">
+              <img id="lacuna-1" src="assets/2. lacuna.svg" alt="segunda opção">
+              <img id="lacuna-2" class="hidden-div" src="assets/7 . lacuna-2.svg" alt="segunda opção invertida">
               <p class="text-2">LACUNA</p>
             </div>
-            <div class="bloco-3">
-              <img class="associação" src="assets/3. associação.svg" alt="terceira opção">
+            <div class="bloco-3" onmouseover="invertAssociação()" onmouseout="convertAssociação()" onclick="questãoAssociação()">
+              <img id="associação-1" src="assets/3. associação.svg" alt="terceira opção">
+              <img id="associação-2" class="hidden-div" src="assets/8 .associação-2.svg" alt="terceira opção invertida">
               <p class="text-3">ASSOCIAÇÃO</p>
             </div>
-            <div class="bloco-4">
-              <img class="resposta-unica" src="assets/4. resposta única e complementação.svg" alt="quarta opção">
+            <div class="bloco-4" onmouseover="invertRespostaUnica()" onmouseout="convertRespostaUnica()" onclick="questãoRespostaUnica()">
+              <img id="resposta-unica-1" src="assets/4. resposta única e complementação.svg" alt="quarta opção">
+              <img id="resposta-unica-2" class="hidden-div" src="assets/9 . resposta única e complementação-2.svg"
+                alt="quarta opção invertida">
               <p class="text-4">RESPOSTA ÚNICA E COMPLEMENTAÇÃO</p>
             </div>
-            <div class="bloco-5">
-              <img class="multiplas" src="assets/5. respostas múltiplas.svg" alt="quinta opção">
+            <div class="bloco-5" onmouseover="invertMultiplas()" onmouseout="convertMultiplas()" onclick="questãoMultiplas()">
+              <img id="multiplas-1" src="assets/5. respostas múltiplas.svg" alt="quinta opção">
+              <img id="multiplas-2" class="hidden-div" src="assets/10 .respostas múltiplas.svg"
+                alt="quinta opção invertida">
               <p class="text-5">RESPOSTAS MÚLTIPLAS</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <nav>
-    </nav>
+      <div id="asserção" class="hidden-div">
+        <h1>ASSERÇÃO RAZÃO</h1>
+      </div>
+      <div id="lacuna" class="hidden-div">
+        <h1>LACUNA</h1>
+      </div>
+      <div id="associação" class="hidden-div">
+        <h1>ASSOCIAÇÃO</h1>
+      </div>
+      <div id="resposta-unica-e-complementação" class="hidden-div">
+        <h1>RESPOSTA UNICA E COMPLEMENTAÇÃO</h1>
+      </div>
+      <div id="respostas-multiplas" class="hidden-div">
+        <h1>RESPOSTAS MULTIPLAS</h1>
+      </div>
+      <nav>
+      </nav>
 
     </div>
   </main>
