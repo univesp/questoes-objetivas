@@ -1,26 +1,19 @@
-{
-  "pages": {
-    "home": {
-      "title": "Bem-vindo à Home",
-      "content": [
-        "Este é o conteúdo da <strong>página</strong> inicial.",
-        "Aqui está mais um parágrafo de texto.",
-        "E ainda mais informações para você."
-      ]
-    },
-    "about": {
-      "title": "Sobre Nós",
-      "content": [
-        "Aqui está um pouco sobre nós.",
-        "Nosso objetivo é fornecer o melhor serviço."
-      ]
-    },
-    "contact": {
-      "title": "Contato",
-      "content": [
-        "Entre em contato conosco.",
-        "Estamos disponíveis de segunda a sexta."
-      ]
-    }
+[
+
+  {
+    "id": "secao1",
+    "titulo": "ASSERÇÃO-RAZÃO.",
+    "classeTitulo": "titulo",
+    "paragrafo": "Primero teste.",
+    "classeParagrafo": "paragrafo",
+    "paragrafo2": "Segundo teste.",
+    "classeParagrafo2": "paragrafo-2"
+  },
+  {
+    "id": "secao2",
+    "titulo": "LACUNA.",
+    "classeTitulo": "titulo",
+    "paragrafo": "Teste lacuna.",
+    "classeParagrafo": "paragrafo"
   }
-}
+]

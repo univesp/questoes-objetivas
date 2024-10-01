@@ -34,43 +34,45 @@ $(document).ready(function () {
     menu.classList.add('appear'); // efito de transição
   });
 
-  // Função para carregar o JSON
-  async function loadJSON() {
-    try {
-      const response = await fetch('data.json');
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      data = await response.json();
-      // Carregar a página inicial ao abrir
-      //loadPage('home');
-    } catch (error) {
-      console.error('Erro ao carregar o JSON:', error);
-    }
-  }
-
-  function loadPage(page) {
-    const pageData = data.pages[page];
-    if (pageData) {
-      document.getElementById('teste').innerText = pageData.title;
-
-      // Limpar o conteúdo anterior
-      const contentDiv = document.getElementById('teste');
-      contentDiv.innerHTML = ''; // Limpa o conteúdo anterior
-
-      // Adicionar todos os textos do array content como parágrafos
-      pageData.content.forEach(text => {
-        const paragraph = document.createElement('p') // Cria o paragrafo
-        paragraph.className = `${page}`; // Adiciona a classe ao paragrafo 
-        paragraph.innerHTML = text; // Define o texto do parágrafo
-        contentDiv.appendChild(paragraph); // Adiciona o parágrafo ao div
-      });
-    }
-  }
-
-  // Chamar a função para carregar o JSON
-  loadJSON();
 })
+
+let jsonData;
+
+// Função para carregar o JSON
+fetch('data.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro ao carregar o JSON');
+    }
+    return response.json(); // Converte a resposta em JSON
+  })
+  .then(data => {
+    jsonData = data; // Armazena os dados em uma variável
+  })
+  .catch(error => {
+    console.error('Erro:', error);
+  });
+
+function mostrarConteudo(id) {
+  const container = document.getElementById('meuContainer');
+  container.innerHTML = ''; // Limpa o conteúdo anterior
+
+  const conteudo = jsonData.find(item => item.id === id);
+  if (conteudo) {
+    const titulo = document.createElement('h'); 
+    titulo.textContent = conteudo.titulo;         
+    titulo.className = conteudo.classeTitulo;        
+    container.appendChild(titulo); 
+    const paragrafo = document.createElement('p'); // Cria um novo parágrafo
+    paragrafo.textContent = conteudo.paragrafo;         // Adiciona o texto
+    paragrafo.className = conteudo.classeParagrafo;          // Adiciona a classe
+    container.appendChild(paragrafo);                // Adiciona ao container
+    const paragrafo2 = document.createElement('p'); 
+    paragrafo2.textContent = conteudo.paragrafo2;         
+    paragrafo2.className = conteudo.classeParagrafo2;         
+    container.appendChild(paragrafo2);                
+  }
+}
 
 //Variáveis
 let asserção1 = document.getElementById('asserção-1');
@@ -158,6 +160,7 @@ function questãoAsserção() {
   menu.classList.add('disappear'); // efeito de transição
   asserção.classList.remove('hidden-div');
   asserção.classList.add('appear'); // efito de transição
+  mostrarConteudo('secao1');
 };
 
 //Opção de lacuna
@@ -167,6 +170,7 @@ function questãoLacuna() {
   menu.classList.add('disappear'); // efeito de transição
   lacuna.classList.remove('hidden-div');
   lacuna.classList.add('appear'); // efito de transição
+  mostrarConteudo('secao2');
 };
 
 //Opção de lacuna
