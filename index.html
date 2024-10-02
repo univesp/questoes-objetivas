@@ -60,6 +60,7 @@
 </head>
 
 <body class="d-flex flex-column">
+  <dialog id="background"></dialog>
 
   <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
   <!-- <div class="esconder-tela-pequena"> -->
@@ -161,10 +162,120 @@
           </div>
         </div>
       </div>
-      <div id="meuContainer"></div>
       <div id="asserção" class="hidden-div">
         <div id="box-asserção">
-          <div id="pink"></div>
+          <div id="pink">
+            <img id="questão-asserção" src="assets/1. asserção razão.svg" alt="icone questão asserção-razão">
+            <p id="titulo-asserção">ASSERÇÃO-RAZÃO</p>
+            <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO</button>
+            <dialog id="modal-asserção">
+              <div class="modal-box">
+                <div class="modal-black">
+                  <div class="modal-retangulo">
+                    <div class="modal-linhas"></div>
+                    <div class="modal-linhas"></div>
+                  </div>
+                </div>
+                <h class="titulo-modal">SOBRE ESTE TIPO DE QUESTÃO</h>
+                <p class="texto-modal">Além de avaliar as proposições isoladamente, o desafio é analisar as possíveis relações entre elas.
+                  Trata-se de um exercício de inferência na leitura. Deve-se colocar em jogo as informações explícitas
+                  nas proposições e seus conhecimentos prévios sobre o tema, de modo a verificar se a segunda proposição
+                  explica ou justifica a primeira. Devido a esta complexidade de habilidades mobilizadas, este tipo de
+                  questão é bastante utilizado em avaliações como o ENADE.</p>
+            </dialog>
+          </div>
+          <div id="gray">
+            <p id="dica-asserção">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
+              resolução (símbolo) e ter o feedback sobre ela.</p>
+          </div>
+          <article>
+            <section id="conteudo-asserção">
+              <div id="conteudo-principal-asserção">
+                <h class="titulo-secundário"> QUESTÃO</h>
+                <p class="textos">Leia, a seguir, uma análise do historiador Jacques Le Goff a respeito do tempo na
+                  Idade Média:</p>
+                <p id="sublinhado-rosa-1" class="textos-sublinhado" onclick="estrategia1Apper()"><i>Da mesma forma que o
+                    camponês, o mercador
+                    está submetido, na sua atividade profissional, em primeiro lugar, ao tempo meteorológico, ao ciclo
+                    das estações, à imprevisibilidade das intempéries e dos cataclismos naturais. Neste aspecto, e
+                    durante muito tempo, ele só necessitou de submissão à ordem da natureza e de Deus e só teve, como
+                    meio de ação, a oração e as práticas supersticiosas. Mas quando se organiza uma rede comercial, o
+                    tempo torna-se objeto de medida. A demora de uma viagem, por mar ou por terra, de um lugar para
+                    outro, o problema dos preços que, no decorrer de uma mesma operação comercial, e mais ainda quando o
+                    circuito se complica, sobem ou descem, aumentam ou diminuem os lucros, a duração do trabalho
+                    artesanal ou operário (o mercador é também quase sempre um dador de trabalho) - tudo isso se impõe
+                    cada vez mais à sua atenção e se torna objeto de regulamentação cada vez mais minuciosa. <img
+                      class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                      alt="icone cursor"></i><strong> 1</strong></p>
+                <p class="textos">LE GOFF, Jacques. <strong>Para um novo conceito de Idade Média: Tempo, Trabalho e
+                    Cultura no ocidente.</strong>Lisboa: Editorial Estampa, 1979.p. 51. (Adaptado).</p>
+                <p id="sublinhado-rosa-2" class="textos-sublinhado" onclick="estrategia2Apper()">Com base no trecho e em
+                  seus conhecimentos
+                  sobre concepções do tempo, avalie as proposições e a relação entre elas: <img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 2</strong></p>
+                <p class="textos"><strong>I.A concepção de tempo dos mercadores transformou-se ao longo da Idade Média
+                    deixando de ser apenas uma noção meteorológica e ligada com a natureza.</strong></p>
+                <p id="sublinhado-rosa-3" class="textos-sublinhado" onclick="estrategia3Apper()">PORQUE <img
+                    class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong>
+                    3</strong></p>
+                <p class="textos"><strong>II.A noção de tempo enquanto medida tornou-se essencial para a organização de
+                    atividades econômicas dos mercadores como, entre outras, o estabelecimento de rotas comerciais, a
+                    definição de preços e cálculo do custo da mão-de-obra.</strong></p>
+                <p id="sublinhado-rosa-4" class="textos-sublinhado" onclick="estrategia4Apper()">Assinale a opção
+                  correta: <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                    alt="icone cursor"><strong>
+                    4</strong></p>
+                <p class="textos">As asserções I e II são proposições verdadeiras, e a II é uma justificativa da I.<br>
+                  As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa da I. <br>
+                  A asserção I é uma proposição verdadeira, e a II é uma proposição falsa. <br>
+                  A asserção I é uma proposição falsa, e a II é uma proposição verdadeira. <br>
+                  As asserções I e II são proposições falsas.</p>
+                <p id="sublinhado-rosa-5" class="textos-sublinhado" onclick="estrategia5Apper()">Qual será a alternativa
+                  correta? <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                    alt="icone cursor"><strong>
+                    5</strong></p>
+              </div>
+              <div id="pink-right">
+                <h class="titulo-secundário">ESTRATÉGIAS</h>
+                <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
+                <p id="estratégia-1" class="textos-estratégias"><strong>1. </strong>Esse é o momento da reflexão. Qual é
+                  o tema da questão? O que você conhece dele? Quais informações são dadas no texto? E como elas se
+                  relacionam com seus conhecimentos prévios?</p>
+                <p id="estratégia-2" class="textos-estratégias"><strong>2. </strong>Aqui você encontra qual ação deve
+                  realizar para responder. No caso, as asserções podem ser verdadeiras ou falsas. Se ambas forem
+                  verdadeiras, você precisa verificar a relação entre elas utilizando o PORQUE.</p>
+                <p id="estratégia-3" class="textos-estratégias"><strong>3. </strong>Sendo as duas asserções verdadeiras,
+                  a asserção II explica ou justifica a asserção I? Tente conectá-las usando as expressões “em razão de”
+                  ou “por motivo de”. Verifique se essa conexão faz sentido frente ao contexto e aos conteúdos estudados
+                </p>
+                <p id="estratégia-4" class="textos-estratégias"><strong>4. </strong>Elimine opções que possam te
+                  confundir. Se uma das asserções for falsa, perde-se o sentido em identificar a relação entre elas. Se
+                  as duas forem verdadeiras, foque somente nas alternativas coerentes com isso.</p>
+                <p id="estratégia-5" class="textos-estratégias"><strong>5. </strong>A alternativa correta é a (A)</p>
+              </div>
+            </section>
+            <section id="gray">
+              <div id="resposta-asserção">
+                <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
+                <p class="textos">Jacques Le Goff explicou em seu texto que a noção meteorológica do tempo se tornou
+                  insuficiente para os mercadores da Idade Média. Conforme a economia se tornou mais complexa, esse
+                  mercador passou a depender do tempo enquanto medida para se organizar.</p>
+                <p class="textos">Se você escolheu a <strong>alternativa b</strong>, provavelmente analisou as duas
+                  proposições corretamente. No entanto, não acertou a relação entre elas. Tente reescrever as
+                  proposições
+                  unindo-as pelo "porque"</p>
+                <p class="textos">Se você escolheu as <strong>alternativas "c", "d" e "e”</strong>, possivelmente teve
+                  dificuldade na avaliação da veracidade. Tente escrever pequenas frases para si explicando o que está
+                  acontecendo no texto.</p>
+              </div>
+            </section>
+            <button id="vamos-praticar" onmouseover="invertPraticar()" onmouseout="convertPraticar()"><img
+                id="img-praticar" class="img-vamos-praticar" src="assets/rea questões objetivas - vamos praticar.svg"
+                alt="icone vamos praticar"><img id="img-praticar-invertido" class="img-vamos-praticar"
+                src="assets/vamos praticar - invertido.svg" alt="icone vamos praticar invertido">
+              <p id="texto-praticar">VAMOS PRATICAR?</p>
+            </button>
+          </article>
         </div>
       </div>
       <div id="lacuna" class="hidden-div"></div>

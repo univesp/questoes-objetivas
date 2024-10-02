@@ -36,44 +36,6 @@ $(document).ready(function () {
 
 })
 
-let jsonData;
-
-// Função para carregar o JSON
-fetch('data.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Erro ao carregar o JSON');
-    }
-    return response.json(); // Converte a resposta em JSON
-  })
-  .then(data => {
-    jsonData = data; // Armazena os dados em uma variável
-  })
-  .catch(error => {
-    console.error('Erro:', error);
-  });
-
-function mostrarConteudo(id) {
-  const container = document.getElementById('meuContainer');
-  container.innerHTML = ''; // Limpa o conteúdo anterior
-
-  const conteudo = jsonData.find(item => item.id === id);
-  if (conteudo) {
-    const titulo = document.createElement('h'); 
-    titulo.textContent = conteudo.titulo;         
-    titulo.className = conteudo.classeTitulo;        
-    container.appendChild(titulo); 
-    const paragrafo = document.createElement('p'); // Cria um novo parágrafo
-    paragrafo.textContent = conteudo.paragrafo;         // Adiciona o texto
-    paragrafo.className = conteudo.classeParagrafo;          // Adiciona a classe
-    container.appendChild(paragrafo);                // Adiciona ao container
-    const paragrafo2 = document.createElement('p'); 
-    paragrafo2.textContent = conteudo.paragrafo2;         
-    paragrafo2.className = conteudo.classeParagrafo2;         
-    container.appendChild(paragrafo2);                
-  }
-}
-
 //Variáveis
 let asserção1 = document.getElementById('asserção-1');
 let asserção2 = document.getElementById('asserção-2');
@@ -90,6 +52,21 @@ let lacuna = document.getElementById('lacuna');
 let associação = document.getElementById('associação');
 let respostaUnica = document.getElementById('resposta-unica-e-complementação');
 let multiplas = document.getElementById('respostas-multiplas');
+let praticar1 = document.getElementById('img-praticar');
+let praticar2 = document.getElementById('img-praticar-invertido');
+let estrategia1 = document.getElementById('estratégia-1');
+let estrategia2 = document.getElementById('estratégia-2');
+let estrategia3 = document.getElementById('estratégia-3');
+let estrategia4 = document.getElementById('estratégia-4');
+let estrategia5 = document.getElementById('estratégia-5');
+let sublinhadoRosa1 = document.getElementById('sublinhado-rosa-1');
+let sublinhadoRosa2 = document.getElementById('sublinhado-rosa-2');
+let sublinhadoRosa3 = document.getElementById('sublinhado-rosa-3');
+let sublinhadoRosa4 = document.getElementById('sublinhado-rosa-4');
+let sublinhadoRosa5 = document.getElementById('sublinhado-rosa-5');
+let respostaAsserção = document.getElementById('resposta-asserção');
+let modalAsserção = document.getElementById('modal-asserção');
+let modalBackground = document.getElementById('background');
 
 //Função para inverter imagem menu ao passar o mouse
 function invertAsserção() {
@@ -151,6 +128,19 @@ function convertMultiplas() {
   multiplas2.classList.add('hidden-div');
 }
 
+//Função para inverter imagem menu ao passar o mouse
+function invertPraticar() {
+  praticar1.style.display="none";
+  praticar2.style.display="block";
+}
+
+//Função para converter a imagem ao passar o mouse
+function convertPraticar() {
+  praticar1.style.display="block";
+  praticar2.style.display="none";
+}
+
+
 //FUNÇÕES OPÇÕES QUESTÕES MENU
 
 //Opção de asserção
@@ -160,7 +150,6 @@ function questãoAsserção() {
   menu.classList.add('disappear'); // efeito de transição
   asserção.classList.remove('hidden-div');
   asserção.classList.add('appear'); // efito de transição
-  mostrarConteudo('secao1');
 };
 
 //Opção de lacuna
@@ -170,7 +159,6 @@ function questãoLacuna() {
   menu.classList.add('disappear'); // efeito de transição
   lacuna.classList.remove('hidden-div');
   lacuna.classList.add('appear'); // efito de transição
-  mostrarConteudo('secao2');
 };
 
 //Opção de lacuna
@@ -197,3 +185,43 @@ function questãoMultiplas() {
   multiplas.classList.remove('hidden-div');
   multiplas.classList.add('appear'); // efito de transição
 };
+
+//FUNÇÕES APARECER ESTRATÉGIAS
+
+function estrategia1Apper(){
+  estrategia1.style.display="block";
+  sublinhadoRosa1.style.backgroundColor="#FFB5FF"
+}
+
+function estrategia2Apper(){
+  estrategia2.style.display="block";
+  sublinhadoRosa2.style.backgroundColor="#FFB5FF"
+}
+
+function estrategia3Apper(){
+  estrategia3.style.display="block";
+  sublinhadoRosa3.style.backgroundColor="#FFB5FF"
+}
+
+function estrategia4Apper(){
+  estrategia4.style.display="block";
+  sublinhadoRosa4.style.backgroundColor="#FFB5FF"
+}
+
+function estrategia5Apper(){
+  estrategia5.style.display="block";
+  sublinhadoRosa5.style.backgroundColor="#FFB5FF"
+  respostaAsserção.style.display="block";
+}
+
+function sobreAsserção(){
+  modalAsserção.style.display="block";
+  modalBackground.style.display="block";
+}
+
+window.onclick = function(event) {
+  if (event.target === modalBackground) {
+    modalAsserção.style.display="none";
+    modalBackground.style.display="none";
+  }
+}

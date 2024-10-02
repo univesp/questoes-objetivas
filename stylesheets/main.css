@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
 
-.container{
+.container {
   max-width: 1200px;
 }
 
@@ -15,40 +15,51 @@ body {
   display: none;
 }
 
-.disappear{
+.disappear {
   animation-name: disappear;
   animation-duration: 1s;
 }
 
-.appear{
+.appear {
   animation-name: appear;
   animation-duration: 1s;
 }
 
-@keyframes appear{
-  from {opacity: 0%;}
-  to {opacity: 100%;}
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
 
-@keyframes disappear{
-  from {opacity: 100%;}
-  to {opacity: 0%;}
+@keyframes disappear {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0%;
+  }
 }
 
-.page-title{
+.page-title {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-size: 52px;
 }
 
-.ilustração-home{
+.ilustração-home {
   width: 500px;
 }
 
-.home-page-content{
+.home-page-content {
   padding-left: 40px;
 }
-.home-page{
+
+.home-page {
   width: 100%;
   display: flex;
   gap: 100px;
@@ -56,7 +67,7 @@ body {
   margin-top: 70px;
 }
 
-.page-content{
+.page-content {
   font-family: "Open Sans", sans-serif;
   margin-top: 20px;
   text-align: left;
@@ -64,7 +75,7 @@ body {
   font-size: 16px;
 }
 
-#iniciar{
+#iniciar {
   margin-top: 70px;
   margin-left: 40%;
   font-family: "Kanit", sans-serif;
@@ -78,24 +89,24 @@ body {
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-#iniciar:hover{
+#iniciar:hover {
   background-color: white;
   color: #343434;
   transform: scale(1.05);
 }
 
-.hidden-div{
+.hidden-div {
   display: none;
 }
 
-.box{
+.box {
   background-color: #F1F1E9;
   width: 100%;
   height: 500px;
   border: 3px solid #343434;
 }
 
-.black{
+.black {
   width: 100%;
   height: 70px;
   top: 0;
@@ -104,33 +115,33 @@ body {
 
 .retangulo {
   left: 81%;
-  width: 150px; 
-  height: 37px; 
-  background-color: #343434; 
-  border: 3px solid #F1F1E9; 
-  border-top: none; 
-  border-radius: 0 0 15px 15px; 
-  position: relative; 
+  width: 150px;
+  height: 37px;
+  background-color: #343434;
+  border: 3px solid #F1F1E9;
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+  position: relative;
 }
 
 .linhas {
-  width: 2px; 
-  height: 100%; 
-  background-color: #F1F1E9; 
+  width: 2px;
+  height: 100%;
+  background-color: #F1F1E9;
   position: absolute;
-  top: 50%; 
-  transform: translateY(-50%); 
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .linhas:first-of-type {
-  left: 30%; 
+  left: 30%;
 }
 
 .linhas:last-of-type {
-  left: 70%; 
+  left: 70%;
 }
 
-.menu-title{
+.menu-title {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -139,18 +150,22 @@ body {
   padding: 40px 0px 40px 0px;
 }
 
-.imagens{
+.imagens {
   display: flex;
-  margin-left: 55px;
+  margin-left: 85px;
 }
 
-#asserção-1{
+#asserção {
+  border: 3px solid #343434;
+}
+
+#asserção-1 {
   padding-top: 10px;
   width: 100px;
   height: 100px;
 }
 
-#asserção-2{
+#asserção-2 {
   padding-top: 10px;
   width: 100px;
   height: 100px;
@@ -171,7 +186,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.text-1{
+.text-1 {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -179,18 +194,18 @@ body {
   padding-top: 30px;
 }
 
-.bloco-1:hover{
+.bloco-1:hover {
   background-color: #343434;
   color: #FFB5FF;
 }
 
-#lacuna-1{
+#lacuna-1 {
   padding-top: 10px;
   width: 100px;
   height: 100px;
 }
 
-#lacuna-2{
+#lacuna-2 {
   padding-top: 10px;
   width: 100px;
   height: 100px;
@@ -212,7 +227,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.text-2{
+.text-2 {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -220,18 +235,18 @@ body {
   padding-top: 30px;
 }
 
-.bloco-2:hover{
+.bloco-2:hover {
   background-color: #343434;
   color: #f9ffb5;
 }
 
-#associação-1{
+#associação-1 {
   padding-top: 10px;
   width: 100px;
   height: 100px;
 }
 
-#associação-2{
+#associação-2 {
   padding-top: 10px;
   width: 100px;
   height: 100px;
@@ -253,7 +268,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.text-3{
+.text-3 {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -261,19 +276,19 @@ body {
   padding-top: 30px;
 }
 
-.bloco-3:hover{
+.bloco-3:hover {
   background-color: #343434;
   color: #B5FBB9;
 }
 
 
-#resposta-unica-1{
+#resposta-unica-1 {
   padding-top: 10px;
   width: 100px;
   height: 100px;
 }
 
-#resposta-unica-2{
+#resposta-unica-2 {
   padding-top: 10px;
   width: 100px;
   height: 100px;
@@ -295,7 +310,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.text-4{
+.text-4 {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -303,18 +318,18 @@ body {
   padding-top: 30px;
 }
 
-.bloco-4:hover{
+.bloco-4:hover {
   background-color: #343434;
   color: #b5f2ff;
 }
 
-#multiplas-1{
+#multiplas-1 {
   padding-top: 10px;
   width: 100px;
   height: 100px;
 }
 
-#multiplas-2{
+#multiplas-2 {
   padding-top: 10px;
   width: 100px;
   height: 100px;
@@ -337,7 +352,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.text-5{
+.text-5 {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -345,12 +360,12 @@ body {
   padding-top: 30px;
 }
 
-.bloco-5:hover{
+.bloco-5:hover {
   background-color: #343434;
   color: #D5D3FF;
 }
 
-.imagens2{
+.imagens2 {
   display: flex;
 }
 
@@ -370,20 +385,260 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.menu2-bloco-1:hover{
+.menu2-bloco-1:hover {
   background-color: #343434;
   color: #FFB5FF;
 }
 
-#box-asserção{
+#box-asserção {
   background-color: white;
   width: 100%;
   height: fit-content;
-  padding-bottom: 50px;
 }
 
-#pink{
+#pink {
   background-color: #FF8BFF;
   width: 100%;
-  height: 50px;
+  height: fit-content;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+}
+
+#questão-asserção {
+  width: 80px;
+  height: 80px;
+}
+
+#titulo-asserção {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#sobre-asserção {
+  position: relative;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  margin-left: 400px;
+}
+
+#sobre-asserção:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.02);
+}
+
+#gray {
+  width: 100%;
+  height: fit-content;
+  background-color: #F1F1E9;
+  padding: 30px 0px 20px 30px;
+}
+
+#dica-asserção {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+#pink-right {
+  background-color: #FF8BFF;
+  width: 40vw;
+  padding: 20px 40px 10px 30px;
+}
+
+#conteudo-asserção {
+  display: flex;
+}
+
+#conteudo-principal-asserção {
+  width: 60vw;
+  height: fit-content;
+  padding: 20px 20px 10px 20px;
+}
+
+.titulo-secundário {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #343434;
+  padding: 0px 0px 100px 20px;
+}
+
+.textos {
+  margin-top: 10px;
+  padding-left: 20px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.textos-sublinhado {
+  padding: 10px 20px 10px 20px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.textos-sublinhado:hover {
+  background-color: #FFB5FF;
+  cursor: pointer;
+}
+
+.imagem-cursor {
+  width: 20px;
+  height: 20px;
+}
+
+.textos-estratégias {
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #ffb5ff;
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+#vamos-praticar {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  gap: 30px;
+  justify-content: center;
+  border-top: 3px solid #343434;
+}
+
+#vamos-praticar:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.001);
+  left: 0px;
+}
+
+.img-vamos-praticar {
+  width: 70px;
+  height: 70px;
+}
+
+#texto-praticar {
+  margin-top: 20px;
+}
+
+#img-praticar {
+  display: block;
+}
+
+#img-praticar-invertido {
+  display: none;
+}
+
+#estratégia-1,
+#estratégia-2,
+#estratégia-3,
+#estratégia-4,
+#estratégia-5 {
+  display: none;
+}
+
+#resposta-asserção{
+  display: none;
+}
+
+#modal-asserção{
+  margin-top: 200px;
+  border: none;
+  background: transparent;
+  z-index: 1001;
+}
+
+.modal-box {
+  background-color: #F1F1E9;
+  width: 650px;
+  height: fit-content;
+  border: 3px solid #343434;
+}
+
+.modal-black {
+  width: 100%;
+  height: 70px;
+  top: 0;
+  background-color: #343434;
+  margin-bottom: 20px;
+}
+
+.modal-retangulo {
+  left: 73%;
+  width: 150px;
+  height: 37px;
+  top: -3px;
+  background-color: #343434;
+  border: 3px solid #F1F1E9;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+}
+
+.modal-linhas {
+  width: 2px;
+  height: 100%;
+  background-color: #F1F1E9;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-linhas:first-of-type {
+  left: 30%;
+}
+
+.modal-linhas:last-of-type {
+  left: 70%;
+}
+
+.titulo-modal{
+  margin-left: 210px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #343434;
+}
+
+.texto-modal{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  line-height: 1.7rem;
+  font-size: 16px;
+  color: #343434;
+  padding: 20px 20px 20px 20px;
+}
+
+#background{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  z-index: 1000;
 }
