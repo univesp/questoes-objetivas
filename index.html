@@ -118,7 +118,7 @@
         <button id="iniciar">VAMOS LÁ!</button>
       </div>
       <div id="menu" class="hidden-div">
-        <div class="box">
+        <div id="box">
           <div class="black">
             <div class="retangulo">
               <div class="linhas"></div>
@@ -126,7 +126,7 @@
             </div>
           </div>
           <h1 class="menu-title">Navegue livremente pelos tipos de questão:</h1>
-          <div class="imagens">
+          <div id="opções-menu" class="imagens">
             <div class="bloco-1" onmouseover="invertAsserção()" onmouseout="convertAsserção()"
               onclick="questãoAsserção()">
               <img id="asserção-1" src="assets/1. asserção razão.svg" alt="primeira opção">
@@ -163,6 +163,16 @@
         </div>
       </div>
       <div id="asserção" class="hidden-div">
+        <div id="menu-asserção">
+          <section id="botão-inicio">
+            <div class="bloco-0" onmouseover="invertInicio()" onmouseout="convertInicio()" onclick="voltarMenu()">
+              <img id="inicio-1" src="assets/rea questões objetivas - home ícone.svg" alt="icone de inicio">
+              <img id="inicio-2" class="hidden-div" src="assets/rea questões objetivas - home ícon invertido.svg"
+                alt="icone de inicio invertido">
+              <p id="text-0">INÍCIO</p>
+            </div>
+          </section>
+        </div>
         <div id="box-asserção">
           <div id="pink">
             <img id="questão-asserção" src="assets/1. asserção razão.svg" alt="icone questão asserção-razão">
@@ -177,7 +187,8 @@
                   </div>
                 </div>
                 <h class="titulo-modal">SOBRE ESTE TIPO DE QUESTÃO</h>
-                <p class="texto-modal">Além de avaliar as proposições isoladamente, o desafio é analisar as possíveis relações entre elas.
+                <p class="texto-modal">Além de avaliar as proposições isoladamente, o desafio é analisar as possíveis
+                  relações entre elas.
                   Trata-se de um exercício de inferência na leitura. Deve-se colocar em jogo as informações explícitas
                   nas proposições e seus conhecimentos prévios sobre o tema, de modo a verificar se a segunda proposição
                   explica ou justifica a primeira. Devido a esta complexidade de habilidades mobilizadas, este tipo de
@@ -269,19 +280,55 @@
                   acontecendo no texto.</p>
               </div>
             </section>
-            <button id="vamos-praticar" onmouseover="invertPraticar()" onmouseout="convertPraticar()"><img
-                id="img-praticar" class="img-vamos-praticar" src="assets/rea questões objetivas - vamos praticar.svg"
-                alt="icone vamos praticar"><img id="img-praticar-invertido" class="img-vamos-praticar"
-                src="assets/vamos praticar - invertido.svg" alt="icone vamos praticar invertido">
+            <button id="vamos-praticar" onmouseover="invertPraticar()" onmouseout="convertPraticar()"
+              onclick="vamosPraticarAsserção()"><img id="img-praticar" class="img-vamos-praticar"
+                src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
+                id="img-praticar-invertido" class="img-vamos-praticar" src="assets/vamos praticar - invertido.svg"
+                alt="icone vamos praticar invertido">
               <p id="texto-praticar">VAMOS PRATICAR?</p>
             </button>
           </article>
         </div>
+        <section id="box-praticar-asserção" class="hidden-div">
+          <div id="pink">
+            <img id="questão-asserção" src="assets/1. asserção razão.svg" alt="icone questão asserção-razão">
+            <p id="titulo-asserção">ASSERÇÃO-RAZÃO</p>
+            <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO</button>
+          </div>
+          <div id="gray">
+            <p id="dica-asserção">Observe a questão e busque seguir as orientações do quadro "Checklist" para
+              responde-la:</p>
+          </div>
+          <article>
+            <section id="conteudo-asserção">
+              <div id="conteudo-principal-asserção">
+                <h class="titulo-secundário"> QUESTÃO</h>
+              </div>
+              <section id="pink-right">
+                <h class="titulo-secundário">ESTRATÉGIAS</h>
+                <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
+              </section>
+            </section>
+            <section id="gray"></section>
+            <div id="resposta-asserção">
+              <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
+            </div>
+        </section>
+        </article>
+        </section>
       </div>
-      <div id="lacuna" class="hidden-div"></div>
-      <div id="associação" class="hidden-div"></div>
-      <div id="resposta-unica-e-complementação" class="hidden-div"></div>
-      <div id="respostas-multiplas" class="hidden-div"></div>
+      <div id="lacuna" class="hidden-div">
+        <div id="menu-lacuna"></div>
+      </div>
+      <div id="associação" class="hidden-div">
+        <div id="menu-associação"></div>
+      </div>
+      <div id="resposta-unica-e-complementação" class="hidden-div">
+        <div id="menu-resposta-unica"></div>
+      </div>
+      <div id="respostas-multiplas" class="hidden-div">
+        <div id="menu-respostas-multiplas"></div>
+      </div>
       <nav>
       </nav>
     </div>
