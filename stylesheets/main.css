@@ -468,7 +468,7 @@ body {
 .titulo-secundário {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   color: #343434;
   padding: 0px 0px 100px 20px;
 }
@@ -563,7 +563,7 @@ body {
 }
 
 #modal-asserção {
-  margin-top: 200px;
+  margin-top: 300px;
   border: none;
   background: transparent;
   z-index: 1001;
@@ -691,10 +691,94 @@ body {
   display: flex;
 }
 
-#box-praticar-asserção{
+#box-praticar-asserção {
   background-color: white;
   width: 1200px;
   height: fit-content;
   border: 3px solid #343434;
   margin-top: 50px;
+}
+
+#bibliografia-asserção {
+  text-align: right;
+  padding: 10px 0px 10px 0px;
+}
+
+#questões-checkbox {
+  border: 3px solid #343434;
+  border-top: none;
+}
+
+#checkbox-1-asserção,
+#checkbox-2-asserção,
+#checkbox-3-asserção,
+#checkbox-4-asserção,
+#checkbox-5-asserção {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+
+#alternativa-1, #alternativa-3, #alternativa-5{
+  display: flex;
+  background-color: #F1F1E9;
+  margin-right: 0px;
+  height: 70px;
+  border-top: 3px solid #343434;
+}
+
+#alternativa-2, #alternativa-4 {
+  display: flex;
+  background-color: white;
+  margin-right: 0px;
+  height: 70px;
+  border-top: 3px solid #343434;
+}
+
+.textos-alternativas {
+  margin-top: 15px;
+  padding-left: 60px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  display: none; 
+}
+
+label {
+  position: relative;
+  padding-left: 25px; 
+  cursor: pointer;
+}
+
+label::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 30px; 
+  height: 30px; 
+  background-color: #F1F1E9; 
+  border: 3px solid #343434; 
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: #343434; 
+}
+
+.estrategia-checkbox{
+  background-color: #FFB5FF;
+}
+
+.textos-estrategia{
+  margin-left: 30px;
+  padding-top: 10px;
+}
+
+#checkbox-estrategia:before{
+  top: 15px;
 }

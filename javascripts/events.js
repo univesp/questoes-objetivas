@@ -20,20 +20,22 @@ $(document).ready(function () {
   // Seu código abaixo
 
   //Variáveis
-  let home = document.getElementById('home');
-  let menu = document.getElementById('menu');
-
-  //Botão inicial
-  document.getElementById('iniciar').addEventListener('click', function () {
-    // Limpa a tela inicial e exibe a próxima
-    home.classList.add('hidden-div');
-    home.classList.add('disappear'); // efeito de transição
-    menu.classList.remove('hidden-div');
-    menu.classList.add('appear'); // efito de transição
-    num = 0;
-  });
 
 })
+
+let home = document.getElementById('home');
+let menu = document.getElementById('menu');
+
+//Botão inicial
+document.getElementById('iniciar').addEventListener('click', function () {
+  // Limpa a tela inicial e exibe a próxima
+  home.classList.add('hidden-div');
+  home.classList.add('disappear'); // efeito de transição
+  menu.classList.remove('hidden-div');
+  menu.classList.add('appear'); // efito de transição
+  num = 0;
+  console.log(`página-${num}`);
+});
 
 var num;
 
@@ -74,6 +76,11 @@ let text = document.getElementById('text-0');
 let box = document.getElementById('box');
 let boxAsserção = document.getElementById('box-asserção');
 let boxPraticarAsserção = document.getElementById('box-praticar-asserção');
+let botão1 = document.getElementById('botão-1');
+let botão2 = document.getElementById('botão-2');
+let botão3 = document.getElementById('botão-3');
+let botão4 = document.getElementById('botão-4');
+let botão5 = document.getElementById('botão-5');
 const botãoInicio = document.getElementById('botão-inicio');
 const opçõesMenu = document.getElementById('opções-menu');
 const menuAsserção = document.getElementById('menu-asserção');
@@ -175,169 +182,121 @@ function convertInicio() {
 //Opção de asserção
 function questãoAsserção() {
   // Limpa a tela inicial e exibe a próxima
+  botãoInicio.classList.remove('hidden-div');
   botãoInicio.parentElement.removeChild(botãoInicio);
   menuAsserção.appendChild(botãoInicio);
   opçõesMenu.parentElement.removeChild(opçõesMenu);
   menuAsserção.appendChild(opçõesMenu);
   opçõesMenu.style.marginLeft = "0";
-  if (num != 0) { //REMOVER AQUI SE FOR SOLICITADO PARA NÃO TER COMO ACESSAR OUTROS TIPOS DE QUESTÃO FORA DO MENU!
-    if (num == 2) {
-      lacuna.classList.add('hidden-div');
-      lacuna.classList.add('disappear'); // efeito de transição 
-    }
-    if (num == 3) {
-      associação.classList.add('hidden-div');
-      associação.classList.add('disappear'); // efeito de transição
-    }
-    if (num == 4) {
-      respostaUnica.classList.add('hidden-div');
-      respostaUnica.classList.add('disappear'); // efeito de transição
-    }
-    if (num == 5) {
-      multiplas.classList.add('hidden-div');
-      multiplas.classList.add('disappear'); // efeito de transição
-    }
-  }
   menu.classList.add('hidden-div');
   menu.classList.add('disappear'); // efeito de transição
   asserção.classList.remove('hidden-div');
   asserção.classList.add('appear'); // efito de transição
   num = 1;
   console.log(`pagina-${num}`);
+  if (num == 1) {
+    botão1.style = "pointer-events: none";
+    botão2.style = "pointer-events: none";
+    botão3.style = "pointer-events: none";
+    botão4.style = "pointer-events: none";
+    botão5.style = "pointer-events: none";
+    boxAsserção.classList.remove('hidden-div');
+    boxAsserção.classList.add('appear');
+  }
 };
 
 //Opção de lacuna
 function questãoLacuna() {
   // Limpa a tela inicial e exibe a próxima
+  botãoInicio.classList.remove('hidden-div');
   botãoInicio.parentElement.removeChild(botãoInicio);
   menuLacuna.appendChild(botãoInicio);
   opçõesMenu.parentElement.removeChild(opçõesMenu);
   menuLacuna.appendChild(opçõesMenu);
   opçõesMenu.style.marginLeft = "0";
-  if (num != 0) {
-    if (num == 1) {
-      asserção.classList.add('hidden-div');
-      asserção.classList.add('disappear'); // efeito de transição 
-    }
-    if (num == 3) {
-      associação.classList.add('hidden-div');
-      associação.classList.add('disappear'); // efeito de transição
-    }
-    if (num == 4) {
-      respostaUnica.classList.add('hidden-div');
-      respostaUnica.classList.add('disappear'); // efeito de transição
-    }
-    if (num == 5) {
-      multiplas.classList.add('hidden-div');
-      multiplas.classList.add('disappear'); // efeito de transição
-    }
-  }
   menu.classList.add('hidden-div');
   menu.classList.add('disappear'); // efeito de transição
   lacuna.classList.remove('hidden-div');
   lacuna.classList.add('appear'); // efito de transição
   num = 2;
   console.log(`pagina-${num}`);
+  if (num == 2) {
+    botão1.style = "pointer-events: none";
+    botão2.style = "pointer-events: none";
+    botão3.style = "pointer-events: none";
+    botão4.style = "pointer-events: none";
+    botão5.style = "pointer-events: none";
+  }
 };
 
 //Opção de lacuna
 function questãoAssociação() {
   // Limpa a tela inicial e exibe a próxima
+  botãoInicio.classList.remove('hidden-div');
   botãoInicio.parentElement.removeChild(botãoInicio);
   menuAssociação.appendChild(botãoInicio);
   opçõesMenu.parentElement.removeChild(opçõesMenu);
   menuAssociação.appendChild(opçõesMenu);
   opçõesMenu.style.marginLeft = "0";
-  if (num != 0) {
-    if (num == 1) {
-      asserção.classList.add('hidden-div');
-      asserção.classList.add('disappear'); // efeito de transição 
-    }
-    if (num == 2) {
-      lacuna.classList.add('hidden-div');
-      lacuna.classList.add('disappear'); // efeito de transição
-    }
-    if (num == 4) {
-      respostaUnica.classList.add('hidden-div');
-      respostaUnica.classList.add('disappear'); // efeito de transição
-    }
-    if (num == 5) {
-      multiplas.classList.add('hidden-div');
-      multiplas.classList.add('disappear'); // efeito de transição
-    }
-  }
   menu.classList.add('hidden-div');
   menu.classList.add('disappear'); // efeito de transição
   associação.classList.remove('hidden-div');
   associação.classList.add('appear'); // efito de transição
   num = 3;
   console.log(`pagina-${num}`);
+  if (num == 3) {
+    botão1.style = "pointer-events: none";
+    botão2.style = "pointer-events: none";
+    botão3.style = "pointer-events: none";
+    botão4.style = "pointer-events: none";
+    botão5.style = "pointer-events: none";
+  }
 };
 
 function questãoRespostaUnica() {
   // Limpa a tela inicial e exibe a próxima
+  botãoInicio.classList.remove('hidden-div');
   botãoInicio.parentElement.removeChild(botãoInicio);
   menuRespostaUnica.appendChild(botãoInicio);
   opçõesMenu.parentElement.removeChild(opçõesMenu);
   menuRespostaUnica.appendChild(opçõesMenu);
   opçõesMenu.style.marginLeft = "0";
-  if (num != 0) {
-    if (num == 1) {
-      asserção.classList.add('hidden-div');
-      asserção.classList.add('disappear'); // efeito de transição 
-    }
-    if (num == 3) {
-      associação.classList.add('hidden-div');
-      associação.classList.add('disappear'); // efeito de transição
-    }
-    if (num == 2) {
-      lacuna.classList.add('hidden-div');
-      lacuna.classList.add('disappear'); // efeito de transição
-    }
-    if (num == 5) {
-      multiplas.classList.add('hidden-div');
-      multiplas.classList.add('disappear'); // efeito de transição
-    }
-  }
   menu.classList.add('hidden-div');
   menu.classList.add('disappear'); // efeito de transição
   respostaUnica.classList.remove('hidden-div');
   respostaUnica.classList.add('appear'); // efito de transição
   num = 4;
   console.log(`pagina-${num}`);
+  if (num == 4) {
+    botão1.style = "pointer-events: none";
+    botão2.style = "pointer-events: none";
+    botão3.style = "pointer-events: none";
+    botão4.style = "pointer-events: none";
+    botão5.style = "pointer-events: none";
+  }
 };
 
 function questãoMultiplas() {
   // Limpa a tela inicial e exibe a próxima
+  botãoInicio.classList.remove('hidden-div');
   botãoInicio.parentElement.removeChild(botãoInicio);
   menuRespostasMultiplas.appendChild(botãoInicio);
   opçõesMenu.parentElement.removeChild(opçõesMenu);
   menuRespostasMultiplas.appendChild(opçõesMenu);
   opçõesMenu.style.marginLeft = "0";
-  if (num != 0) {
-    if (num == 1) {
-      asserção.classList.add('hidden-div');
-      asserção.classList.add('disappear'); // efeito de transição 
-    }
-    if (num == 3) {
-      associação.classList.add('hidden-div');
-      associação.classList.add('disappear'); // efeito de transição
-    }
-    if (num == 4) {
-      respostaUnica.classList.add('hidden-div');
-      respostaUnica.classList.add('disappear'); // efeito de transição
-    }
-    if (num == 2) {
-      lacuna.classList.add('hidden-div');
-      lacuna.classList.add('disappear'); // efeito de transição
-    }
-  }
   menu.classList.add('hidden-div');
   menu.classList.add('disappear'); // efeito de transição
   multiplas.classList.remove('hidden-div');
   multiplas.classList.add('appear'); // efito de transição
   num = 5;
   console.log(`pagina-${num}`);
+  if (num == 5) {
+    botão1.style="pointer-events: none";
+    botão2.style="pointer-events: none";
+    botão3.style="pointer-events: none";
+    botão4.style="pointer-events: none";
+    botão5.style="pointer-events: none";
+  }
 };
 
 function voltarMenu() {
@@ -363,19 +322,35 @@ function voltarMenu() {
       multiplas.classList.add('hidden-div');
       multiplas.classList.add('disappear'); // efeito de transição
     }
+    if (num == 6) {
+      boxPraticarAsserção.classList.add('hidden-div');
+      boxPraticarAsserção.classList.add('desappear');
+      botãoInicio.classList.add('hidden-div');
+    }
   }
   menu.classList.remove('hidden-div');
   menu.classList.add('appear'); // efeito de transição
   opçõesMenu.parentElement.removeChild(opçõesMenu);
   box.appendChild(opçõesMenu);
   opçõesMenu.style.marginLeft = "85px";
+  num = 0;
+  console.log(`página-${num}`);
+  if(num == 0) {
+    botão1.style="pointer-events: auto";
+    botão2.style="pointer-events: auto";
+    botão3.style="pointer-events: auto";
+    botão4.style="pointer-events: auto";
+    botão5.style="pointer-events: auto";
+  }
 };
 
-function vamosPraticarAsserção(){
+function vamosPraticarAsserção() {
   boxAsserção.classList.add('hidden-div');
   boxAsserção.classList.add('disappear');
   boxPraticarAsserção.classList.remove('hidden-div');
   boxPraticarAsserção.classList.add('apper');
+  num = 6;
+  console.log(`página-${num}`);
 }
 
 //FUNÇÕES APARECER ESTRATÉGIAS
@@ -415,5 +390,62 @@ window.onclick = function (event) {
   if (event.target === modalBackground) {
     modalAsserção.style.display = "none";
     modalBackground.style.display = "none";
+  }
+}
+
+//Variáveis
+
+let checkbox1 = document.getElementById('checkbox-1-asserção');
+let checkbox2 = document.getElementById('checkbox-2-asserção');
+let checkbox3 = document.getElementById('checkbox-3-asserção');
+let checkbox4 = document.getElementById('checkbox-4-asserção');
+let checkbox5 = document.getElementById('checkbox-5-asserção');
+let alternativa1 = document.getElementById('alternativa-1');
+let alternativa2 = document.getElementById('alternativa-2');
+let alternativa3 = document.getElementById('alternativa-3');
+let alternativa4 = document.getElementById('alternativa-4');
+let alternativa5 = document.getElementById('alternativa-5');
+let respostaPraticarAsserção = document.getElementById('resposta-praticar-asserção');
+
+
+// FUNÇÕES CHECKBOX VAMOS PRATICAR ASSERÇÕES
+
+function checkboxAsserção1 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarAsserção.classList.remove('hidden-div');
+    alternativa1.style.backgroundColor = "#FFB5FF"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxAsserção2 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarAsserção.classList.remove('hidden-div');
+    alternativa2.style.backgroundColor = "#FFB5FF"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxAsserção3 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarAsserção.classList.remove('hidden-div');
+    alternativa3.style.backgroundColor = "#FFB5FF"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxAsserção4 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarAsserção.classList.remove('hidden-div');
+    alternativa4.style.backgroundColor = "#FFB5FF"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxAsserção5 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarAsserção.classList.remove('hidden-div');
+    alternativa5.style.backgroundColor = "#FFB5FF"
+    console.log('ESTOU CHECADO');
   }
 }

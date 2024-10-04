@@ -60,7 +60,24 @@
 </head>
 
 <body class="d-flex flex-column">
-  <dialog id="background"></dialog>
+  <dialog id="background">
+    <dialog id="modal-asserção">
+      <div class="modal-box">
+        <div class="modal-black">
+          <div class="modal-retangulo">
+            <div class="modal-linhas"></div>
+            <div class="modal-linhas"></div>
+          </div>
+        </div>
+        <h class="titulo-modal">SOBRE ESTE TIPO DE QUESTÃO</h>
+        <p class="texto-modal">Além de avaliar as proposições isoladamente, o desafio é analisar as possíveis
+          relações entre elas.
+          Trata-se de um exercício de inferência na leitura. Deve-se colocar em jogo as informações explícitas
+          nas proposições e seus conhecimentos prévios sobre o tema, de modo a verificar se a segunda proposição
+          explica ou justifica a primeira. Devido a esta complexidade de habilidades mobilizadas, este tipo de
+          questão é bastante utilizado em avaliações como o ENADE.</p>
+    </dialog>
+  </dialog>
 
   <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
   <!-- <div class="esconder-tela-pequena"> -->
@@ -127,32 +144,33 @@
           </div>
           <h1 class="menu-title">Navegue livremente pelos tipos de questão:</h1>
           <div id="opções-menu" class="imagens">
-            <div class="bloco-1" onmouseover="invertAsserção()" onmouseout="convertAsserção()"
+            <div id="botão-1" class="bloco-1" onmouseover="invertAsserção()" onmouseout="convertAsserção()"
               onclick="questãoAsserção()">
               <img id="asserção-1" src="assets/1. asserção razão.svg" alt="primeira opção">
               <img id="asserção-2" class="hidden-div" src="assets/6. asserção razão-invert.svg"
                 alt="primeira opção invertida">
               <p class="text-1">ASSERÇÃO-RAZÃO</p>
             </div>
-            <div class="bloco-2" onmouseover="invertLacuna()" onmouseout="convertLacuna()" onclick="questãoLacuna()">
+            <div id="botão-2" class="bloco-2" onmouseover="invertLacuna()" onmouseout="convertLacuna()"
+              onclick="questãoLacuna()">
               <img id="lacuna-1" src="assets/2. lacuna.svg" alt="segunda opção">
               <img id="lacuna-2" class="hidden-div" src="assets/7 . lacuna-2.svg" alt="segunda opção invertida">
               <p class="text-2">LACUNA</p>
             </div>
-            <div class="bloco-3" onmouseover="invertAssociação()" onmouseout="convertAssociação()"
+            <div id="botão-3" class="bloco-3" onmouseover="invertAssociação()" onmouseout="convertAssociação()"
               onclick="questãoAssociação()">
               <img id="associação-1" src="assets/3. associação.svg" alt="terceira opção">
               <img id="associação-2" class="hidden-div" src="assets/8 .associação-2.svg" alt="terceira opção invertida">
               <p class="text-3">ASSOCIAÇÃO</p>
             </div>
-            <div class="bloco-4" onmouseover="invertRespostaUnica()" onmouseout="convertRespostaUnica()"
+            <div id="botão-4" class="bloco-4" onmouseover="invertRespostaUnica()" onmouseout="convertRespostaUnica()"
               onclick="questãoRespostaUnica()">
               <img id="resposta-unica-1" src="assets/4. resposta única e complementação.svg" alt="quarta opção">
               <img id="resposta-unica-2" class="hidden-div" src="assets/9 . resposta única e complementação-2.svg"
                 alt="quarta opção invertida">
               <p class="text-4">RESPOSTA ÚNICA E COMPLEMENTAÇÃO</p>
             </div>
-            <div class="bloco-5" onmouseover="invertMultiplas()" onmouseout="convertMultiplas()"
+            <div id="botão-5" class="bloco-5" onmouseover="invertMultiplas()" onmouseout="convertMultiplas()"
               onclick="questãoMultiplas()">
               <img id="multiplas-1" src="assets/5. respostas múltiplas.svg" alt="quinta opção">
               <img id="multiplas-2" class="hidden-div" src="assets/10 .respostas múltiplas.svg"
@@ -178,26 +196,11 @@
             <img id="questão-asserção" src="assets/1. asserção razão.svg" alt="icone questão asserção-razão">
             <p id="titulo-asserção">ASSERÇÃO-RAZÃO</p>
             <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO</button>
-            <dialog id="modal-asserção">
-              <div class="modal-box">
-                <div class="modal-black">
-                  <div class="modal-retangulo">
-                    <div class="modal-linhas"></div>
-                    <div class="modal-linhas"></div>
-                  </div>
-                </div>
-                <h class="titulo-modal">SOBRE ESTE TIPO DE QUESTÃO</h>
-                <p class="texto-modal">Além de avaliar as proposições isoladamente, o desafio é analisar as possíveis
-                  relações entre elas.
-                  Trata-se de um exercício de inferência na leitura. Deve-se colocar em jogo as informações explícitas
-                  nas proposições e seus conhecimentos prévios sobre o tema, de modo a verificar se a segunda proposição
-                  explica ou justifica a primeira. Devido a esta complexidade de habilidades mobilizadas, este tipo de
-                  questão é bastante utilizado em avaliações como o ENADE.</p>
-            </dialog>
           </div>
           <div id="gray">
             <p id="dica-asserção">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
-              resolução (símbolo) e ter o feedback sobre ela.</p>
+              resolução (símbolo <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                alt="icone cursor">) e ter o feedback sobre ela.</p>
           </div>
           <article>
             <section id="conteudo-asserção">
@@ -296,23 +299,86 @@
             <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO</button>
           </div>
           <div id="gray">
-            <p id="dica-asserção">Observe a questão e busque seguir as orientações do quadro "Checklist" para
-              responde-la:</p>
+            <p id="dica-asserção">Agora é com você!</p>
           </div>
           <article>
             <section id="conteudo-asserção">
               <div id="conteudo-principal-asserção">
                 <h class="titulo-secundário"> QUESTÃO</h>
+                <p class="textos">(ENADE 2022 – Parte Geral)</p>
+                <p class="textos"><i>Em 2019, a violência armada foi três vezes maior para a população negra, em
+                    comparação com a não negra, tanto para a população em geral quanto para o grupo jovem (entre 15 e 29
+                    anos de idade). Quanto à taxa de mortalidade por 100 mil habitantes no grupo de pessoas com até 14
+                    anos de idade, destaca-se, da mesma forma, a desigualdade na vitimização de crianças e adolescentes
+                    negros por agressão com arma de fogo, com taxa 3,6 vezes maior do que a de não negros em 2019.</i>
+                </p>
+                <p id="bibliografia-asserção" class="textos">INSTITUTO SOU DA PAZ. <strong>Violência armada e
+                    racismo:</strong> o papel da arma de fogo na desigualdade racial. Disponível em:
+                  https://soudapaz.org. Acesso em: 6 jul. 2022 (adaptado).</p>
+                <p class="textos">Considerando as informações apresentadas, avalie as asserções a seguir e a relação
+                  proposta entre elas.</p>
+                <p class="textos"><strong>I. O fator racial é um importante condicionante na análise de dados relativos
+                    a homicídios e violência no Brasil na população de adolescentes e jovens.</strong></p>
+                <p class="textos">PORQUE</p>
+                <p class="textos"><strong>II. A população negra sofre mais violência do que a população não negra, em
+                    razão do racismo estrutural existente no país, além de outras vulnerabilidades sociais associadas a
+                    essa forma de preconceito.</strong></p>
+                <p class="textos">A respeito dessas asserções, assinale a opção correta:</p>
+                <article id="questões-checkbox">
+                  <div id="checkbox-alternativas">
+                    <form id="alternativa-1">
+                      <input type="checkbox" id="checkbox-1-asserção" onchange="checkboxAsserção1(this)">
+                      <label for="checkbox-1-asserção" class="textos-alternativas"><strong>(a)</strong> As asserções I e II
+                        são proposições verdadeiras, e a II é uma <br> justificativa correta da I.</label>
+                    </form>
+                    <form id="alternativa-2">
+                      <input type="checkbox" id="checkbox-2-asserção" onchange="checkboxAsserção2(this)">
+                      <label for="checkbox-2-asserção" class="textos-alternativas"><strong>(b)</strong> As asserções I e II
+                        são proposições verdadeiras, mas a II não é uma <br> justificativa correta da I.</label>
+                    </form>
+                    <form id="alternativa-3">
+                      <input type="checkbox" id="checkbox-3-asserção" onchange="checkboxAsserção3(this)">
+                      <label for="checkbox-3-asserção" class="textos-alternativas"><strong>(c)</strong> A asserção I é uma
+                        proposição verdadeira, e a II é uma proposição falsa.</label>
+                    </form>
+                    <form id="alternativa-4">
+                      <input type="checkbox" id="checkbox-4-asserção" onchange="checkboxAsserção4(this)">
+                      <label for="checkbox-4-asserção" class="textos-alternativas"><strong>(d)</strong> A asserção I é uma
+                        proposição falsa, e a II é uma proposição verdadeira.</label>
+                    </form>
+                    <form id="alternativa-5">
+                      <input type="checkbox" id="checkbox-5-asserção" onchange="checkboxAsserção5(this)">
+                      <label for="checkbox-5-asserção" class="textos-alternativas"><strong>(e)</strong> As asserções I e II
+                        são proposições falsas.</label>
+                    </form>
+                  </div>
+                </article>
               </div>
               <section id="pink-right">
                 <h class="titulo-secundário">ESTRATÉGIAS</h>
                 <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
+                <form>
+                  <input type="checkbox" id="estrategia-1">
+                  <label id="checkbox-estrategia" for="estrategia-1" class="estrategia-checkbox"><p class="textos-estrategia">Você refletiu sobre os temas abordados na questão?</p></label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-2">
+                  <label id="checkbox-estrategia" for="estrategia-2" class="estrategia-checkbox"><p class="textos-estrategia">Lembre-se de que a questão envolve avaliar a veracidade das afirmações e, se as duas forem verdadeiras, a relação entre elas.</p></label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-3">
+                  <label id="checkbox-estrategia" for="estrategia-3" class="estrategia-checkbox"><p class="textos-estrategia">Ao “testar” as afirmações, não deixe de levar em conta as informações do enunciado e seus conhecimentos prévios.</p></label>
+                </form>
               </section>
             </section>
-            <section id="gray"></section>
-            <div id="resposta-asserção">
-              <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
-            </div>
+            <section id="gray">
+              <div id="resposta-praticar-asserção" class="hidden-div">
+                <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
+                <p class="textos">A alternativa correta é (A).</p>
+                <p class="textos">Conforme exposto no levantamento feito pelo Instituto Sou da Paz, o índice de mortalidade da população negra por violência armada é significativamente maior que o da população não negra. Esse fenômeno é produto de uma série de desigualdades e vulnerabilidades relacionadas ao racismo estrutural, que marca a realidade social brasileira.</p>
+                <p class="textos">Dessa forma, as duas asserções discutidas na questão são verdadeiras e a asserção II justifica a asserção I. Caso você tenha optado por outra opção de resposta, busque em fontes confiáveis na internet, estudos e reportagens que discutam as relações entre índices de violência e racismo estrutural.</p>
+              </div>
+            </section>
         </section>
         </article>
         </section>
