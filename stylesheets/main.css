@@ -444,7 +444,7 @@ body {
   padding: 30px 0px 20px 30px;
 }
 
-#dica-asserção {
+#dica-asserção, #dica-lacuna {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
@@ -455,11 +455,11 @@ body {
   padding: 20px 40px 10px 30px;
 }
 
-#conteudo-asserção {
+#conteudo-asserção, #conteudo-lacuna {
   display: flex;
 }
 
-#conteudo-principal-asserção {
+#conteudo-principal-asserção, #conteudo-principal-lacuna {
   width: 60vw;
   height: fit-content;
   padding: 20px 20px 10px 20px;
@@ -781,4 +781,150 @@ input[type="checkbox"]:checked + label::before {
 
 #checkbox-estrategia:before{
   top: 15px;
+}
+
+#checkbox-estrategia{
+  margin-top: 10px;
+}
+
+#box-lacuna {
+  background-color: white;
+  width: 1200px;
+  height: fit-content;
+  border: 3px solid #343434;
+  margin-top: 50px;
+}
+
+#questão-lacuna {
+  width: 80px;
+  height: 80px;
+}
+
+#titulo-lacuna{
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#sobre-lacuna {
+  position: relative;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  margin-left: 540px;
+}
+
+#sobre-lacuna:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.02);
+}
+
+#yellow {
+  background-color: #F2FF53;
+  width: 100%;
+  height: fit-content;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+}
+
+#img-lacuna{
+  width: 650px;
+  height: auto;
+}
+
+#cursor-lacuna{
+  margin-left: 350px;
+}
+
+.textos-sublinhado-lacuna {
+  padding: 10px 20px 10px 20px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.textos-sublinhado-lacuna:hover {
+  background-color: #F9FFB5;
+  cursor: pointer;
+}
+
+#yellow-right {
+  background-color: #F2FF53;
+  width: 40vw;
+  padding: 20px 40px 10px 30px;
+}
+
+#cursor-opções-lacuna{
+  position: relative;
+  margin-left: 250px;
+  top: -50px;
+
+}
+
+#estratégia-lacuna-1,
+#estratégia-lacuna-2,
+#estratégia-lacuna-3,
+#estratégia-lacuna-4,
+#estratégia-lacuna-5 {
+  display: none;
+}
+
+.textos-estratégias-lacuna {
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #F9FFB5;
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+#resposta-lacuna{
+  display: none;
+}
+
+#modal-lacuna {
+  margin-top: 300px;
+  border: none;
+  background: transparent;
+  z-index: 1001;
+}
+
+#vamos-praticar-lacuna {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  gap: 30px;
+  justify-content: center;
+  border-top: 3px solid #343434;
+}
+
+#vamos-praticar-lacuna:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.001);
+  left: 0px;
+}
+
+#img-praticar-lacuna-invertido{
+  display: none;
 }

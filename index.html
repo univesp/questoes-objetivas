@@ -77,6 +77,20 @@
           explica ou justifica a primeira. Devido a esta complexidade de habilidades mobilizadas, este tipo de
           questão é bastante utilizado em avaliações como o ENADE.</p>
     </dialog>
+    <dialog id="modal-lacuna">
+      <div class="modal-box">
+        <div class="modal-black">
+          <div class="modal-retangulo">
+            <div class="modal-linhas"></div>
+            <div class="modal-linhas"></div>
+          </div>
+        </div>
+        <h class="titulo-modal">SOBRE ESTE TIPO DE QUESTÃO</h>
+        <p class="texto-modal">É apresentada uma sentença ou parágrafo com uma ou mais palavras ou termos faltantes,
+          representados geralmente por um espaço vazio ou uma lacuna. O objetivo é utilizar seus conhecimentos sobre o
+          tema para identificar quais das palavras ou termos apresentados nas alternativas completam as lacunas
+          adequadamente e na ordem de leitura da sentença ou parágrafo.</p>
+    </dialog>
   </dialog>
 
   <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
@@ -260,12 +274,13 @@
                   verdadeiras, você precisa verificar a relação entre elas utilizando o PORQUE.</p>
                 <p id="estratégia-3" class="textos-estratégias"><strong>3. </strong>Sendo as duas asserções verdadeiras,
                   a asserção II explica ou justifica a asserção I? Tente conectá-las usando as expressões “em razão de”
-                  ou “por motivo de”. Verifique se essa conexão faz sentido frente ao contexto e aos conteúdos estudados
+                  ou “por motivo de”. Verifique se essa conexão faz sentido frente ao contexto e aos conteúdos
+                  estudados.
                 </p>
                 <p id="estratégia-4" class="textos-estratégias"><strong>4. </strong>Elimine opções que possam te
                   confundir. Se uma das asserções for falsa, perde-se o sentido em identificar a relação entre elas. Se
                   as duas forem verdadeiras, foque somente nas alternativas coerentes com isso.</p>
-                <p id="estratégia-5" class="textos-estratégias"><strong>5. </strong>A alternativa correta é a (A)</p>
+                <p id="estratégia-5" class="textos-estratégias"><strong>5. </strong>A alternativa correta é a (A).</p>
               </div>
             </section>
             <section id="gray">
@@ -328,27 +343,32 @@
                   <div id="checkbox-alternativas">
                     <form id="alternativa-1">
                       <input type="checkbox" id="checkbox-1-asserção" onchange="checkboxAsserção1(this)">
-                      <label for="checkbox-1-asserção" class="textos-alternativas"><strong>(a)</strong> As asserções I e II
+                      <label for="checkbox-1-asserção" class="textos-alternativas"><strong>(a)</strong> As asserções I e
+                        II
                         são proposições verdadeiras, e a II é uma <br> justificativa correta da I.</label>
                     </form>
                     <form id="alternativa-2">
                       <input type="checkbox" id="checkbox-2-asserção" onchange="checkboxAsserção2(this)">
-                      <label for="checkbox-2-asserção" class="textos-alternativas"><strong>(b)</strong> As asserções I e II
+                      <label for="checkbox-2-asserção" class="textos-alternativas"><strong>(b)</strong> As asserções I e
+                        II
                         são proposições verdadeiras, mas a II não é uma <br> justificativa correta da I.</label>
                     </form>
                     <form id="alternativa-3">
                       <input type="checkbox" id="checkbox-3-asserção" onchange="checkboxAsserção3(this)">
-                      <label for="checkbox-3-asserção" class="textos-alternativas"><strong>(c)</strong> A asserção I é uma
+                      <label for="checkbox-3-asserção" class="textos-alternativas"><strong>(c)</strong> A asserção I é
+                        uma
                         proposição verdadeira, e a II é uma proposição falsa.</label>
                     </form>
                     <form id="alternativa-4">
                       <input type="checkbox" id="checkbox-4-asserção" onchange="checkboxAsserção4(this)">
-                      <label for="checkbox-4-asserção" class="textos-alternativas"><strong>(d)</strong> A asserção I é uma
+                      <label for="checkbox-4-asserção" class="textos-alternativas"><strong>(d)</strong> A asserção I é
+                        uma
                         proposição falsa, e a II é uma proposição verdadeira.</label>
                     </form>
                     <form id="alternativa-5">
                       <input type="checkbox" id="checkbox-5-asserção" onchange="checkboxAsserção5(this)">
-                      <label for="checkbox-5-asserção" class="textos-alternativas"><strong>(e)</strong> As asserções I e II
+                      <label for="checkbox-5-asserção" class="textos-alternativas"><strong>(e)</strong> As asserções I e
+                        II
                         são proposições falsas.</label>
                     </form>
                   </div>
@@ -359,32 +379,165 @@
                 <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
                 <form>
                   <input type="checkbox" id="estrategia-1">
-                  <label id="checkbox-estrategia" for="estrategia-1" class="estrategia-checkbox"><p class="textos-estrategia">Você refletiu sobre os temas abordados na questão?</p></label>
+                  <label id="checkbox-estrategia" for="estrategia-1" class="estrategia-checkbox">
+                    <p class="textos-estrategia">Você refletiu sobre os temas abordados na questão?</p>
+                  </label>
                 </form>
                 <form>
                   <input type="checkbox" id="estrategia-2">
-                  <label id="checkbox-estrategia" for="estrategia-2" class="estrategia-checkbox"><p class="textos-estrategia">Lembre-se de que a questão envolve avaliar a veracidade das afirmações e, se as duas forem verdadeiras, a relação entre elas.</p></label>
+                  <label id="checkbox-estrategia" for="estrategia-2" class="estrategia-checkbox">
+                    <p class="textos-estrategia">Lembre-se de que a questão envolve avaliar a veracidade das afirmações
+                      e, se as duas forem verdadeiras, a relação entre elas.</p>
+                  </label>
                 </form>
                 <form>
                   <input type="checkbox" id="estrategia-3">
-                  <label id="checkbox-estrategia" for="estrategia-3" class="estrategia-checkbox"><p class="textos-estrategia">Ao “testar” as afirmações, não deixe de levar em conta as informações do enunciado e seus conhecimentos prévios.</p></label>
+                  <label id="checkbox-estrategia" for="estrategia-3" class="estrategia-checkbox">
+                    <p class="textos-estrategia">Ao “testar” as afirmações, não deixe de levar em conta as informações
+                      do enunciado e seus conhecimentos prévios.</p>
+                  </label>
                 </form>
+                <form>
+                  <input type="checkbox" id="estrategia-4">
+                  <label id="checkbox-estrategia" for="estrategia-4" class="estrategia-checkbox">
+                    <p class="textos-estrategia">Você verificou a veracidade das afirmações? Elas são coerentes com o
+                      contexto da questão? São complementares ou contraditórias entre si?</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-5">
+                  <label id="checkbox-estrategia" for="estrategia-5" class="estrategia-checkbox">
+                    <p class="textos-estrategia">Você eliminou as alternativas que podem te confundir? Lembre-se de que
+                      se você tem certeza na avaliação sobre as afirmações, vale a pena eliminar alternativas
+                      incoerentes com suas conclusões.</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-6">
+                  <label id="checkbox-estrategia" for="estrategia-6" class="estrategia-checkbox">
+                    <p class="textos-estrategia">Sendo as alternativas verdadeiras, você as reescreveu usando o PORQUE
+                      para ligá-las? Fez sentido?</p>
+                  </label>
+                </form>
+                <p class="textos"><strong>Agora, selecione a alternativa que se encaixa com a sua conclusão!</strong>
+                </p>
               </section>
             </section>
             <section id="gray">
               <div id="resposta-praticar-asserção" class="hidden-div">
                 <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
                 <p class="textos">A alternativa correta é (A).</p>
-                <p class="textos">Conforme exposto no levantamento feito pelo Instituto Sou da Paz, o índice de mortalidade da população negra por violência armada é significativamente maior que o da população não negra. Esse fenômeno é produto de uma série de desigualdades e vulnerabilidades relacionadas ao racismo estrutural, que marca a realidade social brasileira.</p>
-                <p class="textos">Dessa forma, as duas asserções discutidas na questão são verdadeiras e a asserção II justifica a asserção I. Caso você tenha optado por outra opção de resposta, busque em fontes confiáveis na internet, estudos e reportagens que discutam as relações entre índices de violência e racismo estrutural.</p>
+                <p class="textos">Conforme exposto no levantamento feito pelo Instituto Sou da Paz, o índice de
+                  mortalidade da população negra por violência armada é significativamente maior que o da população não
+                  negra. Esse fenômeno é produto de uma série de desigualdades e vulnerabilidades relacionadas ao
+                  racismo estrutural, que marca a realidade social brasileira.</p>
+                <p class="textos">Dessa forma, as duas asserções discutidas na questão são verdadeiras e a asserção II
+                  justifica a asserção I. Caso você tenha optado por outra opção de resposta, busque em fontes
+                  confiáveis na internet, estudos e reportagens que discutam as relações entre índices de violência e
+                  racismo estrutural.</p>
               </div>
             </section>
+            <button id="vamos-praticar" onclick="voltarEstrategias()">
+              <p id="texto-praticar">ESTRATÉGIAS</p>
+            </button>
         </section>
         </article>
         </section>
       </div>
       <div id="lacuna" class="hidden-div">
         <div id="menu-lacuna"></div>
+        <div id="box-lacuna">
+          <div id="yellow">
+            <img id="questão-lacuna" src="assets/2. lacuna.svg" alt="icone questão lacuna">
+            <p id="titulo-lacuna">LACUNA</p>
+            <button id="sobre-lacuna" onclick="sobreLacuna()">SOBRE ESTE TIPO DE QUESTÃO</button>
+          </div>
+          <div id="gray">
+            <p id="dica-lacuna">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
+              resolução (símbolo <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                alt="icone cursor">) e ter o feedback sobre ela.</p>
+          </div>
+          <article>
+            <section id="conteudo-lacuna">
+              <div id="conteudo-principal-lacuna">
+                <h class="titulo-secundário"> QUESTÃO</h>
+                <p class="textos"><i>Observe a seguinte situação:</i></p>
+                <img id="img-lacuna" onclick="estrategiaLacuna1Apper()" src="assets/imagem questão lacuna.png"
+                  alt="imagem questão lacuna">
+                <img id="cursor-lacuna" class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                  alt="icone cursor">
+                <p id="sublinhado-amarelo-2" class="textos-sublinhado-lacuna" onclick="estrategiaLacuna2Apper()">A
+                  palavra <strong>tempo</strong> é
+                  empregada com dois significados <strong>[preencher
+                    1]</strong> nas falas dos personagens. Enquanto no primeiro balão de fala a palavra tempo remete à
+                  (ao) <strong>[preencher 2]</strong>, no segundo balão o termo assume o significado de
+                  <strong>[preencher 3]</strong>. <img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor">
+                </p>
+                <p id="sublinhado-amarelo-3" class="textos-sublinhado-lacuna" onclick="estrategiaLacuna3Apper()">
+                  Assinale a alternativa que apresenta
+                  palavras ou termos que corretamente completam as lacunas do trecho anterior, de acordo com sua ordem
+                  de leitura: <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                    alt="icone cursor"></p>
+                <p id="sublinhado-amarelo-4" class="textos-sublinhado-lacuna" onclick="estrategiaLacuna4Apper()">(a) 1 –
+                  iguais; 2 – estado da atmosfera; 3
+                  – clima. <br>(b) 1 – iguais; 2 – duração; 3 – inflexões de um verbo. <br>(c) 1 – diferentes; 2 –
+                  estado da atmosfera; 3 – prazo. <br>(d) 1 – diferentes; 2 – linguagem poética; 3 – estado da
+                  atmosfera.<br>(e) 1 – diferentes; 2 – ritmo; 3 – clima. <img id="cursor-opções-lacuna"
+                    class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"></p>
+                <p id="sublinhado-amarelo-5" class="textos-sublinhado-lacuna" onclick="estrategiaLacuna5Apper()">Qual
+                  será a alternativa correta? <img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></p>
+              </div>
+              <div id="yellow-right">
+                <h class="titulo-secundário">ESTRATÉGIAS</h>
+                <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
+                <p id="estratégia-lacuna-1" class="textos-estratégias-lacuna"><strong>1. </strong>Qual é o tema da
+                  imagem? Você
+                  consegue identificar as semelhanças e diferenças entre as falas das duas personagens?</p>
+                <p id="estratégia-lacuna-2" class="textos-estratégias-lacuna"><strong>2. </strong>O parágrafo está
+                  incompleto e as
+                  lacunas devem ser preenchidas com palavras que façam sentido e sejam corretas frente ao contexto
+                  apresentado. Antes de analisar as alternativas, pense em quais palavras
+                  ou termos você utilizaria para preencher as lacunas e reflita se elas fazem sentido em relação ao
+                  contexto observado.</p>
+                <p id="estratégia-lacuna-3" class="textos-estratégias-lacuna"><strong>3. </strong>Aqui você encontra
+                  qual ação deve
+                  realizar para responder a questão. No caso, você deve analisar a situação e preencher as lacunas de
+                  acordo com a ordem de leitura no texto.
+                </p>
+                <p id="estratégia-lacuna-4" class="textos-estratégias-lacuna"><strong>4. </strong>As palavras que você
+                  imaginou se
+                  aproximam de alguma das alternativas? Em caso negativo, procure analisar novamente os balões de fala e
+                  o parágrafo incompleto. Pense sobre os usos da palavra “tempo” em seu dia a dia.</p>
+                <p id="estratégia-lacuna-5" class="textos-estratégias-lacuna"><strong>5. </strong>A alternativa correta
+                  é a (C).</p>
+              </div>
+            </section>
+            <section id="gray">
+              <div id="resposta-lacuna">
+                <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
+                <p class="textos">Os personagens usam a palavra “tempo” com sentido diferente. O primeiro está
+                  preocupado com a chuva, enquanto o segundo está preocupado com o horário.</p>
+                <p class="textos">Se você escolheu as <strong>alternativas “a” e "b"</strong>, você provavelmente
+                  considerou as duas
+                  situações como iguais. No entanto, elas indicam diferentes usos cotidianos da palavra tempo.</p>
+                <p class="textos">Se você escolheu as <strong>alternativas “d” e "e"</strong>,, você provavelmente
+                  identificou a diferença
+                  entre as situações. No entanto, não relacionou a primeira situação com um “estado da atmosfera” e a
+                  segunda como uma questão de “prazo”.</p>
+              </div>
+            </section>
+            <button id="vamos-praticar-lacuna" onmouseover="invertPraticarLacuna()" onmouseout="convertPraticarLacuna()"
+              onclick="vamosPraticarLacuna()"><img id="img-praticar-lacuna" class="img-vamos-praticar"
+                src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
+                id="img-praticar-lacuna-invertido" class="img-vamos-praticar" src="assets/vamos praticar - invertido.svg"
+                alt="icone vamos praticar invertido">
+              <p id="texto-praticar">VAMOS PRATICAR?</p>
+            </button>
+          </article>
+        </div>
+        <section id="box-praticar-lacuna"></section>
       </div>
       <div id="associação" class="hidden-div">
         <div id="menu-associação"></div>

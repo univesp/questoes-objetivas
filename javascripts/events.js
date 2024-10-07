@@ -89,6 +89,23 @@ const menuAssociação = document.getElementById('menu-associação');
 const menuRespostaUnica = document.getElementById('menu-resposta-unica');
 const menuRespostasMultiplas = document.getElementById('menu-respostas-multiplas');
 const praticarAsserção = document.getElementById('vamos-praticar');
+let estrategiaLacuna1 = document.getElementById('estratégia-lacuna-1');
+let estrategiaLacuna2 = document.getElementById('estratégia-lacuna-2');
+let estrategiaLacuna3 = document.getElementById('estratégia-lacuna-3');
+let estrategiaLacuna4 = document.getElementById('estratégia-lacuna-4');
+let estrategiaLacuna5 = document.getElementById('estratégia-lacuna-5');
+let sublinhadoAmarelo1 = document.getElementById('sublinhado-amarelo-1');
+let sublinhadoAmarelo2 = document.getElementById('sublinhado-amarelo-2');
+let sublinhadoAmarelo3 = document.getElementById('sublinhado-amarelo-3');
+let sublinhadoAmarelo4 = document.getElementById('sublinhado-amarelo-4');
+let sublinhadoAmarelo5 = document.getElementById('sublinhado-amarelo-5');
+let respostaLacuna = document.getElementById('resposta-lacuna');
+let modalLacuna = document.getElementById('modal-lacuna');
+let praticarLacuna1 = document.getElementById('img-praticar-lacuna');
+let praticarLacuna2 = document.getElementById('img-praticar-lacuna-invertido');
+let boxPraticarLacuna = document.getElementById('box-praticar-lacuna');
+let boxLacuna = document.getElementById('box-lacuna');
+
 
 //Função para inverter imagem menu ao passar o mouse
 function invertAsserção() {
@@ -174,6 +191,17 @@ function convertInicio() {
   inicio1.style.display = "block";
   inicio2.style.display = "none";
   text.style.color = "#ffffff";
+}
+
+function invertPraticarLacuna() {
+  praticarLacuna1.style.display = "none";
+  praticarLacuna2.style.display = "block";
+}
+
+//Função para converter a imagem ao passar o mouse
+function convertPraticarLacuna() {
+  praticarLacuna1.style.display = "block";
+  praticarLacuna2.style.display = "none";
 }
 
 
@@ -327,6 +355,11 @@ function voltarMenu() {
       boxPraticarAsserção.classList.add('desappear');
       botãoInicio.classList.add('hidden-div');
     }
+    if (num == 7) {
+      boxPraticarLacuna.classList.add('hidden-div');
+      boxPraticarLacuna.classList.add('desappear');
+      botãoInicio.classList.add('hidden-div');
+    }
   }
   menu.classList.remove('hidden-div');
   menu.classList.add('appear'); // efeito de transição
@@ -353,7 +386,25 @@ function vamosPraticarAsserção() {
   console.log(`página-${num}`);
 }
 
-//FUNÇÕES APARECER ESTRATÉGIAS
+function voltarEstrategias(){
+  boxPraticarAsserção.classList.add('hidden-div');
+  boxPraticarAsserção.classList.add('disapper');
+  boxAsserção.classList.remove('hidden-div');
+  boxAsserção.classList.add('appear');
+  num=1;
+  console.log(`página-${num}`);
+}
+
+function vamosPraticarLacuna() {
+  boxLacuna.classList.add('hidden-div');
+  boxLacuna.classList.add('disappear');
+  boxPraticarLacuna.classList.remove('hidden-div');
+  boxPraticarLacuna.classList.add('apper');
+  num = 7;
+  console.log(`página-${num}`);
+}
+
+//FUNÇÕES APARECER ESTRATÉGIAS ASSERÇÃO
 
 function estrategia1Apper() {
   estrategia1.style.display = "block";
@@ -386,9 +437,42 @@ function sobreAsserção() {
   modalBackground.style.display = "block";
 }
 
+//FUNÇÕES APARECER ESTRATÉGIAS LACUNA
+
+function estrategiaLacuna1Apper() {
+  estrategiaLacuna1.style.display = "block";
+}
+
+function estrategiaLacuna2Apper() {
+  estrategiaLacuna2.style.display = "block";
+  sublinhadoAmarelo2.style.backgroundColor = "#F9FFB5"
+}
+
+function estrategiaLacuna3Apper() {
+  estrategiaLacuna3.style.display = "block";
+  sublinhadoAmarelo3.style.backgroundColor = "#F9FFB5"
+}
+
+function estrategiaLacuna4Apper() {
+  estrategiaLacuna4.style.display = "block";
+  sublinhadoAmarelo4.style.backgroundColor = "#F9FFB5"
+}
+
+function estrategiaLacuna5Apper() {
+  estrategiaLacuna5.style.display = "block";
+  sublinhadoAmarelo5.style.backgroundColor = "#F9FFB5"
+  respostaLacuna.style.display = "block";
+}
+
+function sobreLacuna() {
+  modalLacuna.style.display = "block";
+  modalBackground.style.display = "block";
+}
+
 window.onclick = function (event) {
   if (event.target === modalBackground) {
     modalAsserção.style.display = "none";
+    modalLacuna.style.display = "none";
     modalBackground.style.display = "none";
   }
 }
