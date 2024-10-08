@@ -91,6 +91,33 @@
           tema para identificar quais das palavras ou termos apresentados nas alternativas completam as lacunas
           adequadamente e na ordem de leitura da sentença ou parágrafo.</p>
     </dialog>
+    <dialog id="modal-associação">
+      <div class="modal-box">
+        <div class="modal-black">
+          <div class="modal-retangulo">
+            <div class="modal-linhas"></div>
+            <div class="modal-linhas"></div>
+          </div>
+        </div>
+        <h class="titulo-modal">SOBRE ESTE TIPO DE QUESTÃO</h>
+        <p class="texto-modal">Duas listas de dados são apresentadas para serem utilizadas na resolução da questão. O
+          desafio consiste em combinar itens dessas duas listas de acordo com a demanda ou regra exposta no enunciado.
+          Note que não é obrigatório que cada elemento de uma das listas se relacione a um elemento da outra e que mais
+          de um item de uma lista pode ter correspondência na outra.</p>
+    </dialog>
+    <dialog id="modal-resposta-unica">
+      <div class="modal-box">
+        <div class="modal-black">
+          <div class="modal-retangulo">
+            <div class="modal-linhas"></div>
+            <div class="modal-linhas"></div>
+          </div>
+        </div>
+        <h class="titulo-modal">SOBRE ESTE TIPO DE QUESTÃO</h>
+        <p class="texto-modal">Este tipo de questão é bastante comum em provas e exames de cursos em diferentes níveis
+          de escolaridade, concursos públicos, processos seletivos e ENADE. Nela há apenas uma alternativa que responde
+          corretamente ao comando apresentado.</p>
+    </dialog>
   </dialog>
 
   <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
@@ -341,31 +368,31 @@
                 <p class="textos">A respeito dessas asserções, assinale a opção correta:</p>
                 <article id="questões-checkbox">
                   <div id="checkbox-alternativas">
-                    <form id="alternativa-1">
+                    <form id="alternativa-1-asserção">
                       <input type="checkbox" id="checkbox-1-asserção" onchange="checkboxAsserção1(this)">
                       <label for="checkbox-1-asserção" class="textos-alternativas"><strong>(a)</strong> As asserções I e
                         II
                         são proposições verdadeiras, e a II é uma <br> justificativa correta da I.</label>
                     </form>
-                    <form id="alternativa-2">
+                    <form id="alternativa-2-asserção">
                       <input type="checkbox" id="checkbox-2-asserção" onchange="checkboxAsserção2(this)">
                       <label for="checkbox-2-asserção" class="textos-alternativas"><strong>(b)</strong> As asserções I e
                         II
                         são proposições verdadeiras, mas a II não é uma <br> justificativa correta da I.</label>
                     </form>
-                    <form id="alternativa-3">
+                    <form id="alternativa-3-asserção">
                       <input type="checkbox" id="checkbox-3-asserção" onchange="checkboxAsserção3(this)">
                       <label for="checkbox-3-asserção" class="textos-alternativas"><strong>(c)</strong> A asserção I é
                         uma
                         proposição verdadeira, e a II é uma proposição falsa.</label>
                     </form>
-                    <form id="alternativa-4">
+                    <form id="alternativa-4-asserção">
                       <input type="checkbox" id="checkbox-4-asserção" onchange="checkboxAsserção4(this)">
                       <label for="checkbox-4-asserção" class="textos-alternativas"><strong>(d)</strong> A asserção I é
                         uma
                         proposição falsa, e a II é uma proposição verdadeira.</label>
                     </form>
-                    <form id="alternativa-5">
+                    <form id="alternativa-5-asserção">
                       <input type="checkbox" id="checkbox-5-asserção" onchange="checkboxAsserção5(this)">
                       <label for="checkbox-5-asserção" class="textos-alternativas"><strong>(e)</strong> As asserções I e
                         II
@@ -531,19 +558,451 @@
             <button id="vamos-praticar-lacuna" onmouseover="invertPraticarLacuna()" onmouseout="convertPraticarLacuna()"
               onclick="vamosPraticarLacuna()"><img id="img-praticar-lacuna" class="img-vamos-praticar"
                 src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
-                id="img-praticar-lacuna-invertido" class="img-vamos-praticar" src="assets/vamos praticar - invertido.svg"
-                alt="icone vamos praticar invertido">
+                id="img-praticar-lacuna-invertido" class="img-vamos-praticar"
+                src="assets/vamos praticar - invertido.svg" alt="icone vamos praticar invertido">
               <p id="texto-praticar">VAMOS PRATICAR?</p>
             </button>
           </article>
         </div>
-        <section id="box-praticar-lacuna"></section>
+        <section id="box-praticar-lacuna" class="hidden-div">
+          <div id="yellow">
+            <img id="questão-lacuna" src="assets/2. lacuna.svg" alt="icone questão lacuna">
+            <p id="titulo-lacuna">LACUNA</p>
+            <button id="sobre-lacuna" onclick="sobreLacuna()">SOBRE ESTE TIPO DE QUESTÃO</button>
+          </div>
+          <div id="gray">
+            <p id="dica-lacuna">Agora é com você!</p>
+          </div>
+          <article>
+            <section id="conteudo-lacuna">
+              <div id="conteudo-principal-lacuna">
+                <h class="titulo-secundário"> QUESTÃO</h>
+                <p class="textos">Questão – Pref. Munic. de Amparo (2022) – Instituto Avança São Paulo</p>
+                <p class="textos">Um funcionário, que utiliza um computador com Windows 7 em sua configuração padrão,
+                  precisa acessar, com frequência, um determinado website de um órgão governamental, de modo que possa
+                  realizar algumas de suas tarefas. Para que o funcionário não precise, em todas as ocasiões, digitar
+                  o endereço do site, ele pode usar o recurso de <strong>[preencher 1]</strong>, o que possibilitará
+                  que ele acesse o portal com apenas um clique do mouse.
+                </p>
+                <p class="textos">Indique a alternativa com os termos que preenchem corretamente a lacuna do enunciado:
+                </p>
+                <article id="questões-checkbox">
+                  <div id="checkbox-alternativas">
+                    <form id="alternativa-1-lacuna">
+                      <input type="checkbox" id="checkbox-1-lacuna" onchange="checkboxLacuna1(this)">
+                      <label for="checkbox-1-lacuna" class="textos-alternativas"><strong>(a)</strong> 1 – histórico,
+                        existente apenas no Mozilla Firefox.</label>
+                    </form>
+                    <form id="alternativa-2-lacuna">
+                      <input type="checkbox" id="checkbox-2-lacuna" onchange="checkboxLacuna2(this)">
+                      <label for="checkbox-2-lacuna" class="textos-alternativas"><strong>(b)</strong> 1 – antivírus, que
+                        deve ser previamente comprado.</label>
+                    </form>
+                    <form id="alternativa-3-lacuna">
+                      <input type="checkbox" id="checkbox-3-lacuna" onchange="checkboxLacuna3(this)">
+                      <label for="checkbox-3-lacuna" class="textos-alternativas"><strong>(c)</strong> 1 – favoritos,
+                        presente nos principais navegadores de Internet.</label>
+                    </form>
+                    <form id="alternativa-4-lacuna">
+                      <input type="checkbox" id="checkbox-4-lacuna" onchange="checkboxLacuna4(this)">
+                      <label for="checkbox-4-lacuna" class="textos-alternativas"><strong>(d)</strong> 1 – downloads, que
+                        baixará uma cópia completa e exata da página.</label>
+                    </form>
+                    <form id="alternativa-5-lacuna">
+                      <input type="checkbox" id="checkbox-5-lacuna" onchange="checkboxLacuna5(this)">
+                      <label for="checkbox-5-lacuna" class="textos-alternativas"><strong>(e)</strong> 1 – impressão, que
+                        permitirá a obtenção de uma versão física da página.</label>
+                    </form>
+                  </div>
+                </article>
+              </div>
+              <section id="yellow-right">
+                <h class="titulo-secundário">ESTRATÉGIAS</h>
+                <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
+                <form>
+                  <input type="checkbox" id="estrategia-1-lacuna">
+                  <label id="checkbox-estrategia" for="estrategia-1-lacuna" class="estrategia-checkbox-lacuna">
+                    <p class="textos-estratégias-lacuna">Você refletiu sobre os temas abordados na questão?</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-2-lacuna">
+                  <label id="checkbox-estrategia" for="estrategia-2-lacuna" class="estrategia-checkbox-lacuna">
+                    <p class="textos-estratégias-lacuna">Você entendeu a ação pedida no comando da questão?</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-3-lacuna">
+                  <label id="checkbox-estrategia" for="estrategia-3-lacuna" class="estrategia-checkbox-lacuna">
+                    <p class="textos-estratégias-lacuna">Observe o contexto e pense em palavras que indiquem os temas
+                      abordados nele. Alguma dessas palavras te ajuda a completar o texto?</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-4-lacuna">
+                  <label id="checkbox-estrategia" for="estrategia-4-lacuna" class="estrategia-checkbox-lacuna">
+                    <p class="textos-estratégias-lacuna">Analise as alternativas e tente completar o texto com elas.
+                      Exclua aquelas que você tem certeza de que não correspondem ao que está sendo discutido.</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-5-lacuna">
+                  <label id="checkbox-estrategia" for="estrategia-5-lacuna" class="estrategia-checkbox-lacuna">
+                    <p class="textos-estratégias-lacuna">Caso haja mais de uma lacuna, atenção à ordem em que as
+                      palavras ou termos das alternativas as completam</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-6-lacuna">
+                  <label id="checkbox-estrategia" for="estrategia-6-lacuna" class="estrategia-checkbox-lacuna">
+                    <p class="textos-estratégias-lacuna">Agora, selecione a alternativa que se encaixa com a sua
+                      conclusão!</p>
+                  </label>
+                </form>
+                <p class="textos"><strong>Agora, selecione a alternativa que se encaixa com a sua conclusão!</strong>
+                </p>
+              </section>
+            </section>
+            <section id="gray">
+              <div id="resposta-praticar-lacuna" class="hidden-div">
+                <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
+                <p class="textos">A alternativa correta é (C).</p>
+                <p class="textos">A situação exposta envolve a utilização de navegadores de internet e o acesso e
+                  execução de tarefas rotineiras em websites. Nota-se que o recurso escolhido deve permitir o acesso
+                  rápido ao site desejado. Essa função é desempenhada pelo recurso “favoritos”, que permite que os links
+                  sejam armazenados e rapidamente acessados no navegador. As demais funções listadas são importantes
+                  para o uso cotidiano de computadores, mas não atende à ação desejada pelo usuário.</p>
+              </div>
+            </section>
+            <button id="vamos-praticar-lacuna" onclick="voltarEstrategiasLacuna()">
+              <p id="texto-praticar">ESTRATÉGIAS</p>
+            </button>
+        </section>
       </div>
       <div id="associação" class="hidden-div">
         <div id="menu-associação"></div>
+        <div id="box-associação">
+          <div id="green">
+            <img id="questão-associação" src="assets/3. associação.svg" alt="icone questão associação">
+            <p id="titulo-associação">ASSOCIAÇÃO</p>
+            <button id="sobre-associação" onclick="sobreAssociação()">SOBRE ESTE TIPO DE QUESTÃO</button>
+          </div>
+          <div id="gray">
+            <p id="dica-associação">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
+              resolução (símbolo <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                alt="icone cursor">) e ter o feedback sobre ela.</p>
+          </div>
+          <article>
+            <section id="conteudo-associação">
+              <div id="conteudo-principal-associação">
+                <h class="titulo-secundário"> QUESTÃO</h>
+                <p id="sublinhado-verde-1" class="textos-sublinhado-associação" onclick="estrategiaAssociação1Apper()">A
+                  comunidade científica calcula que o planeta Terra possui 4,54 bilhões de anos. De modo a melhor
+                  estudar esse grande intervalo de tempo, os cientistas o dividiram em unidades menores: éons, eras,
+                  períodos e épocas. <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                    alt="icone cursor">
+                </p>
+                <p id="sublinhado-verde-2" class="textos-sublinhado-associação" onclick="estrategiaAssociação2Apper()">
+                  As
+                  quatro grandes eras do nosso planeta são: <img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor">
+                </p>
+                <p class="textos">A. Pré-Cambriana (entre 4.566 milhões de anos e 542 milhões de anos atrás). <br>B.
+                  Paleozóica (entre 542 milhões de anos e 245 milhões de anos atrás). <br>C. Mesozóica (entre 245
+                  milhões de anos e 65,5 milhões de anos atrás). <br>D. Cenozóica (a partir de 65,5 milhões de anos
+                  atrás).</p>
+                <p class="textos">Considere informações a seguir sobre o surgimento de algumas formas de vida no
+                  planeta:</p>
+                <p id="sublinhado-verde-3" class="textos-sublinhado-associação" onclick="estrategiaAssociação3Apper()">
+                  I. Primeiras plantas terrestres (entre 450 milhões e 400 milhões de anos atrás). <br>II. Primeiros
+                  organismos unicelulares (entre 4.500 milhões e 2.500 milhões de anos atrás) <br>III. Primeiros
+                  hominídeos (entre 3,5 milhões e 4 milhões de anos atrás). <br>IV. Primeiros pássaros (entre 160
+                  milhões e 144 milhões de anos atrás).<img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></p>
+                <p id="sublinhado-verde-4" class="textos-sublinhado-associação" onclick="estrategiaAssociação4Apper()">
+                  Relacione corretamente o surgimento das formas de vida (I, II, III, IV) às eras geológicas do planeta
+                  (A, B, C e D):<img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"></p>
+                <p class="textos">(a) A-II; B-I; C-IV; D-III. <br>(b) A-I; B-II; C-III; D-IV. <br>(c) A-II; B-III; C-IV;
+                  D-I. <br>(d) A-IV; B-III; C-I; D-III. <br>(e) A-III; B-IV; C-I; D-II.</p>
+                <p id="sublinhado-verde-5" class="textos-sublinhado-associação" onclick="estrategiaAssociação5Apper()">
+                  Qual
+                  será a alternativa correta? <img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></p>
+              </div>
+              <div id="green-right">
+                <h class="titulo-secundário">ESTRATÉGIAS</h>
+                <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
+                <p id="estratégia-associação-1" class="textos-estratégias-associação"><strong>1. </strong>Qual é o tema
+                  da
+                  imagem? Você
+                  consegue identificar as semelhanças e diferenças entre as falas das duas personagens?</p>
+                <p id="estratégia-associação-2" class="textos-estratégias-associação"><strong>2. </strong>O parágrafo
+                  está
+                  incompleto e as
+                  lacunas devem ser preenchidas com palavras que façam sentido e sejam corretas frente ao contexto
+                  apresentado. Antes de analisar as alternativas, pense em quais palavras
+                  ou termos você utilizaria para preencher as lacunas e reflita se elas fazem sentido em relação ao
+                  contexto observado.</p>
+                <p id="estratégia-associação-3" class="textos-estratégias-associação"><strong>3. </strong>Aqui você
+                  encontra
+                  qual ação deve
+                  realizar para responder a questão. No caso, você deve analisar a situação e preencher as lacunas de
+                  acordo com a ordem de leitura no texto.
+                </p>
+                <p id="estratégia-associação-4" class="textos-estratégias-associação"><strong>4. </strong>As palavras
+                  que você
+                  imaginou se
+                  aproximam de alguma das alternativas? Em caso negativo, procure analisar novamente os balões de fala e
+                  o parágrafo incompleto. Pense sobre os usos da palavra “tempo” em seu dia a dia.</p>
+                <p id="estratégia-associação-5" class="textos-estratégias-associação"><strong>5. </strong>A alternativa
+                  correta
+                  é a (C).</p>
+              </div>
+            </section>
+            <section id="gray">
+              <div id="resposta-associação">
+                <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
+                <p class="textos">Se você selecionou as outras alternativas, possivelmente se confundiu com a escala das
+                  datas fornecidas nas duas listas. Nesse caso, desenhe uma
+                  linha do tempo usando a lista de referência. Após desenhá-la, faça pequenos pontos inserindo os itens
+                  da outra lista respeitando suas respectivas
+                  datas. Assim, ficará mais fácil enxergar a relação estabelecida.</p>
+                <p class="textos">Não se esqueça também de que o surgimento dos primeiros organismos unicelulares, por
+                  exemplo, é anterior ao das plantas e que o surgimento das
+                  plantas, por sua vez, é anterior ao dos animais. Esse cuidado pode te ajudar a organizar melhor as
+                  suas informações.</p>
+              </div>
+            </section>
+            <button id="vamos-praticar-associação" onmouseover="invertPraticarAssociação()"
+              onmouseout="convertPraticarAssociação()" onclick="vamosPraticarAssociação()"><img
+                id="img-praticar-associação" class="img-vamos-praticar"
+                src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
+                id="img-praticar-associação-invertido" class="img-vamos-praticar"
+                src="assets/vamos praticar - invertido.svg" alt="icone vamos praticar invertido">
+              <p id="texto-praticar">VAMOS PRATICAR?</p>
+            </button>
+          </article>
+        </div>
+        <section id="box-praticar-associação" class="hidden-div">
+          <div id="green">
+            <img id="questão-associação" src="assets/3. associação.svg" alt="icone questão associação">
+            <p id="titulo-associação">ASSOCIAÇÃO</p>
+            <button id="sobre-associação" onclick="sobreAssociação()">SOBRE ESTE TIPO DE QUESTÃO</button>
+          </div>
+          <div id="gray">
+            <p id="dica-associação">Agora é com você!</p>
+          </div>
+          <article>
+            <section id="conteudo-associação">
+              <div id="conteudo-principal-associação">
+                <h class="titulo-secundário"> QUESTÃO</h>
+                <p class="textos">Concurso público IFRS-2015</p>
+                <p class="textos">Tendo em vista as características do mito e da filosofia na Grécia Antiga, relacione
+                  as colunas.</p>
+                <p class="textos"><strong>I. Mito. <br>II. Filosofia.</strong></p>
+                <p class="textos">a - Pergunta e narra sobre o que era antes que tudo existisse. <br>b - Opera,
+                  discursivamente, por meio de analogias, metáforas e parábolas. <br>c- Exige investigação para
+                  responder aos problemas postos pela natureza. <br>d- Pergunta e explica como as coisas existem e são
+                  agora. <br>e- Não se preocupa com as contradições e irracionalidades de seu discurso. <br>f- Explica
+                  os fenômenos da natureza a partir de causas puramente naturais.</p>
+                <p class="textos">A sequência correta de cima para baixo encontra-se na alternativa:</p>
+                <article id="questões-checkbox">
+                  <div id="checkbox-alternativas">
+                    <form id="alternativa-1-associação">
+                      <input type="checkbox" id="checkbox-1-associação" onchange="checkboxAssociação1(this)">
+                      <label for="checkbox-1-associação" class="textos-alternativas"><strong>(a)</strong> I-a; I-b; I-e;
+                        II-c; II-d; II-f.</label>
+                    </form>
+                    <form id="alternativa-2-associação">
+                      <input type="checkbox" id="checkbox-2-associação" onchange="checkboxAssociação2(this)">
+                      <label for="checkbox-2-associação" class="textos-alternativas"><strong>(b)</strong> I-c; I-d; I-f;
+                        II-a; II-b; II-d.</label>
+                    </form>
+                    <form id="alternativa-3-associação">
+                      <input type="checkbox" id="checkbox-3-associação" onchange="checkboxAssociação3(this)">
+                      <label for="checkbox-3-associação" class="textos-alternativas"><strong>(c)</strong> I-b; I-d; I-f;
+                        II-a; II-c; II-e.</label>
+                    </form>
+                    <form id="alternativa-4-associação">
+                      <input type="checkbox" id="checkbox-4-associação" onchange="checkboxAssociação4(this)">
+                      <label for="checkbox-4-associação" class="textos-alternativas"><strong>(d)</strong> I-a; I-b; I-d;
+                        II-c; II-e; II-f.</label>
+                    </form>
+                    <form id="alternativa-5-associação">
+                      <input type="checkbox" id="checkbox-5-associação" onchange="checkboxAssociação5(this)">
+                      <label for="checkbox-5-associação" class="textos-alternativas"><strong>(e)</strong> I-a; I-c; I-e;
+                        II-b; II-d; II-f.</label>
+                    </form>
+                  </div>
+                </article>
+              </div>
+              <section id="green-right">
+                <h class="titulo-secundário">ESTRATÉGIAS</h>
+                <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
+                <form>
+                  <input type="checkbox" id="estrategia-1-associação">
+                  <label id="checkbox-estrategia" for="estrategia-1-associação" class="estrategia-checkbox-associação">
+                    <p class="textos-estratégias-associação">Você refletiu sobre os temas abordados na questão?</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-2-associação">
+                  <label id="checkbox-estrategia" for="estrategia-2-associação" class="estrategia-checkbox-associação">
+                    <p class="textos-estratégias-associação">Leia as duas listas com atenção. Agora, reflita: quais são
+                      as informações que elas apresentam? Como se relacionam com o tema da questão?</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-3-associação">
+                  <label id="checkbox-estrategia" for="estrategia-3-associação" class="estrategia-checkbox-associação">
+                    <p class="textos-estratégias-associação">Observe o comando e verifique os critérios para poder
+                      relacionar as informações.</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-4-associação">
+                  <label id="checkbox-estrategia" for="estrategia-4-associação" class="estrategia-checkbox-associação">
+                    <p class="textos-estratégias-associação">Você consegue excluir alternativas erradas após estabelecer
+                      as relações mais fáceis?</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-5-associação">
+                  <label id="checkbox-estrategia" for="estrategia-5-associação" class="estrategia-checkbox-associação">
+                    <p class="textos-estratégias-associação">Comece a organizar sua resposta pelas relações mais fáceis.
+                      Depois tente fazer as relações médias e difíceis. Conseguiu chegar em uma resposta?</p>
+                  </label>
+                </form>
+                <form>
+                  <input type="checkbox" id="estrategia-6-associação">
+                  <label id="checkbox-estrategia" for="estrategia-6-associação" class="estrategia-checkbox-associação">
+                    <p class="textos-estratégias-associação">Agora, selecione a alternativa que se encaixa com a sua
+                      conclusão!</p>
+                  </label>
+                </form>
+                <p class="textos"><strong>Agora, selecione a alternativa que se encaixa com a sua conclusão!</strong>
+                </p>
+              </section>
+            </section>
+            <section id="gray">
+              <div id="resposta-praticar-associação" class="hidden-div">
+                <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
+                <p class="textos">A alternativa correta é (A).</p>
+                <p class="textos">A questão propõe a organização de um quadro comparativo entre os conceitos de Mito e
+                  Filosofia tomando a realidade da Grécia Antiga como referência. O Mito busca narrar a origem das
+                  coisas através de histórias marcadas pelos elementos mágicos e nas quais se sobressaem a utilização de
+                  parábolas, analogias e metáforas, sem compromisso com a razão ou com a lógica. Por sua vez, a
+                  Filosofia busca explicação para problemas presentes, partindo de uma investigação lógica e racional
+                  sobre a natureza.</p>
+              </div>
+            </section>
+            <button id="vamos-praticar-associação" onclick="voltarEstrategiasAssociação()">
+              <p id="texto-praticar">ESTRATÉGIAS</p>
+            </button>
+        </section>
       </div>
       <div id="resposta-unica-e-complementação" class="hidden-div">
         <div id="menu-resposta-unica"></div>
+        <div id="box-resposta-unica">
+          <div id="blue">
+            <img id="questão-resposta-unica" src="assets/4. resposta única e complementação.svg"
+              alt="icone questão resposta unica e complementação">
+            <p id="titulo-resposta-unica">RESPOSTA ÚNICA E COMPLEMENTAÇÃO</p>
+            <button id="sobre-resposta-unica" onclick="sobreRespostaUnica()">SOBRE ESTE TIPO DE QUESTÃO</button>
+          </div>
+          <div id="gray">
+            <p id="dica-resposta-unica">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
+              resolução (símbolo <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                alt="icone cursor">) e ter o feedback sobre ela.</p>
+          </div>
+          <article>
+            <section id="conteudo-resposta-unica">
+              <div id="conteudo-principal-resposta-unica">
+                <h class="titulo-secundário"> QUESTÃO</h>
+                <p id="sublinhado-azul-1" class="textos-sublinhado-resposta-unica"
+                  onclick="estrategiaRespostaUnica1Apper()">A observação e compreensão de fenômenos naturais periódicos
+                  - como as fases da lua, a alternância entre dia e noite, as estações do ano, o ciclo menstrual etc. -
+                  proporcionou à humanidade maneiras de medir a passagem do tempo. Um exemplo disso é o calendário
+                  Asteca, constituído de um ciclo de 365 dias baseado na observação do Sol. De certa maneira,
+                  calendários como este, denominados como “agrícolas”, possibilitam também a compreensão das estações do
+                  ano. <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg" alt="icone cursor">
+                </p>
+                <p id="sublinhado-azul-2" class="textos-sublinhado-resposta-unica"
+                  onclick="estrategiaRespostaUnica12Apper()">
+                  Considerando este contexto e seus conhecimentos sobre maneiras convencionais de medir a passagem do
+                  tempo, qual a duração aproximada de cada estação do ano? <img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor">
+                </p>
+                <p id="sublinhado-azul-3" class="textos-sublinhado-resposta-unica"
+                  onclick="estrategiaRespostaUnica13Apper()">
+                  (a) 1 mês. <br>(b) 42 dias. <br>(c) 3 meses. <br>(d) 1 semestre e meio. <br>(e) 1440 horas.<img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></p> <!--CONTINUAR A PARTIR DAQUI-->
+                <p id="sublinhado-azul-4" class="textos-sublinhado-resposta-unica"
+                  onclick="estrategiaRespostaUnica14Apper()">
+                  Relacione corretamente o surgimento das formas de vida (I, II, III, IV) às eras geológicas do planeta
+                  (A, B, C e D):<img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"></p>
+                <p class="textos">(a) A-II; B-I; C-IV; D-III. <br>(b) A-I; B-II; C-III; D-IV. <br>(c) A-II; B-III; C-IV;
+                  D-I. <br>(d) A-IV; B-III; C-I; D-III. <br>(e) A-III; B-IV; C-I; D-II.</p>
+                <p id="sublinhado-azul-5" class="textos-sublinhado-resposta-unica"
+                  onclick="estrategiaRespostaUnica15Apper()">
+                  Qual
+                  será a alternativa correta? <img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></p>
+              </div>
+              <div id="green-right">
+                <h class="titulo-secundário">ESTRATÉGIAS</h>
+                <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
+                <p id="estratégia-associação-1" class="textos-estratégias-associação"><strong>1. </strong>Qual é o tema
+                  da
+                  imagem? Você
+                  consegue identificar as semelhanças e diferenças entre as falas das duas personagens?</p>
+                <p id="estratégia-associação-2" class="textos-estratégias-associação"><strong>2. </strong>O parágrafo
+                  está
+                  incompleto e as
+                  lacunas devem ser preenchidas com palavras que façam sentido e sejam corretas frente ao contexto
+                  apresentado. Antes de analisar as alternativas, pense em quais palavras
+                  ou termos você utilizaria para preencher as lacunas e reflita se elas fazem sentido em relação ao
+                  contexto observado.</p>
+                <p id="estratégia-associação-3" class="textos-estratégias-associação"><strong>3. </strong>Aqui você
+                  encontra
+                  qual ação deve
+                  realizar para responder a questão. No caso, você deve analisar a situação e preencher as lacunas de
+                  acordo com a ordem de leitura no texto.
+                </p>
+                <p id="estratégia-associação-4" class="textos-estratégias-associação"><strong>4. </strong>As palavras
+                  que você
+                  imaginou se
+                  aproximam de alguma das alternativas? Em caso negativo, procure analisar novamente os balões de fala e
+                  o parágrafo incompleto. Pense sobre os usos da palavra “tempo” em seu dia a dia.</p>
+                <p id="estratégia-associação-5" class="textos-estratégias-associação"><strong>5. </strong>A alternativa
+                  correta
+                  é a (C).</p>
+              </div>
+            </section>
+            <section id="gray">
+              <div id="resposta-associação">
+                <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
+                <p class="textos">Se você selecionou as outras alternativas, possivelmente se confundiu com a escala das
+                  datas fornecidas nas duas listas. Nesse caso, desenhe uma
+                  linha do tempo usando a lista de referência. Após desenhá-la, faça pequenos pontos inserindo os itens
+                  da outra lista respeitando suas respectivas
+                  datas. Assim, ficará mais fácil enxergar a relação estabelecida.</p>
+                <p class="textos">Não se esqueça também de que o surgimento dos primeiros organismos unicelulares, por
+                  exemplo, é anterior ao das plantas e que o surgimento das
+                  plantas, por sua vez, é anterior ao dos animais. Esse cuidado pode te ajudar a organizar melhor as
+                  suas informações.</p>
+              </div>
+            </section>
+            <button id="vamos-praticar-associação" onmouseover="invertPraticarAssociação()"
+              onmouseout="convertPraticarAssociação()" onclick="vamosPraticarAssociação()"><img
+                id="img-praticar-associação" class="img-vamos-praticar"
+                src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
+                id="img-praticar-associação-invertido" class="img-vamos-praticar"
+                src="assets/vamos praticar - invertido.svg" alt="icone vamos praticar invertido">
+              <p id="texto-praticar">VAMOS PRATICAR?</p>
+            </button>
+          </article>
+        </div>
       </div>
       <div id="respostas-multiplas" class="hidden-div">
         <div id="menu-respostas-multiplas"></div>

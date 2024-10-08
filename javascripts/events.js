@@ -105,6 +105,33 @@ let praticarLacuna1 = document.getElementById('img-praticar-lacuna');
 let praticarLacuna2 = document.getElementById('img-praticar-lacuna-invertido');
 let boxPraticarLacuna = document.getElementById('box-praticar-lacuna');
 let boxLacuna = document.getElementById('box-lacuna');
+let modalAssociação = document.getElementById('modal-associação');
+let estrategiaAssociação1 = document.getElementById('estratégia-associação-1');
+let estrategiaAssociação2 = document.getElementById('estratégia-associação-2');
+let estrategiaAssociação3 = document.getElementById('estratégia-associação-3');
+let estrategiaAssociação4 = document.getElementById('estratégia-associação-4');
+let estrategiaAssociação5 = document.getElementById('estratégia-associação-5');
+let sublinhadoVerde1 = document.getElementById('sublinhado-verde-1');
+let sublinhadoVerde2 = document.getElementById('sublinhado-verde-2');
+let sublinhadoVerde3 = document.getElementById('sublinhado-verde-3');
+let sublinhadoVerde4 = document.getElementById('sublinhado-verde-4');
+let sublinhadoVerde5 = document.getElementById('sublinhado-verde-5');
+let respostaAssociação = document.getElementById('resposta-associação');
+let boxAssociação = document.getElementById('box-associação');
+let boxPraticarAssociação = document.getElementById('box-praticar-associação');
+let praticarAssociação1 = document.getElementById('img-praticar-associação');
+let praticarAssociação2 = document.getElementById('img-praticar-associação-invertido');
+let modalRespostaUnica = document.getElementById('modal-resposta-unica');
+let sublinhadoAzul1 = document.getElementById('sublinhado-azul-1');
+let sublinhadoAzul2 = document.getElementById('sublinhado-azul-2');
+let sublinhadoAzul3 = document.getElementById('sublinhado-azul-3');
+let sublinhadoAzul4 = document.getElementById('sublinhado-azul-4');
+let sublinhadoAzul5 = document.getElementById('sublinhado-azul-5');
+let estrategiaRespostaUnica1 = document.getElementById('estratégia-resposta-unica-1');
+let estrategiaRespostaUnica2 = document.getElementById('estratégia-resposta-unica-2');
+let estrategiaRespostaUnica3 = document.getElementById('estratégia-resposta-unica-3');
+let estrategiaRespostaUnica4 = document.getElementById('estratégia-resposta-unica-4');
+let estrategiaRespostaUnica5 = document.getElementById('estratégia-resposta-unica-5');
 
 
 //Função para inverter imagem menu ao passar o mouse
@@ -204,6 +231,17 @@ function convertPraticarLacuna() {
   praticarLacuna2.style.display = "none";
 }
 
+function invertPraticarAssociação() {
+  praticarAssociação1.style.display = "none";
+  praticarAssociação2.style.display = "block";
+}
+
+//Função para converter a imagem ao passar o mouse
+function convertPraticarAssociação() {
+  praticarAssociação1.style.display = "block";
+  praticarAssociação2.style.display = "none";
+}
+
 
 //FUNÇÕES OPÇÕES QUESTÕES MENU
 
@@ -254,6 +292,8 @@ function questãoLacuna() {
     botão3.style = "pointer-events: none";
     botão4.style = "pointer-events: none";
     botão5.style = "pointer-events: none";
+    boxLacuna.classList.remove('hidden-div');
+    boxLacuna.classList.add('appear');
   }
 };
 
@@ -278,6 +318,8 @@ function questãoAssociação() {
     botão3.style = "pointer-events: none";
     botão4.style = "pointer-events: none";
     botão5.style = "pointer-events: none";
+    boxAssociação.classList.remove('hidden-div');
+    boxAssociação.classList.add('appear');
   }
 };
 
@@ -360,6 +402,11 @@ function voltarMenu() {
       boxPraticarLacuna.classList.add('desappear');
       botãoInicio.classList.add('hidden-div');
     }
+    if (num == 8) {
+      boxPraticarAssociação.classList.add('hidden-div');
+      boxPraticarAssociação.classList.add('desappear');
+      botãoInicio.classList.add('hidden-div');
+    }
   }
   menu.classList.remove('hidden-div');
   menu.classList.add('appear'); // efeito de transição
@@ -401,6 +448,33 @@ function vamosPraticarLacuna() {
   boxPraticarLacuna.classList.remove('hidden-div');
   boxPraticarLacuna.classList.add('apper');
   num = 7;
+  console.log(`página-${num}`);
+}
+
+function voltarEstrategiasLacuna(){
+  boxPraticarLacuna.classList.add('hidden-div');
+  boxPraticarLacuna.classList.add('disapper');
+  boxLacuna.classList.remove('hidden-div');
+  boxLacuna.classList.add('appear');
+  num=2;
+  console.log(`página-${num}`);
+}
+
+function vamosPraticarAssociação() {
+  boxAssociação.classList.add('hidden-div');
+  boxAssociação.classList.add('disappear');
+  boxPraticarAssociação.classList.remove('hidden-div');
+  boxPraticarAssociação.classList.add('apper');
+  num = 8;
+  console.log(`página-${num}`);
+}
+
+function voltarEstrategiasAssociação(){
+  boxPraticarAssociação.classList.add('hidden-div');
+  boxPraticarAssociação.classList.add('disapper');
+  boxAssociação.classList.remove('hidden-div');
+  boxAssociação.classList.add('appear');
+  num = 3;
   console.log(`página-${num}`);
 }
 
@@ -469,27 +543,108 @@ function sobreLacuna() {
   modalBackground.style.display = "block";
 }
 
+//FUNÇÕES APARECER ESTRATÉGIAS ASSOCIAÇÃO
+
+function estrategiaAssociação1Apper() {
+  estrategiaAssociação1.style.display = "block";
+  sublinhadoVerde1.style.backgroundColor = "#B5FBB9"
+}
+
+function estrategiaAssociação2Apper() {
+  estrategiaAssociação2.style.display = "block";
+  sublinhadoVerde2.style.backgroundColor = "#B5FBB9"
+}
+
+function estrategiaAssociação3Apper() {
+  estrategiaAssociação3.style.display = "block";
+  sublinhadoVerde3.style.backgroundColor = "#B5FBB9"
+}
+
+function estrategiaAssociação4Apper() {
+  estrategiaAssociação4.style.display = "block";
+  sublinhadoVerde4.style.backgroundColor = "##B5FBB9"
+}
+
+function estrategiaAssociação5Apper() {
+  estrategiaAssociação5.style.display = "block";
+  sublinhadoVerde5.style.backgroundColor = "#B5FBB9"
+  respostaAssociação.style.display = "block";
+}
+
+function sobreAssociação() {
+  modalAssociação.style.display = "block";
+  modalBackground.style.display = "block";
+}
+
+//FUNÇÕES APARECER RESPOSTA UNICA
+
+function estrategiaAssociação1Apper() {
+  estrategiaRespostaUnica1.style.display = "block";
+  sublinhadoAzul1.style.backgroundColor = "#B5FBB9"
+}
+
+function estrategiaAssociação2Apper() {
+  estrategiaRespostaUnica2.style.display = "block";
+  sublinhadoAzul2.style.backgroundColor = "#B5FBB9"
+}
+
+function estrategiaAssociação3Apper() {
+  estrategiaRespostaUnica3.style.display = "block";
+  sublinhadoAzul3.style.backgroundColor = "#B5FBB9"
+}
+
+function estrategiaAssociação4Apper() {
+  estrategiaRespostaUnica4.style.display = "block";
+  sublinhadoAzul4.style.backgroundColor = "##B5FBB9"
+}
+
+function estrategiaAssociação5Apper() {
+  estrategiaRespostaUnica5.style.display = "block";
+  sublinhadoAzul5.style.backgroundColor = "#B5FBB9"
+  respostaAssociação.style.display = "block";
+}
+
+function sobreRespostaUnica() {
+  modalRespostaUnica.style.display = "block";
+  modalBackground.style.display = "block";
+}
+
 window.onclick = function (event) {
   if (event.target === modalBackground) {
     modalAsserção.style.display = "none";
     modalLacuna.style.display = "none";
+    modalAssociação.style.display = "none";
+    modalRespostaUnica.style.display = "none";
     modalBackground.style.display = "none";
   }
 }
 
 //Variáveis
 
-let checkbox1 = document.getElementById('checkbox-1-asserção');
-let checkbox2 = document.getElementById('checkbox-2-asserção');
-let checkbox3 = document.getElementById('checkbox-3-asserção');
-let checkbox4 = document.getElementById('checkbox-4-asserção');
-let checkbox5 = document.getElementById('checkbox-5-asserção');
-let alternativa1 = document.getElementById('alternativa-1');
-let alternativa2 = document.getElementById('alternativa-2');
-let alternativa3 = document.getElementById('alternativa-3');
-let alternativa4 = document.getElementById('alternativa-4');
-let alternativa5 = document.getElementById('alternativa-5');
+
+let alternativa1lacuna = document.getElementById('alternativa-1-lacuna');
+let alternativa2lacuna = document.getElementById('alternativa-2-lacuna');
+let alternativa3lacuna = document.getElementById('alternativa-3-lacuna');
+let alternativa4lacuna = document.getElementById('alternativa-4-lacuna');
+let alternativa5lacuna = document.getElementById('alternativa-5-lacuna');
 let respostaPraticarAsserção = document.getElementById('resposta-praticar-asserção');
+let checkbox1 = document.getElementById('checkbox-1-lacuna');
+let checkbox2 = document.getElementById('checkbox-2-lacuna');
+let checkbox3 = document.getElementById('checkbox-3-lacuna');
+let checkbox4 = document.getElementById('checkbox-4-lacuna');
+let checkbox5 = document.getElementById('checkbox-5-lacuna');
+let alternativa1asserção = document.getElementById('alternativa-1-asserção');
+let alternativa2asserção = document.getElementById('alternativa-2-asserção');
+let alternativa3asserção = document.getElementById('alternativa-3-asserção');
+let alternativa4asserção = document.getElementById('alternativa-4-asserção');
+let alternativa5asserção = document.getElementById('alternativa-5-asserção');
+let respostaPraticarLacuna = document.getElementById('resposta-praticar-lacuna');
+let respostaPraticarAssociação = document.getElementById('resposta-praticar-associação');
+let alternativa1associação = document.getElementById('alternativa-1-associação');
+let alternativa2associação = document.getElementById('alternativa-2-associação');
+let alternativa3associação = document.getElementById('alternativa-3-associação');
+let alternativa4associação = document.getElementById('alternativa-4-associação');
+let alternativa5associação = document.getElementById('alternativa-5-associação');
 
 
 // FUNÇÕES CHECKBOX VAMOS PRATICAR ASSERÇÕES
@@ -497,7 +652,7 @@ let respostaPraticarAsserção = document.getElementById('resposta-praticar-asse
 function checkboxAsserção1 (checkbox){
   if (checkbox.checked){
     respostaPraticarAsserção.classList.remove('hidden-div');
-    alternativa1.style.backgroundColor = "#FFB5FF"
+    alternativa1asserção.style.backgroundColor = "#FFB5FF"
     console.log('ESTOU CHECADO');
   }
 }
@@ -505,7 +660,7 @@ function checkboxAsserção1 (checkbox){
 function checkboxAsserção2 (checkbox){
   if (checkbox.checked){
     respostaPraticarAsserção.classList.remove('hidden-div');
-    alternativa2.style.backgroundColor = "#FFB5FF"
+    alternativa2asserção.style.backgroundColor = "#FFB5FF"
     console.log('ESTOU CHECADO');
   }
 }
@@ -513,7 +668,7 @@ function checkboxAsserção2 (checkbox){
 function checkboxAsserção3 (checkbox){
   if (checkbox.checked){
     respostaPraticarAsserção.classList.remove('hidden-div');
-    alternativa3.style.backgroundColor = "#FFB5FF"
+    alternativa3asserção.style.backgroundColor = "#FFB5FF"
     console.log('ESTOU CHECADO');
   }
 }
@@ -521,7 +676,7 @@ function checkboxAsserção3 (checkbox){
 function checkboxAsserção4 (checkbox){
   if (checkbox.checked){
     respostaPraticarAsserção.classList.remove('hidden-div');
-    alternativa4.style.backgroundColor = "#FFB5FF"
+    alternativa4asserção.style.backgroundColor = "#FFB5FF"
     console.log('ESTOU CHECADO');
   }
 }
@@ -529,7 +684,91 @@ function checkboxAsserção4 (checkbox){
 function checkboxAsserção5 (checkbox){
   if (checkbox.checked){
     respostaPraticarAsserção.classList.remove('hidden-div');
-    alternativa5.style.backgroundColor = "#FFB5FF"
+    alternativa5asserção.style.backgroundColor = "#FFB5FF"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+// FUNÇÕES CHECKBOX VAMOS PRATICAR LACUNA
+
+function checkboxLacuna1 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarLacuna.classList.remove('hidden-div');
+    alternativa1lacuna.style.backgroundColor = "#F9FFB5"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxLacuna2 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarLacuna.classList.remove('hidden-div');
+    alternativa2lacuna.style.backgroundColor = "#F9FFB5"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxLacuna3 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarLacuna.classList.remove('hidden-div');
+    alternativa3lacuna.style.backgroundColor = "#F9FFB5"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxLacuna4 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarLacuna.classList.remove('hidden-div');
+    alternativa4lacuna.style.backgroundColor = "#F9FFB5"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxLacuna5 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarLacuna.classList.remove('hidden-div');
+    alternativa5lacuna.style.backgroundColor = "#F9FFB5"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+// FUNÇÕES CHECKBOX VAMOS PRATICAR ASSOCIAÇÃO
+
+function checkboxAssociação1 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarAssociação.classList.remove('hidden-div');
+    alternativa1associação.style.backgroundColor = "#B5FBB9"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxAssociação2 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarAssociação.classList.remove('hidden-div');
+    alternativa2associação.style.backgroundColor = "#B5FBB9"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxAssociação3 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarAssociação.classList.remove('hidden-div');
+    alternativa3associação.style.backgroundColor = "#B5FBB9"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxAssociação4 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarAssociação.classList.remove('hidden-div');
+    alternativa4associação.style.backgroundColor = "#B5FBB9"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxAssociação5 (checkbox){
+  if (checkbox.checked){
+    respostaPraticarAssociação.classList.remove('hidden-div');
+    alternativa5associação.style.backgroundColor = "#B5FBB9"
     console.log('ESTOU CHECADO');
   }
 }

@@ -444,7 +444,10 @@ body {
   padding: 30px 0px 20px 30px;
 }
 
-#dica-asserção, #dica-lacuna {
+#dica-asserção,
+#dica-lacuna,
+#dica-associação,
+#dica-resposta-unica {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
@@ -455,11 +458,17 @@ body {
   padding: 20px 40px 10px 30px;
 }
 
-#conteudo-asserção, #conteudo-lacuna {
+#conteudo-asserção,
+#conteudo-lacuna,
+#conteudo-associação,
+#conteudo-resposta-unica {
   display: flex;
 }
 
-#conteudo-principal-asserção, #conteudo-principal-lacuna {
+#conteudo-principal-asserção,
+#conteudo-principal-lacuna,
+#conteudo-principal-associação,
+#conteudo-principal-resposta-unica {
   width: 60vw;
   height: fit-content;
   padding: 20px 20px 10px 20px;
@@ -721,7 +730,9 @@ body {
 }
 
 
-#alternativa-1, #alternativa-3, #alternativa-5{
+#alternativa-1-asserção,
+#alternativa-3-asserção,
+#alternativa-5-asserção {
   display: flex;
   background-color: #F1F1E9;
   margin-right: 0px;
@@ -729,7 +740,8 @@ body {
   border-top: 3px solid #343434;
 }
 
-#alternativa-2, #alternativa-4 {
+#alternativa-2-asserção,
+#alternativa-4-asserção {
   display: flex;
   background-color: white;
   margin-right: 0px;
@@ -746,12 +758,12 @@ body {
 }
 
 input[type="checkbox"] {
-  display: none; 
+  display: none;
 }
 
 label {
   position: relative;
-  padding-left: 25px; 
+  padding-left: 25px;
   cursor: pointer;
 }
 
@@ -760,30 +772,30 @@ label::before {
   position: absolute;
   left: 10px;
   top: 0;
-  width: 30px; 
-  height: 30px; 
-  background-color: #F1F1E9; 
-  border: 3px solid #343434; 
+  width: 30px;
+  height: 30px;
+  background-color: #F1F1E9;
+  border: 3px solid #343434;
 }
 
-input[type="checkbox"]:checked + label::before {
-  background-color: #343434; 
+input[type="checkbox"]:checked+label::before {
+  background-color: #343434;
 }
 
-.estrategia-checkbox{
+.estrategia-checkbox {
   background-color: #FFB5FF;
 }
 
-.textos-estrategia{
+.textos-estrategia {
   margin-left: 30px;
   padding-top: 10px;
 }
 
-#checkbox-estrategia:before{
+#checkbox-estrategia:before {
   top: 15px;
 }
 
-#checkbox-estrategia{
+#checkbox-estrategia {
   margin-top: 10px;
 }
 
@@ -800,7 +812,7 @@ input[type="checkbox"]:checked + label::before {
   height: 80px;
 }
 
-#titulo-lacuna{
+#titulo-lacuna {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-size: 28px;
@@ -837,13 +849,15 @@ input[type="checkbox"]:checked + label::before {
   display: flex;
 }
 
-#img-lacuna{
+#img-lacuna {
   width: 650px;
   height: auto;
 }
 
-#cursor-lacuna{
-  margin-left: 350px;
+#cursor-lacuna {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: -200px;
 }
 
 .textos-sublinhado-lacuna {
@@ -864,7 +878,7 @@ input[type="checkbox"]:checked + label::before {
   padding: 20px 40px 10px 30px;
 }
 
-#cursor-opções-lacuna{
+#cursor-opções-lacuna {
   position: relative;
   margin-left: 250px;
   top: -50px;
@@ -889,7 +903,7 @@ input[type="checkbox"]:checked + label::before {
   margin-left: 20px;
 }
 
-#resposta-lacuna{
+#resposta-lacuna {
   display: none;
 }
 
@@ -925,6 +939,277 @@ input[type="checkbox"]:checked + label::before {
   left: 0px;
 }
 
-#img-praticar-lacuna-invertido{
+#img-praticar-lacuna-invertido {
   display: none;
+}
+
+#box-praticar-lacuna {
+  background-color: white;
+  width: 1200px;
+  height: fit-content;
+  border: 3px solid #343434;
+  margin-top: 50px;
+}
+
+.estrategia-checkbox-lacuna {
+  background-color: #F9FFB5;
+}
+
+.textos-estratégias-lacuna {
+  margin-left: 30px;
+  padding-top: 10px;
+}
+
+#checkbox-1-lacuna,
+#checkbox-2-lacuna,
+#checkbox-3-lacuna,
+#checkbox-4-lacuna,
+#checkbox-5-lacuna {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#alternativa-1-lacuna,
+#alternativa-3-lacuna,
+#alternativa-5-lacuna {
+  display: flex;
+  background-color: #F1F1E9;
+  margin-right: 0px;
+  height: 70px;
+  border-top: 3px solid #343434;
+}
+
+#alternativa-2-lacuna,
+#alternativa-4-lacuna {
+  display: flex;
+  background-color: white;
+  margin-right: 0px;
+  height: 70px;
+  border-top: 3px solid #343434;
+}
+
+#box-associação {
+  background-color: white;
+  width: 1200px;
+  height: fit-content;
+  border: 3px solid #343434;
+  margin-top: 50px;
+}
+
+#green {
+  background-color: #5EF267;
+  width: 100%;
+  height: fit-content;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+}
+
+#questão-associação {
+  width: 80px;
+  height: 80px;
+}
+
+#titulo-associação {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#sobre-associação {
+  position: relative;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  margin-left: 500px;
+}
+
+#modal-associação {
+  margin-top: 300px;
+  border: none;
+  background: transparent;
+  z-index: 1001;
+}
+
+#green-right {
+  background-color: #5EF267;
+  width: 40vw;
+  padding: 20px 40px 10px 30px;
+}
+
+.textos-sublinhado-associação {
+  padding: 10px 20px 10px 20px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.textos-sublinhado-associação:hover {
+  background-color: #B5FBB9;
+  cursor: pointer;
+}
+
+#estratégia-associação-1,
+#estratégia-associação-2,
+#estratégia-associação-3,
+#estratégia-associação-4,
+#estratégia-associação-5 {
+  display: none;
+}
+
+.textos-estratégias-associação {
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #B5FBB9;
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+#resposta-associação {
+  display: none;
+}
+
+#vamos-praticar-associação {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  gap: 30px;
+  justify-content: center;
+  border-top: 3px solid #343434;
+}
+
+#box-praticar-associação {
+  background-color: white;
+  width: 1200px;
+  height: fit-content;
+  border: 3px solid #343434;
+  margin-top: 50px;
+}
+
+#img-praticar-associação-invertido {
+  display: none;
+}
+
+#vamos-praticar-associação:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.001);
+  left: 0px;
+}
+
+#alternativa-1-associação,
+#alternativa-3-associação,
+#alternativa-5-associação {
+  display: flex;
+  background-color: #F1F1E9;
+  margin-right: 0px;
+  height: 70px;
+  border-top: 3px solid #343434;
+}
+
+#alternativa-2-associação,
+#alternativa-4-associação {
+  display: flex;
+  background-color: white;
+  margin-right: 0px;
+  height: 70px;
+  border-top: 3px solid #343434;
+}
+
+.estrategia-checkbox-associação {
+  background-color: #B5FBB9;
+}
+
+.textos-estratégias-associação {
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #B5FBB9;
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+#box-resposta-unica {
+  background-color: white;
+  width: 1200px;
+  height: fit-content;
+  border: 3px solid #343434;
+  margin-top: 50px;
+}
+
+#blue {
+  background-color: #4DDFFF;
+  width: 100%;
+  height: fit-content;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+}
+
+#questão-resposta-unica {
+  width: 80px;
+  height: 80px;
+}
+
+#titulo-resposta-unica {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#sobre-resposta-unica {
+  position: relative;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  margin-left: 170px;
+}
+
+#modal-resposta-unica {
+  margin-top: 300px;
+  border: none;
+  background: transparent;
+  z-index: 1001;
+}
+
+.textos-sublinhado-resposta-unica{
+  padding: 10px 20px 10px 20px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.textos-sublinhado-resposta-unica:hover {
+  background-color: #B5F2FF;
+  cursor: pointer;
 }
