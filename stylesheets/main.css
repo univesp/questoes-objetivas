@@ -505,6 +505,7 @@ body {
 .imagem-cursor {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 .textos-estratégias {
@@ -943,6 +944,10 @@ input[type="checkbox"]:checked+label::before {
   display: none;
 }
 
+#img-lacuna{
+  cursor: pointer;
+}
+
 #box-praticar-lacuna {
   background-color: white;
   width: 1200px;
@@ -1212,4 +1217,115 @@ input[type="checkbox"]:checked+label::before {
 .textos-sublinhado-resposta-unica:hover {
   background-color: #B5F2FF;
   cursor: pointer;
+}
+
+#blue-right {
+  background-color: #4DDFFF;
+  width: 40vw;
+  padding: 20px 40px 10px 30px;
+}
+
+#estratégia-resposta-unica-1,
+#estratégia-resposta-unica-2,
+#estratégia-resposta-unica-3,
+#estratégia-resposta-unica-4,
+#estratégia-resposta-unica-5 {
+  display: none;
+}
+
+.textos-estratégias-resposta-unica {
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #B5F2FF;
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+#resposta-resposta-unica {
+  display: none;
+}
+
+#vamos-praticar-resposta-unica {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  gap: 30px;
+  justify-content: center;
+  border-top: 3px solid #343434;
+}
+
+#vamos-praticar-resposta-unica:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.001);
+  left: 0px;
+}
+
+#img-praticar-resposta-unica-invertido{
+  display: none;
+}
+
+#box-praticar-resposta-unica {
+  background-color: white;
+  width: 1200px;
+  height: fit-content;
+  border: 3px solid #343434;
+  margin-top: 50px;
+}
+
+#bibliografia-resposta-unica {
+  text-align: right;
+  padding-right: 10px;
+}
+
+#imagem-praticar-resposta-unica{
+  width: 500px;
+  height: auto;
+  margin-left: 80px;
+}
+
+#alternativa-1-resposta-unica,
+#alternativa-3-resposta-unica,
+#alternativa-5-resposta-unica {
+  display: flex;
+  background-color: #F1F1E9;
+  margin-right: 0px;
+  height: fit-content;
+  border-top: 3px solid #343434;
+  padding-right: 20px;
+}
+
+#alternativa-2-resposta-unica,
+#alternativa-4-resposta-unica {
+  display: flex;
+  background-color: white;
+  margin-right: 0px;
+  height: fit-content;
+  border-top: 3px solid #343434;
+  padding-right: 20px;
+}
+
+.estrategia-checkbox-resposta-unica {
+  background-color: #B5F2FF;
+}
+
+.textos-estratégias-resposta-unica {
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #B5F2FF;
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
 }
