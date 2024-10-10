@@ -113,10 +113,38 @@
             <div class="modal-linhas"></div>
           </div>
         </div>
-        <h class="titulo-modal">SOBRE ESTE TIPO DE QUESTÃO</h>
-        <p class="texto-modal">Este tipo de questão é bastante comum em provas e exames de cursos em diferentes níveis
+        <h class="titulo-modal-unica">SOBRE ESTE TIPO DE QUESTÃO</h>
+        <p class="texto-modal-unica">Este tipo de questão é bastante comum em provas e exames de cursos em diferentes níveis
           de escolaridade, concursos públicos, processos seletivos e ENADE. Nela há apenas uma alternativa que responde
           corretamente ao comando apresentado.</p>
+          <p class="texto-modal-unica">Questões desse tipo também podem se apresentar em formatos diferentes, a depender do comando:</p>
+          <ul>
+            <li class="texto-modal-unica">(...) considerando este contexto e seus conhecimentos sobre maneiras convencionais de medir a passagem do tempo <strong>assinale a alternativa que apresenta corretamente a duração aproximada de cada estação do ano:</strong></li>
+            <li class="texto-modal-unica">(...) considerando este contexto e seus conhecimentos sobre maneiras convencionais de medir a passagem do tempo, <strong>a duração aproximada de cada estação do ano é de:</strong></li>
+          </ul>
+    </dialog>
+    <dialog id="modal-respostas-multiplas">
+      <div class="modal-box">
+        <div class="modal-black">
+          <div class="modal-retangulo">
+            <div class="modal-linhas"></div>
+            <div class="modal-linhas"></div>
+          </div>
+        </div>
+        <h class="titulo-modal-multiplas">SOBRE ESTE TIPO DE QUESTÃO</h>
+        <p class="texto-modal-multiplas">Este tipo de questão é bastante comum em vestibulares, concursos públicos,
+          processos
+          seletivos e ENADE. Nela, são apresentadas diferentes afirmações relacionadas a um assunto, cuja veracidade
+          deve ser avaliada.</p>
+        <p class="texto-modal-multiplas">
+          Existe uma variação desse modelo na qual as alternativas apresentam a sequência ordenada
+          das afirmações avaliadas em verdadeiras (V) ou falsas (F). </p>
+        <p class="texto-modal-multiplas">Por exemplo:</p>
+        <p class="texto-modal-multiplas">Assinale a alternativa que apresenta a correta avaliação das afirmações: </p>
+        <p class="texto-modal-multiplas">a) I-V; II-V; III-V <br> b) I-V; II-V; III-F <br> c) I-V; II-F; III-F <br> d)
+          I-F; II-V;
+          III-F <br> e) I-F; II-F; III-V
+        </p>
     </dialog>
   </dialog>
 
@@ -1079,21 +1107,26 @@
                 <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
                 <form>
                   <input type="checkbox" id="estrategia-1-resposta-unica">
-                  <label id="checkbox-estrategia" for="estrategia-1-resposta-unica" class="estrategia-checkbox-resposta-unica">
-                    <p class="textos-estratégias-resposta-unica">Você refletiu sobre os temas abordados na questão? Como os
+                  <label id="checkbox-estrategia" for="estrategia-1-resposta-unica"
+                    class="estrategia-checkbox-resposta-unica">
+                    <p class="textos-estratégias-resposta-unica">Você refletiu sobre os temas abordados na questão? Como
+                      os
                       materiais da questão dialogam entre si?</p>
                   </label>
                 </form>
                 <form>
                   <input type="checkbox" id="estrategia-2-resposta-unica">
-                  <label id="checkbox-estrategia" for="estrategia-2-resposta-unica" class="estrategia-checkbox-resposta-unica">
-                    <p class="textos-estratégias-resposta-unica">Observe o comando da questão. Você refletiu sobre a ação
+                  <label id="checkbox-estrategia" for="estrategia-2-resposta-unica"
+                    class="estrategia-checkbox-resposta-unica">
+                    <p class="textos-estratégias-resposta-unica">Observe o comando da questão. Você refletiu sobre a
+                      ação
                       pedida e sua relação com as informações já fornecidas pela questão?</p>
                   </label>
                 </form>
                 <form>
                   <input type="checkbox" id="estrategia-3-resposta-unica">
-                  <label id="checkbox-estrategia" for="estrategia-3-resposta-unica" class="estrategia-checkbox-resposta-unica">
+                  <label id="checkbox-estrategia" for="estrategia-3-resposta-unica"
+                    class="estrategia-checkbox-resposta-unica">
                     <p class="textos-estratégias-resposta-unica">Leia as alternativas com atenção. Contraponha as
                       informações por elas apresentadas com seus conhecimentos sobre o tema, com o apresentado no
                       enunciado e com relação às demais alternativas.</p>
@@ -1101,14 +1134,17 @@
                 </form>
                 <form>
                   <input type="checkbox" id="estrategia-4-resposta-unica">
-                  <label id="checkbox-estrategia" for="estrategia-4-resposta-unica" class="estrategia-checkbox-resposta-unica">
-                    <p class="textos-estratégias-resposta-unica">Você consegue excluir alternativas erradas após estabelecer
+                  <label id="checkbox-estrategia" for="estrategia-4-resposta-unica"
+                    class="estrategia-checkbox-resposta-unica">
+                    <p class="textos-estratégias-resposta-unica">Você consegue excluir alternativas erradas após
+                      estabelecer
                       as relações mais fáceis?</p>
                   </label>
                 </form>
                 <form>
                   <input type="checkbox" id="estrategia-5-resposta-unica">
-                  <label id="checkbox-estrategia" for="estrategia-5-resposta-unica" class="estrategia-checkbox-resposta-unica">
+                  <label id="checkbox-estrategia" for="estrategia-5-resposta-unica"
+                    class="estrategia-checkbox-resposta-unica">
                     <p class="textos-estratégias-resposta-unica">Ainda em dúvida entre possíveis alternativas corretas?
                       Procure identificar no texto da
                       alternativa onde reside sua dúvida. Releia o enunciado para buscar informações que ajudem a sanar
@@ -1117,7 +1153,8 @@
                 </form>
                 <form>
                   <input type="checkbox" id="estrategia-6-resposta-unica">
-                  <label id="checkbox-estrategia" for="estrategia-6-resposta-unica" class="estrategia-checkbox-resposta-unica">
+                  <label id="checkbox-estrategia" for="estrategia-6-resposta-unica"
+                    class="estrategia-checkbox-resposta-unica">
                     <p class="textos-estratégias-resposta-unica">Agora, selecione a alternativa que se encaixa com a sua
                       conclusão!</p>
                   </label>
@@ -1145,6 +1182,124 @@
       </div>
       <div id="respostas-multiplas" class="hidden-div">
         <div id="menu-respostas-multiplas"></div>
+        <div id="box-respostas-multiplas">
+          <div id="purple">
+            <img id="questão-respostas-multiplas" src="assets/5. respostas múltiplas.svg"
+              alt="icone questão respostas multiplas">
+            <p id="titulo-respostas-multiplas">RESPOSTAS MÚLTIPLAS</p>
+            <button id="sobre-respostas-multiplas" onclick="sobreRespostasMultiplas()">SOBRE ESTE TIPO DE
+              QUESTÃO</button>
+          </div>
+          <div id="gray">
+            <p id="dica-respostas-multiplas">Observe a questão e passe o mouse em seus elementos para conhecer
+              estratégias de
+              resolução (símbolo <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                alt="icone cursor">) e ter o feedback sobre ela.</p>
+          </div>
+          <article>
+            <section id="conteudo-respostas-multiplas">
+              <div id="conteudo-principal-respostas-multiplas">
+                <h class="titulo-secundário"> QUESTÃO</h>
+                <p class="textos">Leia o texto a seguir:</p>
+                <p id="sublinhado-roxo-1" class="textos-sublinhado-respostas-multiplas"><i>“Uma das formas de calcular a
+                    idade do Universo é medir o que os cientistas chamam de radiação cosmológica de fundo ou "ecos do
+                    Big Bang". Essa teoria ganhou mais força a partir de 1964, quando os físicos norte-americanos Robert
+                    Wilson e Arno Penzias descobriram um ruído que vinha do espaço e não desaparecia. (...) Wilson e
+                    Penzias foram então conversar com colegas da Universidade de Princeton, que contaram que esse ruído,
+                    uma espécie de eco da grande exploração que originou o Universo, já havia sido previsto por
+                    cientistas em 1948, mas até então ninguém havia conseguido prová-lo. A descoberta acidental rendeu a
+                    dupla de físicos norte-americanos o Prêmio Nobel em 1979”.</i> <img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"
+                    onclick="estrategiaRespostasMultiplas1Appear()">
+                </p>
+                <p id="bibliografia-respostas-multiplas"><strong>SOUZA, Marcelle. 14 bilhões de anos: como os cientistas
+                    calculam a idade do Universo?</strong> Disponível em: <a
+                    href="https://www.uol.com.br/tilt/noticias/redacao/2021/12/02/14-bilhoes-de-anos-como-os-cientistas-calculam-a-idade-do-universo.htm"
+                    target="_blank">https://www.uol.com.br/tilt/noticias/redacao/2021/12/02/14-bilhoes-de-anos-como-os-cientistas-calculam-a-idade-do-universo.htm</a>
+                </p>
+                <p id="sublinhado-roxo-2" class="textos-sublinhado-respostas-multiplas">
+                  Com base no texto e em seus conhecimentos sobre o assunto, avalie as afirmações a seguir. <img
+                    class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"
+                    onclick="estrategiaRespostasMultiplas2Appear()">
+                </p>
+                <p id="sublinhado-roxo-3" class=""><strong>
+                    <ul id="lista-respostas-multiplas">
+                      <li> A utilização da radiação cosmológica de fundo não é uma técnica validada pela comunidade
+                        científica
+                        para calcular a idade do Universo, visto que até o presente momento não foi possível provar sua
+                        existência.</li>
+                      <li> Os cientistas Wilson e Penzias provaram a existência da radiação cosmológica de fundo a
+                        partir da
+                        descoberta de um ruído que vinha do espaço e não desaparecia.</li>
+                      <li> A existência dos "ecos do Big Bang" já havia sido provada em 1948, rendendo a seus
+                        descobridores
+                        o Prêmio Nobel daquele ano. <img class="imagem-cursor"
+                          src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"
+                          onclick="estrategiaRespostasMultiplas3Appear()"></li>
+                    </ul>
+                  </strong>
+                </p>
+                <p class="textos">São verdadeiras as afirmações:</p>
+                <p id="sublinhado-roxo-4" class="textos-sublinhado-respostas-multiplas">(a) I, II e III. <br>
+                  (b) I e II, apenas. <br>
+                  (c) I, apenas. <br>
+                  (d) II, apenas. <br>
+                  (e) III, apenas. <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                    onclick="estrategiaRespostasMultiplas4Appear()"></p>
+                <p id="sublinhado-roxo-5" class="textos-sublinhado-respostas-multiplas">
+                  Qual
+                  será a alternativa correta? <img class="imagem-cursor"
+                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"
+                    onclick="estrategiaRespostasMultiplas5Appear()"></p>
+              </div>
+              <div id="purple-right">
+                <h class="titulo-secundário">ESTRATÉGIAS</h>
+                <p class="textos">O que é importante levar em conta ao responder a esse tipo de questão:</p>
+                <p id="estratégia-respostas-multiplas-1" class="textos-estratégias-respostas-multiplas"><strong>1.
+                  </strong>Qual é
+                  o tema da questão? Quais informações o enunciado te passa a esse respeito? O que você já sabe sobre o
+                  tema?</p>
+                <p id="estratégia-respostas-multiplas-2" class="textos-estratégias-respostas-multiplas"><strong>2.
+                  </strong>Nesse
+                  modelo, você deve avaliar uma série de afirmações sobre um determinado assunto para verificar sua
+                  veracidade.</p>
+                <p id="estratégia-respostas-multiplas-3" class="textos-estratégias-respostas-multiplas"><strong>3.
+                  </strong>Com base nos seus conhecimentos sobre o tema e nas afirmações apresentadas no enunciado,
+                  avalie se as afirmações são verdadeiras. Quais são as afirmações que você tem certeza sobre a sua
+                  avaliação? Se você as considerar verdadeiras, elas são coerentes ou excludentes entre si?
+                </p>
+                <p id="estratégia-respostas-multiplas-4" class="textos-estratégias-respostas-multiplas"><strong>4.
+                  </strong>As
+                  alternativas apresentam a avaliação das afirmações seguindo a ordem de sua apresentação. Mesmo que
+                  você não consiga avaliar todas as afirmações, é possível descartar alternativas com base nas que você
+                  já tem mais certeza.</p>
+                <p id="estratégia-respostas-multiplas-5" class="textos-estratégias-respostas-multiplas"><strong>5.
+                  </strong>A
+                  alternativa correta é a (D).</p>
+              </div>
+            </section>
+            <section id="gray">
+              <div id="resposta-respostas-multiplas">
+                <h class="titulo-secundário"><strong>RESPOSTA:</strong></h>
+                <p class="textos">Se você selecionou outra alternativa, provavelmente encontrou alguma dificuldade em
+                  avaliar as afirmações. Leve em conta que a contextualização dessa questão está narrando o processo de
+                  comprovação de uma teoria científica e fornecendo datas de referência para os principais momentos
+                  desse processo. </p>
+                <p class="textos">Uma opção para chegar na interpretação correta é reler as afirmações e grifar os
+                  elementos do texto que as comprovem ou contradigam.</p>
+              </div>
+            </section>
+            <button id="vamos-praticar-respostas-multiplas" onmouseover="invertPraticarRespostasMultiplas()"
+              onmouseout="convertPraticarRespostasMultiplas()" onclick="vamosPraticarRespostasMultiplas()"><img
+                id="img-praticar-respostas-multiplas" class="img-vamos-praticar"
+                src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
+                id="img-praticar-respostas-multiplas-invertido" class="img-vamos-praticar"
+                src="assets/vamos praticar - invertido.svg" alt="icone vamos praticar invertido">
+              <p id="texto-praticar">VAMOS PRATICAR?</p>
+            </button>
+          </article>
+        </div>
+        <section id="box-praticar-respostas-multiplas"></section> <!--CONTINUAR A PARTIR DAQUI-->
       </div>
       <nav>
       </nav>
@@ -1174,8 +1329,8 @@
             href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
           Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
         <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
-        <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i
-              class="fab fa-github"></i></a></div>
+        <div><a href="https://github.com/univesp/questoes-objetivas" target="_blank" aria-label="GitHub"
+            style="white-space:nowrap;">GitHub <i class="fab fa-github"></i></a></div>
         <div>Compartilhe: <div class="sharing"></div>
         </div>
 
@@ -1238,7 +1393,7 @@
         <div class="modal-body">
 
           <h6>Governo do Estado de São Paulo</h6>
-          <p>Secretaria de Desenvolvimento Econômico</p>
+          <p>Secretaria de Ciência, Tecnologia e Inovação</p>
 
           <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
           <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>

@@ -19,25 +19,24 @@ $(document).ready(function () {
 
   // Seu código abaixo
 
-  //Variáveis
-
 })
 
 let home = document.getElementById('home');
 let menu = document.getElementById('menu');
 
-//Botão inicial
+//BOTÃO INICIAL "VAMOS PRATICAR"
+
 document.getElementById('iniciar').addEventListener('click', function () {
   // Limpa a tela inicial e exibe a próxima
   home.classList.add('hidden-div');
   home.classList.add('disappear'); // efeito de transição
   menu.classList.remove('hidden-div');
   menu.classList.add('appear'); // efito de transição
-  num = 0;
+  num = 0; // Atualiza o número da página
   console.log(`página-${num}`);
 });
 
-var num;
+var num; //Variável para contar as páginas
 
 //Variáveis
 let asserção1 = document.getElementById('asserção-1');
@@ -137,7 +136,24 @@ let praticarRespostaUnica1 = document.getElementById('img-praticar-resposta-unic
 let praticarRespostaUnica2 = document.getElementById('img-praticar-resposta-unica-invertido');
 let boxRespostaUnica = document.getElementById('box-resposta-unica');
 let boxPraticarRespostaUnica = document.getElementById('box-praticar-resposta-unica')
+let modalRespostasMultiplas = document.getElementById('modal-respostas-multiplas');
+let estrategiaRespostasMultiplas1 = document.getElementById('estratégia-respostas-multiplas-1');
+let estrategiaRespostasMultiplas2 = document.getElementById('estratégia-respostas-multiplas-2');
+let estrategiaRespostasMultiplas3 = document.getElementById('estratégia-respostas-multiplas-3');
+let estrategiaRespostasMultiplas4 = document.getElementById('estratégia-respostas-multiplas-4');
+let estrategiaRespostasMultiplas5 = document.getElementById('estratégia-respostas-multiplas-5');
+let sublinhadoRoxo1 = document.getElementById('sublinhado-roxo-1');
+let sublinhadoRoxo2 = document.getElementById('sublinhado-roxo-2');
+let sublinhadoRoxo3 = document.getElementById('lista-respostas-multiplas');
+let sublinhadoRoxo4 = document.getElementById('sublinhado-roxo-4');
+let sublinhadoRoxo5 = document.getElementById('sublinhado-roxo-5');
+let praticarRespostasMultiplas1 = document.getElementById('img-praticar-respostas-multiplas');
+let praticarRespostasMultiplas2 = document.getElementById('img-praticar-respostas-multiplas-invertido');
+let respostaRespostasMultiplas = document.getElementById('resposta-respostas-multiplas');
+let boxRespostasMultiplas = document.getElementById('box-respostas-multiplas');
+let boxPraticarRespostasMultiplas = document.getElementById('box-praticar-respostas-multiplas')
 
+//INVERTE A IMAGEM DOS TIPOS DE QUESTÃO
 
 //Função para inverter imagem menu ao passar o mouse
 function invertAsserção() {
@@ -225,6 +241,7 @@ function convertInicio() {
   text.style.color = "#ffffff";
 }
 
+//Função para inverter imagem menu ao passar o mouse
 function invertPraticarLacuna() {
   praticarLacuna1.style.display = "none";
   praticarLacuna2.style.display = "block";
@@ -236,6 +253,7 @@ function convertPraticarLacuna() {
   praticarLacuna2.style.display = "none";
 }
 
+//Função para inverter imagem menu ao passar o mouse
 function invertPraticarAssociação() {
   praticarAssociação1.style.display = "none";
   praticarAssociação2.style.display = "block";
@@ -247,6 +265,7 @@ function convertPraticarAssociação() {
   praticarAssociação2.style.display = "none";
 }
 
+//Função para inverter imagem menu ao passar o mouse
 function invertPraticarRespostaUnica() {
   praticarRespostaUnica1.style.display = "none";
   praticarRespostaUnica2.style.display = "block";
@@ -258,6 +277,17 @@ function convertPraticarRespostaUnica() {
   praticarRespostaUnica2.style.display = "none";
 }
 
+//Função para inverter imagem menu ao passar o mouse
+function invertPraticarRespostasMultiplas() {
+  praticarRespostasMultiplas1.style.display = "none";
+  praticarRespostasMultiplas2.style.display = "block";
+}
+
+//Função para converter a imagem ao passar o mouse
+function convertPraticarRespostasMultiplas() {
+  praticarRespostasMultiplas1.style.display = "block";
+  praticarRespostasMultiplas2.style.display = "none";
+}
 
 
 
@@ -267,39 +297,45 @@ function convertPraticarRespostaUnica() {
 function questãoAsserção() {
   // Limpa a tela inicial e exibe a próxima
   botãoInicio.classList.remove('hidden-div');
-  botãoInicio.parentElement.removeChild(botãoInicio);
-  menuAsserção.appendChild(botãoInicio);
-  opçõesMenu.parentElement.removeChild(opçõesMenu);
-  menuAsserção.appendChild(opçõesMenu);
-  opçõesMenu.style.marginLeft = "0";
-  menu.classList.add('hidden-div');
+  botãoInicio.parentElement.removeChild(botãoInicio); //Remove o botão do elemento pai atual
+  menuAsserção.appendChild(botãoInicio); //Adiciona o botão a questão atual
+  opçõesMenu.parentElement.removeChild(opçõesMenu); //Remove o menu do elemento pai atual
+  menuAsserção.appendChild(opçõesMenu); // Adiciona o menu a questão atual
+  opçõesMenu.style.marginLeft = "0"; // Remove a margem existente na tela de menu
+  menu.classList.add('hidden-div'); // Oculta o menu
   menu.classList.add('disappear'); // efeito de transição
-  asserção.classList.remove('hidden-div');
+  asserção.classList.remove('hidden-div'); // Exibe o conteúdo de asserção
   asserção.classList.add('appear'); // efito de transição
-  num = 1;
+  num = 1; // Número da página atual
   console.log(`pagina-${num}`);
-    if (num == 1) {
-      botão1.style = "pointer-events: none";
-      botão2.style = "pointer-events: auto";
-      botão3.style = "pointer-events: auto";
-      botão4.style = "pointer-events: auto";
-      botão5.style = "pointer-events: auto";
-      boxAsserção.classList.remove('hidden-div');
-      boxAsserção.classList.add('appear');
-      boxLacuna.classList.add('hidden-div');
-      boxLacuna.classList.add('disappear');
-      boxAssociação.classList.add('hidden-div');
-      boxAssociação.classList.add('disappear');
-      boxRespostaUnica.classList.add('hidden-div');
-      boxRespostaUnica.classList.add('disappear');
-      boxPraticarLacuna.classList.add('hidden-div');
-      boxPraticarLacuna.classList.add('disappear');
-      boxPraticarAssociação.classList.add('hidden-div');
-      boxPraticarAssociação.classList.add('disappear');
-      boxPraticarRespostaUnica.classList.add('hidden-div');
-      boxPraticarRespostaUnica.classList.add('disappear');
-    }
-  };
+  if (num == 1) { 
+    // Desativa a função de clicar na opção da questão atual e mantém as outras
+    botão1.style = "pointer-events: none"; 
+    botão2.style = "pointer-events: auto";
+    botão3.style = "pointer-events: auto";
+    botão4.style = "pointer-events: auto";
+    botão5.style = "pointer-events: auto";
+    // Força o ocultamento de todas as página e exibe a página da questão acessada
+    boxAsserção.classList.remove('hidden-div');
+    boxAsserção.classList.add('appear');
+    boxLacuna.classList.add('hidden-div');
+    boxLacuna.classList.add('disappear');
+    boxAssociação.classList.add('hidden-div');
+    boxAssociação.classList.add('disappear');
+    boxRespostaUnica.classList.add('hidden-div');
+    boxRespostaUnica.classList.add('disappear');
+    boxRespostasMultiplas.classList.add('hidden-div');
+    boxRespostasMultiplas.classList.add('disappear');
+    boxPraticarLacuna.classList.add('hidden-div');
+    boxPraticarLacuna.classList.add('disappear');
+    boxPraticarAssociação.classList.add('hidden-div');
+    boxPraticarAssociação.classList.add('disappear');
+    boxPraticarRespostaUnica.classList.add('hidden-div');
+    boxPraticarRespostaUnica.classList.add('disappear');
+    boxPraticarRespostasMultiplas.classList.add('hidden-div');
+    boxPraticarRespostasMultiplas.classList.add('disappear');
+  }
+};
 
 //Opção de lacuna
 function questãoLacuna() {
@@ -330,12 +366,16 @@ function questãoLacuna() {
     boxAssociação.classList.add('disappear');
     boxRespostaUnica.classList.add('hidden-div');
     boxRespostaUnica.classList.add('disappear');
+    boxRespostasMultiplas.classList.add('hidden-div');
+    boxRespostasMultiplas.classList.add('disappear');
     boxPraticarAsserção.classList.add('hidden-div');
     boxPraticarAsserção.classList.add('disappear');
     boxPraticarAssociação.classList.add('hidden-div');
     boxPraticarAssociação.classList.add('disappear');
     boxPraticarRespostaUnica.classList.add('hidden-div');
     boxPraticarRespostaUnica.classList.add('disappear');
+    boxPraticarRespostasMultiplas.classList.add('hidden-div');
+    boxPraticarRespostasMultiplas.classList.add('disappear');
   }
 };
 
@@ -368,12 +408,16 @@ function questãoAssociação() {
     boxAsserção.classList.add('disappear');
     boxRespostaUnica.classList.add('hidden-div');
     boxRespostaUnica.classList.add('disappear');
+    boxRespostasMultiplas.classList.add('hidden-div');
+    boxRespostasMultiplas.classList.add('disappear');
     boxPraticarLacuna.classList.add('hidden-div');
     boxPraticarLacuna.classList.add('disappear');
     boxPraticarAsserção.classList.add('hidden-div');
     boxPraticarAsserção.classList.add('disappear');
     boxPraticarRespostaUnica.classList.add('hidden-div');
     boxPraticarRespostaUnica.classList.add('disappear');
+    boxRespostasMultiplas.classList.add('hidden-div');
+    boxRespostasMultiplas.classList.add('disappear');
   }
 };
 
@@ -405,12 +449,16 @@ function questãoRespostaUnica() {
     boxAsserção.classList.add('disappear');
     boxAssociação.classList.add('hidden-div');
     boxAssociação.classList.add('disappear');
+    boxRespostasMultiplas.classList.add('hidden-div');
+    boxRespostasMultiplas.classList.add('disappear');
     boxPraticarLacuna.classList.add('hidden-div');
     boxPraticarLacuna.classList.remove('appear');
     boxPraticarAsserção.classList.add('hidden-div');
     boxPraticarAsserção.classList.add('disappear');
     boxPraticarAssociação.classList.add('hidden-div');
     boxPraticarAssociação.classList.add('disappear');
+    boxRespostasMultiplas.classList.add('hidden-div');
+    boxRespostasMultiplas.classList.add('disappear');
   }
 };
 
@@ -429,16 +477,36 @@ function questãoMultiplas() {
   num = 5;
   console.log(`pagina-${num}`);
   if (num == 5) {
-    botão1.style="pointer-events: none";
-    botão2.style="pointer-events: none";
-    botão3.style="pointer-events: none";
-    botão4.style="pointer-events: none";
-    botão5.style="pointer-events: none";
+    botão1.style = "pointer-events: auto";
+    botão2.style = "pointer-events: auto";
+    botão3.style = "pointer-events: auto";
+    botão4.style = "pointer-events: auto";
+    botão5.style = "pointer-events: none";
+    boxRespostasMultiplas.classList.remove('hidden-div');
+    boxRespostasMultiplas.classList.add('appear');
+    boxLacuna.classList.add('hidden-div');
+    boxLacuna.classList.remove('appear');
+    boxAsserção.classList.add('hidden-div');
+    boxAsserção.classList.add('disappear');
+    boxAssociação.classList.add('hidden-div');
+    boxAssociação.classList.add('disappear');
+    boxRespostaUnica.classList.add('hidden-div');
+    boxRespostaUnica.classList.add('disappear');
+    boxPraticarLacuna.classList.add('hidden-div');
+    boxPraticarLacuna.classList.remove('appear');
+    boxPraticarAsserção.classList.add('hidden-div');
+    boxPraticarAsserção.classList.add('disappear');
+    boxPraticarAssociação.classList.add('hidden-div');
+    boxPraticarAssociação.classList.add('disappear');
+    boxRespostaUnica.classList.add('hidden-div');
+    boxRespostaUnica.classList.add('disappear');
   }
 };
 
+//FUNÇÃO BOTÃO INICIO
+
 function voltarMenu() {
-  // Limpa a tela inicial e exibe a próxima
+  // Volta para o menu de início e oculta o botão
   if (num != 0) {
     if (num == 1) {
       asserção.classList.add('hidden-div');
@@ -463,39 +531,47 @@ function voltarMenu() {
     if (num == 6) {
       boxPraticarAsserção.classList.add('hidden-div');
       boxPraticarAsserção.classList.add('desappear');
-      botãoInicio.classList.add('hidden-div');
+      botãoInicio.classList.add('hidden-div'); //Oculta o botão de início
     }
     if (num == 7) {
       boxPraticarLacuna.classList.add('hidden-div');
       boxPraticarLacuna.classList.add('desappear');
-      botãoInicio.classList.add('hidden-div');
+      botãoInicio.classList.add('hidden-div'); //Oculta o botão de início
     }
     if (num == 8) {
       boxPraticarAssociação.classList.add('hidden-div');
       boxPraticarAssociação.classList.add('desappear');
-      botãoInicio.classList.add('hidden-div');
+      botãoInicio.classList.add('hidden-div'); //Oculta o botão de início
     }
     if (num == 9) {
       boxPraticarRespostaUnica.classList.add('hidden-div');
       boxPraticarRespostaUnica.classList.add('desappear');
-      botãoInicio.classList.add('hidden-div');
+      botãoInicio.classList.add('hidden-div'); //Oculta o botão de início
+    }
+    if (num == 10) {
+      boxPraticarRespostasMultiplas.classList.add('hidden-div');
+      boxPraticarRespostasMultiplas.classList.add('desappear');
+      botãoInicio.classList.add('hidden-div'); //Oculta o botão de início
     }
   }
   menu.classList.remove('hidden-div');
   menu.classList.add('appear'); // efeito de transição
-  opçõesMenu.parentElement.removeChild(opçõesMenu);
-  box.appendChild(opçõesMenu);
-  opçõesMenu.style.marginLeft = "85px";
+  opçõesMenu.parentElement.removeChild(opçõesMenu); // Remove o menu do elemento pai atual
+  box.appendChild(opçõesMenu); // Adiciona o menu a tela de menu
+  opçõesMenu.style.marginLeft = "85px"; // Adiciona a margem ao menu
   num = 0;
   console.log(`página-${num}`);
-  if(num == 0) {
-    botão1.style="pointer-events: auto";
-    botão2.style="pointer-events: auto";
-    botão3.style="pointer-events: auto";
-    botão4.style="pointer-events: auto";
-    botão5.style="pointer-events: auto";
+  if (num == 0) {
+    // Torna todos os botões de questão ativos novamente
+    botão1.style = "pointer-events: auto";
+    botão2.style = "pointer-events: auto";
+    botão3.style = "pointer-events: auto";
+    botão4.style = "pointer-events: auto";
+    botão5.style = "pointer-events: auto";
   }
 };
+
+// FUNÇÕES BOTÕES EXIBIR A PÁGINA VAMOS PRATICAR E VOLTAR ESTRATÉGIAS
 
 function vamosPraticarAsserção() {
   boxAsserção.classList.add('hidden-div');
@@ -506,12 +582,12 @@ function vamosPraticarAsserção() {
   console.log(`página-${num}`);
 }
 
-function voltarEstrategias(){
+function voltarEstrategias() {
   boxPraticarAsserção.classList.add('hidden-div');
   boxPraticarAsserção.classList.add('disappear');
   boxAsserção.classList.remove('hidden-div');
   boxAsserção.classList.add('appear');
-  num=1;
+  num = 1;
   console.log(`página-${num}`);
 }
 
@@ -524,12 +600,12 @@ function vamosPraticarLacuna() {
   console.log(`página-${num}`);
 }
 
-function voltarEstrategiasLacuna(){
+function voltarEstrategiasLacuna() {
   boxPraticarLacuna.classList.add('hidden-div');
   boxPraticarLacuna.classList.add('disappear');
   boxLacuna.classList.remove('hidden-div');
   boxLacuna.classList.add('appear');
-  num=2;
+  num = 2;
   console.log(`página-${num}`);
 }
 
@@ -542,7 +618,7 @@ function vamosPraticarAssociação() {
   console.log(`página-${num}`);
 }
 
-function voltarEstrategiasAssociação(){
+function voltarEstrategiasAssociação() {
   boxPraticarAssociação.classList.add('hidden-div');
   boxPraticarAssociação.classList.add('disappear');
   boxAssociação.classList.remove('hidden-div');
@@ -560,7 +636,7 @@ function vamosPraticarRespostaUnica() {
   console.log(`página-${num}`);
 }
 
-function voltarEstrategiasRespostaUnica(){
+function voltarEstrategiasRespostaUnica() {
   boxPraticarRespostaUnica.classList.add('hidden-div');
   boxPraticarRespostaUnica.classList.add('disappear');
   boxRespostaUnica.classList.remove('hidden-div');
@@ -569,7 +645,23 @@ function voltarEstrategiasRespostaUnica(){
   console.log(`página-${num}`);
 }
 
+function vamosPraticarRespostasMultiplas() {
+  boxRespostasMultiplas.classList.add('hidden-div');
+  boxRespostasMultiplas.classList.add('disappear');
+  boxPraticarRespostasMultiplas.classList.remove('hidden-div');
+  boxPraticarRespostasMultiplas.classList.add('appear');
+  num = 10;
+  console.log(`página-${num}`);
+}
 
+function voltarEstrategiasRespostasMultiplas() {
+  boxPraticarRespostasMultiplas.classList.add('hidden-div');
+  boxPraticarRespostasMultiplas.classList.add('disappear');
+  boxRespostasMultiplas.classList.remove('hidden-div');
+  boxRespostasMultiplas.classList.add('appear');
+  num = 5;
+  console.log(`página-${num}`);
+}
 
 //FUNÇÕES APARECER ESTRATÉGIAS ASSERÇÃO
 
@@ -598,6 +690,8 @@ function estrategia5Appear() {
   sublinhadoRosa5.style.backgroundColor = "#FFB5FF"
   respostaAsserção.style.display = "block";
 }
+
+// FUNÇÃO ABRIR POP-UP SOBRE O TIPO DE QUESTÃO
 
 function sobreAsserção() {
   modalAsserção.style.display = "block";
@@ -630,6 +724,8 @@ function estrategiaLacuna5Appear() {
   sublinhadoAmarelo5.style.backgroundColor = "#F9FFB5"
   respostaLacuna.style.display = "block";
 }
+
+// FUNÇÃO ABRIR POP-UP SOBRE O TIPO DE QUESTÃO
 
 function sobreLacuna() {
   modalLacuna.style.display = "block";
@@ -664,6 +760,8 @@ function estrategiaAssociação5Appear() {
   respostaAssociação.style.display = "block";
 }
 
+// FUNÇÃO ABRIR POP-UP SOBRE O TIPO DE QUESTÃO
+
 function sobreAssociação() {
   modalAssociação.style.display = "block";
   modalBackground.style.display = "block";
@@ -697,10 +795,49 @@ function estrategiaRespostaUnica5Appear() {
   respostaRespostaUnica.style.display = "block";
 }
 
+// FUNÇÃO ABRIR POP-UP SOBRE O TIPO DE QUESTÃO
+
 function sobreRespostaUnica() {
   modalRespostaUnica.style.display = "block";
   modalBackground.style.display = "block";
 }
+
+//FUNÇÕES APARECER RESPOSTAS MULTIPLAS
+
+function estrategiaRespostasMultiplas1Appear() {
+  estrategiaRespostasMultiplas1.style.display = "block";
+  sublinhadoRoxo1.style.backgroundColor = "#D5D3FF"
+}
+
+function estrategiaRespostasMultiplas2Appear() {
+  estrategiaRespostasMultiplas2.style.display = "block";
+  sublinhadoRoxo2.style.backgroundColor = "#D5D3FF"
+}
+
+function estrategiaRespostasMultiplas3Appear() {
+  estrategiaRespostasMultiplas3.style.display = "block";
+  sublinhadoRoxo3.style.backgroundColor = "#D5D3FF"
+}
+
+function estrategiaRespostasMultiplas4Appear() {
+  estrategiaRespostasMultiplas4.style.display = "block";
+  sublinhadoRoxo4.style.backgroundColor = "#D5D3FF"
+}
+
+function estrategiaRespostasMultiplas5Appear() {
+  estrategiaRespostasMultiplas5.style.display = "block";
+  sublinhadoRoxo5.style.backgroundColor = "#D5D3FF"
+  respostaRespostasMultiplas.style.display = "block";
+}
+
+// FUNÇÃO ABRIR POP-UP SOBRE O TIPO DE QUESTÃO
+
+function sobreRespostasMultiplas() {
+  modalRespostasMultiplas.style.display = "block";
+  modalBackground.style.display = "block";
+}
+
+// FUNÇÃO PARA FECHAR O POP-UP AO CLICAR EM QUALQUER PARTE DA TELA
 
 window.onclick = function (event) {
   if (event.target === modalBackground) {
@@ -708,6 +845,7 @@ window.onclick = function (event) {
     modalLacuna.style.display = "none";
     modalAssociação.style.display = "none";
     modalRespostaUnica.style.display = "none";
+    modalRespostasMultiplas.style.display = "none";
     modalBackground.style.display = "none";
   }
 }
@@ -744,44 +882,45 @@ let alternativa2RespostaUnica = document.getElementById('alternativa-2-resposta-
 let alternativa3RespostaUnica = document.getElementById('alternativa-3-resposta-unica');
 let alternativa4RespostaUnica = document.getElementById('alternativa-4-resposta-unica');
 let alternativa5RespostaUnica = document.getElementById('alternativa-5-resposta-unica');
+let respostaPraticarRespostasMultiplas = document.getElementById('resposta-praticar-respostas-multiplas');
 
 
 // FUNÇÕES CHECKBOX VAMOS PRATICAR ASSERÇÕES
 
-function checkboxAsserção1 (checkbox){
-  if (checkbox.checked){
+function checkboxAsserção1(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarAsserção.classList.remove('hidden-div');
     alternativa1asserção.style.backgroundColor = "#FFB5FF"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxAsserção2 (checkbox){
-  if (checkbox.checked){
+function checkboxAsserção2(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarAsserção.classList.remove('hidden-div');
     alternativa2asserção.style.backgroundColor = "#FFB5FF"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxAsserção3 (checkbox){
-  if (checkbox.checked){
+function checkboxAsserção3(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarAsserção.classList.remove('hidden-div');
     alternativa3asserção.style.backgroundColor = "#FFB5FF"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxAsserção4 (checkbox){
-  if (checkbox.checked){
+function checkboxAsserção4(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarAsserção.classList.remove('hidden-div');
     alternativa4asserção.style.backgroundColor = "#FFB5FF"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxAsserção5 (checkbox){
-  if (checkbox.checked){
+function checkboxAsserção5(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarAsserção.classList.remove('hidden-div');
     alternativa5asserção.style.backgroundColor = "#FFB5FF"
     console.log('ESTOU CHECADO');
@@ -790,40 +929,40 @@ function checkboxAsserção5 (checkbox){
 
 // FUNÇÕES CHECKBOX VAMOS PRATICAR LACUNA
 
-function checkboxLacuna1 (checkbox){
-  if (checkbox.checked){
+function checkboxLacuna1(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarLacuna.classList.remove('hidden-div');
     alternativa1lacuna.style.backgroundColor = "#F9FFB5"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxLacuna2 (checkbox){
-  if (checkbox.checked){
+function checkboxLacuna2(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarLacuna.classList.remove('hidden-div');
     alternativa2lacuna.style.backgroundColor = "#F9FFB5"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxLacuna3 (checkbox){
-  if (checkbox.checked){
+function checkboxLacuna3(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarLacuna.classList.remove('hidden-div');
     alternativa3lacuna.style.backgroundColor = "#F9FFB5"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxLacuna4 (checkbox){
-  if (checkbox.checked){
+function checkboxLacuna4(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarLacuna.classList.remove('hidden-div');
     alternativa4lacuna.style.backgroundColor = "#F9FFB5"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxLacuna5 (checkbox){
-  if (checkbox.checked){
+function checkboxLacuna5(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarLacuna.classList.remove('hidden-div');
     alternativa5lacuna.style.backgroundColor = "#F9FFB5"
     console.log('ESTOU CHECADO');
@@ -832,40 +971,40 @@ function checkboxLacuna5 (checkbox){
 
 // FUNÇÕES CHECKBOX VAMOS PRATICAR ASSOCIAÇÃO
 
-function checkboxAssociação1 (checkbox){
-  if (checkbox.checked){
+function checkboxAssociação1(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarAssociação.classList.remove('hidden-div');
     alternativa1associação.style.backgroundColor = "#B5FBB9"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxAssociação2 (checkbox){
-  if (checkbox.checked){
+function checkboxAssociação2(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarAssociação.classList.remove('hidden-div');
     alternativa2associação.style.backgroundColor = "#B5FBB9"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxAssociação3 (checkbox){
-  if (checkbox.checked){
+function checkboxAssociação3(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarAssociação.classList.remove('hidden-div');
     alternativa3associação.style.backgroundColor = "#B5FBB9"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxAssociação4 (checkbox){
-  if (checkbox.checked){
+function checkboxAssociação4(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarAssociação.classList.remove('hidden-div');
     alternativa4associação.style.backgroundColor = "#B5FBB9"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxAssociação5 (checkbox){
-  if (checkbox.checked){
+function checkboxAssociação5(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarAssociação.classList.remove('hidden-div');
     alternativa5associação.style.backgroundColor = "#B5FBB9"
     console.log('ESTOU CHECADO');
@@ -874,40 +1013,40 @@ function checkboxAssociação5 (checkbox){
 
 // FUNÇÕES CHECKBOX VAMOS PRATICAR RESPOSTA UNICA
 
-function checkboxRespostaUnica1 (checkbox){
-  if (checkbox.checked){
+function checkboxRespostaUnica1(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarRespostaUnica.classList.remove('hidden-div');
     alternativa1RespostaUnica.style.backgroundColor = "#B5F2FF"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxRespostaUnica2 (checkbox){
-  if (checkbox.checked){
+function checkboxRespostaUnica2(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarRespostaUnica.classList.remove('hidden-div');
     alternativa2RespostaUnica.style.backgroundColor = "#B5F2FF"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxRespostaUnica3 (checkbox){
-  if (checkbox.checked){
+function checkboxRespostaUnica3(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarRespostaUnica.classList.remove('hidden-div');
     alternativa3RespostaUnica.style.backgroundColor = "#B5F2FF"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxRespostaUnica4 (checkbox){
-  if (checkbox.checked){
+function checkboxRespostaUnica4(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarRespostaUnica.classList.remove('hidden-div');
     alternativa4RespostaUnica.style.backgroundColor = "#B5F2FF"
     console.log('ESTOU CHECADO');
   }
 }
 
-function checkboxRespostaUnica5 (checkbox){
-  if (checkbox.checked){
+function checkboxRespostaUnica5(checkbox) {
+  if (checkbox.checked) {
     respostaPraticarRespostaUnica.classList.remove('hidden-div');
     alternativa5RespostaUnica.style.backgroundColor = "#B5F2FF"
     console.log('ESTOU CHECADO');

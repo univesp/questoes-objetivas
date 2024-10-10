@@ -428,7 +428,7 @@ body {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  margin-left: 400px;
+  left: 400px;
 }
 
 #sobre-asserção:hover {
@@ -447,7 +447,8 @@ body {
 #dica-asserção,
 #dica-lacuna,
 #dica-associação,
-#dica-resposta-unica {
+#dica-resposta-unica,
+#dica-respostas-multiplas {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
@@ -461,14 +462,16 @@ body {
 #conteudo-asserção,
 #conteudo-lacuna,
 #conteudo-associação,
-#conteudo-resposta-unica {
+#conteudo-resposta-unica,
+#conteudo-respostas-multiplas {
   display: flex;
 }
 
 #conteudo-principal-asserção,
 #conteudo-principal-lacuna,
 #conteudo-principal-associação,
-#conteudo-principal-resposta-unica {
+#conteudo-principal-resposta-unica,
+#conteudo-principal-respostas-multiplas {
   width: 60vw;
   height: fit-content;
   padding: 20px 20px 10px 20px;
@@ -833,7 +836,7 @@ input[type="checkbox"]:checked+label::before {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  margin-left: 540px;
+  margin-left: 530px;
 }
 
 #sobre-lacuna:hover {
@@ -1036,7 +1039,7 @@ input[type="checkbox"]:checked+label::before {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  margin-left: 500px;
+  margin-left: 470px;
 }
 
 #modal-associação {
@@ -1197,11 +1200,11 @@ input[type="checkbox"]:checked+label::before {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  margin-left: 170px;
+  margin-left: 140px;
 }
 
 #modal-resposta-unica {
-  margin-top: 300px;
+  margin-top: 200px;
   border: none;
   background: transparent;
   z-index: 1001;
@@ -1328,4 +1331,182 @@ input[type="checkbox"]:checked+label::before {
   background-color: #B5F2FF;
   padding: 10px 10px 10px 10px;
   margin-left: 20px;
+}
+
+.titulo-modal-unica {
+  margin-left: 210px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #343434;
+}
+
+.texto-modal-unica {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  line-height: 1.7rem;
+  font-size: 16px;
+  color: #343434;
+  padding: 10px 20px 0px 20px;
+}
+
+#box-respostas-multiplas {
+  background-color: white;
+  width: 1200px;
+  height: fit-content;
+  border: 3px solid #343434;
+  margin-top: 50px;
+}
+
+#purple {
+  background-color: #B9BEFF;
+  width: 100%;
+  height: fit-content;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+}
+
+#questão-respostas-multiplas {
+  width: 80px;
+  height: 80px;
+}
+
+#titulo-respostas-multiplas {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#sobre-respostas-multiplas {
+  position: relative;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  margin-left: 340px;
+}
+
+#modal-respostas-multiplas {
+  margin-top: 200px;
+  border: none;
+  background: transparent;
+  z-index: 1001;
+}
+
+.textos-sublinhado-respostas-multiplas{
+  padding: 10px 20px 10px 20px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.textos-sublinhado-respostas-multiplas:hover {
+  background-color: #D5D3FF;
+  cursor: pointer;
+}
+
+#bibliografia-respostas-multiplas {
+  text-align: right;
+  padding-right: 10px;
+}
+
+#sublinhado-roxo-3{
+  text-align: left;
+}
+
+#lista-respostas-multiplas{
+  list-style-type: upper-roman;
+  padding: 10px 20px 10px 40px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+#lista-respostas-multiplas:hover{
+  background-color: #D5D3FF;
+  cursor: pointer;
+}
+
+#purple-right {
+  background-color: #B9BEFF;
+  width: 40vw;
+  padding: 20px 40px 10px 30px;
+}
+
+.titulo-modal-multiplas {
+  margin-left: 210px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #343434;
+}
+
+.texto-modal-multiplas {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  line-height: 1.7rem;
+  font-size: 16px;
+  color: #343434;
+  padding: 10px 20px 0px 20px;
+}
+
+#estratégia-respostas-multiplas-1,
+#estratégia-respostas-multiplas-2,
+#estratégia-respostas-multiplas-3,
+#estratégia-respostas-multiplas-4,
+#estratégia-respostas-multiplas-5 {
+  display: none;
+}
+
+.textos-estratégias-respostas-multiplas {
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #D5D3FF;
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+#resposta-respostas-multiplas {
+  display: none;
+}
+
+#vamos-praticar-respostas-multiplas{
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  gap: 30px;
+  justify-content: center;
+  border-top: 3px solid #343434;
+}
+
+#vamos-praticar-respostas-multiplas:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.001);
+  left: 0px;
+}
+
+#img-praticar-respostas-multiplas-invertido{
+  display: none;
 }
