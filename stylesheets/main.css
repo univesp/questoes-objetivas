@@ -1323,16 +1323,6 @@ input[type="checkbox"]:checked+label::before {
   background-color: #B5F2FF;
 }
 
-.textos-estratégias-resposta-unica {
-  margin-top: 10px;
-  text-align: left;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  background-color: #B5F2FF;
-  padding: 10px 10px 10px 10px;
-  margin-left: 20px;
-}
-
 .titulo-modal-unica {
   margin-left: 210px;
   font-family: "Kanit", sans-serif;
@@ -1509,4 +1499,83 @@ input[type="checkbox"]:checked+label::before {
 
 #img-praticar-respostas-multiplas-invertido{
   display: none;
+}
+
+#box-praticar-respostas-multiplas {
+  background-color: white;
+  width: 1200px;
+  height: fit-content;
+  border: 3px solid #343434;
+  margin-top: 50px;
+}
+
+#bibliografia-respostas-multiplas {
+  text-align: right;
+  padding-right: 10px;
+}
+
+#lista-respostas-multiplas-praticar{
+  list-style-type: upper-roman;
+  padding: 10px 20px 10px 40px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+#alternativa-1-respostas-multiplas,
+#alternativa-3-respostas-multiplas,
+#alternativa-5-respostas-multiplas {
+  display: flex;
+  background-color: #F1F1E9;
+  margin-right: 0px;
+  height: 70px;
+  border-top: 3px solid #343434;
+}
+
+#alternativa-2-respostas-multiplas,
+#alternativa-4-respostas-multiplas {
+  display: flex;
+  background-color: white;
+  margin-right: 0px;
+  height: 70px;
+  border-top: 3px solid #343434;
+}
+
+.textos-estratégias-respostas-multiplas {
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #D5D3FF;
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+.estrategia-checkbox-respostas-multiplas {
+  background-color: #D5D3FF;
+}
+
+#vamos-praticar-respostas-multiplas {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #343434;
+  padding: 20px 70px 20px 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  gap: 30px;
+  justify-content: center;
+  border-top: 3px solid #343434;
+}
+
+#vamos-praticar-respostas-meltiplas:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.001);
+  left: 0px;
 }

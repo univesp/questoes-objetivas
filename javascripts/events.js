@@ -416,8 +416,8 @@ function questãoAssociação() {
     boxPraticarAsserção.classList.add('disappear');
     boxPraticarRespostaUnica.classList.add('hidden-div');
     boxPraticarRespostaUnica.classList.add('disappear');
-    boxRespostasMultiplas.classList.add('hidden-div');
-    boxRespostasMultiplas.classList.add('disappear');
+    boxPraticarRespostasMultiplas.classList.add('hidden-div');
+    boxPraticarRespostasMultiplas.classList.add('disappear');
   }
 };
 
@@ -457,8 +457,8 @@ function questãoRespostaUnica() {
     boxPraticarAsserção.classList.add('disappear');
     boxPraticarAssociação.classList.add('hidden-div');
     boxPraticarAssociação.classList.add('disappear');
-    boxRespostasMultiplas.classList.add('hidden-div');
-    boxRespostasMultiplas.classList.add('disappear');
+    boxPraticarRespostasMultiplas.classList.add('hidden-div');
+    boxPraticarRespostasMultiplas.classList.add('disappear');
   }
 };
 
@@ -498,8 +498,8 @@ function questãoMultiplas() {
     boxPraticarAsserção.classList.add('disappear');
     boxPraticarAssociação.classList.add('hidden-div');
     boxPraticarAssociação.classList.add('disappear');
-    boxRespostaUnica.classList.add('hidden-div');
-    boxRespostaUnica.classList.add('disappear');
+    boxPraticarRespostaUnica.classList.add('hidden-div');
+    boxPraticarRespostaUnica.classList.add('disappear');
   }
 };
 
@@ -883,6 +883,12 @@ let alternativa3RespostaUnica = document.getElementById('alternativa-3-resposta-
 let alternativa4RespostaUnica = document.getElementById('alternativa-4-resposta-unica');
 let alternativa5RespostaUnica = document.getElementById('alternativa-5-resposta-unica');
 let respostaPraticarRespostasMultiplas = document.getElementById('resposta-praticar-respostas-multiplas');
+let alternativa1RespostasMultiplas = document.getElementById('alternativa-1-respostas-multiplas');
+let alternativa2RespostasMultiplas = document.getElementById('alternativa-2-respostas-multiplas');
+let alternativa3RespostasMultiplas = document.getElementById('alternativa-3-respostas-multiplas');
+let alternativa4RespostasMultiplas = document.getElementById('alternativa-4-respostas-multiplas');
+let alternativa5RespostasMultiplas = document.getElementById('alternativa-5-respostas-multiplas');
+
 
 
 // FUNÇÕES CHECKBOX VAMOS PRATICAR ASSERÇÕES
@@ -1049,6 +1055,48 @@ function checkboxRespostaUnica5(checkbox) {
   if (checkbox.checked) {
     respostaPraticarRespostaUnica.classList.remove('hidden-div');
     alternativa5RespostaUnica.style.backgroundColor = "#B5F2FF"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+// FUNÇÕES CHECKBOX VAMOS PRATICAR RESPOSTAS MULTIPLAS
+
+function checkboxRespostasMultiplas1(checkbox) {
+  if (checkbox.checked) {
+    respostaPraticarRespostasMultiplas.classList.remove('hidden-div');
+    alternativa1RespostasMultiplas.style.backgroundColor = "#D5D3FF"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxRespostasMultiplas2(checkbox) {
+  if (checkbox.checked) {
+    respostaPraticarRespostasMultiplas.classList.remove('hidden-div');
+    alternativa2RespostasMultiplas.style.backgroundColor = "#D5D3FF"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxRespostasMultiplas3(checkbox) {
+  if (checkbox.checked) {
+    respostaPraticarRespostasMultiplas.classList.remove('hidden-div');
+    alternativa3RespostasMultiplas.style.backgroundColor = "#D5D3FF"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxRespostasMultiplas4(checkbox) {
+  if (checkbox.checked) {
+    respostaPraticarRespostasMultiplas.classList.remove('hidden-div');
+    alternativa4.style.backgroundColor = "#D5D3FF"
+    console.log('ESTOU CHECADO');
+  }
+}
+
+function checkboxRespostasMultiplas5(checkbox) {
+  if (checkbox.checked) {
+    respostaPraticarRespostasMultiplas.classList.remove('hidden-div');
+    alternativa5.style.backgroundColor = "#D5D3FF"
     console.log('ESTOU CHECADO');
   }
 }
