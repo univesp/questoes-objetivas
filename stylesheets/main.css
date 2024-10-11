@@ -1042,6 +1042,12 @@ input[type="checkbox"]:checked+label::before {
   margin-left: 470px;
 }
 
+#sobre-associação:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.02);
+}
+
 #modal-associação {
   margin-top: 300px;
   border: none;
@@ -1201,6 +1207,12 @@ input[type="checkbox"]:checked+label::before {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
   margin-left: 140px;
+}
+
+#sobre-resposta-unica:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.02);
 }
 
 #modal-resposta-unica {
@@ -1383,6 +1395,12 @@ input[type="checkbox"]:checked+label::before {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
   margin-left: 340px;
+}
+
+#sobre-respostas-multiplas:hover {
+  background-color: white;
+  color: #343434;
+  transform: scale(1.02);
 }
 
 #modal-respostas-multiplas {
