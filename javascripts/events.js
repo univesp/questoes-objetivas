@@ -751,7 +751,7 @@ function estrategiaAssociação3Appear() {
 
 function estrategiaAssociação4Appear() {
   estrategiaAssociação4.style.display = "block";
-  sublinhadoVerde4.style.backgroundColor = "##B5FBB9"
+  sublinhadoVerde4.style.backgroundColor = "#B5FBB9"
 }
 
 function estrategiaAssociação5Appear() {
