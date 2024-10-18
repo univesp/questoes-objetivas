@@ -1612,7 +1612,14 @@ input[type="checkbox"]:checked+label::before {
   margin-top: -90px;
 }
 
+#cursor-opções-lacuna{
+  margin-left: 50px;
+}
+
+#cursor-4-associação{
+  margin-left: 30px;
+}
+
 #cursor-3-resposta-unica{
-  margin-left: 120px;
-  margin-top: -110px;
+  margin-left: 20px;
 }

@@ -130,7 +130,6 @@ let estrategiaRespostaUnica1 = document.getElementById('estratégia-resposta-uni
 let estrategiaRespostaUnica2 = document.getElementById('estratégia-resposta-unica-2');
 let estrategiaRespostaUnica3 = document.getElementById('estratégia-resposta-unica-3');
 let estrategiaRespostaUnica4 = document.getElementById('estratégia-resposta-unica-4');
-let estrategiaRespostaUnica5 = document.getElementById('estratégia-resposta-unica-5');
 let respostaRespostaUnica = document.getElementById('resposta-resposta-unica');
 let praticarRespostaUnica1 = document.getElementById('img-praticar-resposta-unica');
 let praticarRespostaUnica2 = document.getElementById('img-praticar-resposta-unica-invertido');
