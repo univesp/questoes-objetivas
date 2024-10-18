@@ -751,7 +751,7 @@ function estrategiaAssociação3Appear() {
 
 function estrategiaAssociação4Appear() {
   estrategiaAssociação4.style.display = "block";
-  sublinhadoVerde4.style.backgroundColor = "##B5FBB9"
+  sublinhadoVerde4.style.backgroundColor = "#B5FBB9"
 }
 
 function estrategiaAssociação5Appear() {
@@ -787,11 +787,6 @@ function estrategiaRespostaUnica3Appear() {
 function estrategiaRespostaUnica4Appear() {
   estrategiaRespostaUnica4.style.display = "block";
   sublinhadoAzul4.style.backgroundColor = "#B5F2FF"
-}
-
-function estrategiaRespostaUnica5Appear() {
-  estrategiaRespostaUnica5.style.display = "block";
-  sublinhadoAzul5.style.backgroundColor = "#B5F2FF"
   respostaRespostaUnica.style.display = "block";
 }
 
