@@ -41,6 +41,7 @@
   <!-- <link rel="stylesheet" href="../common/rea-geral-2.1.css">   -->
   <link rel="stylesheet" href="stylesheets/nav_footer.css">
   <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/mobile.css">
 
 
   <!--[if gte mso 9]><xml>
@@ -205,8 +206,15 @@
               conhecer um pouco mais sobre estratégias de como resolvê-las. E, claro, tire um tempinho para praticar
               suas novas habilidades respondendo a uma nova questão. E aí, vamos estudar?</p>
           </div>
-          <img class="ilustração-home" src="assets/rea-questões-objetivas---home.png"
+          <div id="imegem-home-mobile">
+            <p id="page-content-mobile" style="display: none;">Avaliações e exames em diferentes contextos utilizam uma variedade de tipos de
+              questões objetivas em sua elaboração. Cada tipo possui um objetivo avaliativo específico e demanda
+              diferentes habilidades e estratégias para sua resolução. Agora, navegue entre os tipos de questão para
+              conhecer um pouco mais sobre estratégias de como resolvê-las. E, claro, tire um tempinho para praticar
+              suas novas habilidades respondendo a uma nova questão. E aí, vamos estudar?</p>
+              <img class="ilustração-home" src="assets/rea-questões-objetivas---home.png"
             alt="ilustração página inicial questões objetivas">
+          </div>
         </div>
         <button id="iniciar">VAMOS LÁ!</button>
       </div>
@@ -225,33 +233,33 @@
               <img id="asserção-1" src="assets/1. asserção razão.svg" alt="primeira opção">
               <img id="asserção-2" class="hidden-div" src="assets/6. asserção razão-invert.svg"
                 alt="primeira opção invertida">
-              <p class="text-1">ASSERÇÃO-RAZÃO</p>
+              <p id="text-1">ASSERÇÃO-RAZÃO</p>
             </div>
             <div id="botão-2" class="bloco-2" onmouseover="invertLacuna()" onmouseout="convertLacuna()"
               onclick="questãoLacuna()">
               <img id="lacuna-1" src="assets/2. lacuna.svg" alt="segunda opção">
               <img id="lacuna-2" class="hidden-div" src="assets/7 . lacuna-2.svg" alt="segunda opção invertida">
-              <p class="text-2">LACUNA</p>
+              <p id="text-2">LACUNA</p>
             </div>
             <div id="botão-3" class="bloco-3" onmouseover="invertAssociação()" onmouseout="convertAssociação()"
               onclick="questãoAssociação()">
               <img id="associação-1" src="assets/3. associação.svg" alt="terceira opção">
               <img id="associação-2" class="hidden-div" src="assets/8 .associação-2.svg" alt="terceira opção invertida">
-              <p class="text-3">ASSOCIAÇÃO</p>
+              <p id="text-3">ASSOCIAÇÃO</p>
             </div>
             <div id="botão-4" class="bloco-4" onmouseover="invertRespostaUnica()" onmouseout="convertRespostaUnica()"
               onclick="questãoRespostaUnica()">
               <img id="resposta-unica-1" src="assets/4. resposta única e complementação.svg" alt="quarta opção">
               <img id="resposta-unica-2" class="hidden-div" src="assets/9 . resposta única e complementação-2.svg"
                 alt="quarta opção invertida">
-              <p class="text-4">RESPOSTA ÚNICA E COMPLEMENTAÇÃO</p>
+              <p id="text-4">RESPOSTA ÚNICA E COMPLEMENTAÇÃO</p>
             </div>
             <div id="botão-5" class="bloco-5" onmouseover="invertMultiplas()" onmouseout="convertMultiplas()"
               onclick="questãoMultiplas()">
               <img id="multiplas-1" src="assets/5. respostas múltiplas.svg" alt="quinta opção">
               <img id="multiplas-2" class="hidden-div" src="assets/10 .respostas múltiplas.svg"
                 alt="quinta opção invertida">
-              <p class="text-5">RESPOSTAS MÚLTIPLAS</p>
+              <p id="text-5">RESPOSTAS MÚLTIPLAS</p>
             </div>
           </div>
         </div>
@@ -259,7 +267,7 @@
       <div id="asserção" class="hidden-div">
         <div id="menu-asserção">
           <section id="botão-inicio">
-            <div class="bloco-0" onmouseover="invertInicio()" onmouseout="convertInicio()" onclick="voltarMenu()">
+            <div id="botão-0" class="bloco-0" onmouseover="invertInicio()" onmouseout="convertInicio()" onclick="voltarMenu()">
               <img id="inicio-1" src="assets/rea questões objetivas - home ícone.svg" alt="icone de inicio">
               <img id="inicio-2" class="hidden-div" src="assets/rea questões objetivas - home ícon invertido.svg"
                 alt="icone de inicio invertido">
@@ -271,7 +279,7 @@
           <div id="pink">
             <img id="questão-asserção" src="assets/1. asserção razão.svg" alt="icone questão asserção-razão">
             <p id="titulo-asserção">ASSERÇÃO-RAZÃO</p>
-            <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO</button>
+            <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO <img id="abrir-sobre" src="assets/simbolo abrir.png" alt="simbolo abrir sobre" style="display: none;"></button>
           </div>
           <div id="gray">
             <p id="dica-asserção">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
@@ -1594,6 +1602,7 @@
 
   <!-- Custom JS -->
   <script type="text/javascript" src="javascripts/events.js"></script>
+  <script type="text/javascript" src="javascripts/mobile.js"></script>
 
   <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
   <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->

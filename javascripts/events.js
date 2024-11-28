@@ -307,9 +307,9 @@ function questãoAsserção() {
   asserção.classList.add('appear'); // efito de transição
   num = 1; // Número da página atual
   console.log(`pagina-${num}`);
-  if (num == 1) { 
+  if (num == 1) {
     // Desativa a função de clicar na opção da questão atual e mantém as outras
-    botão1.style = "pointer-events: none"; 
+    botão1.style = "pointer-events: none";
     botão2.style = "pointer-events: auto";
     botão3.style = "pointer-events: auto";
     botão4.style = "pointer-events: auto";
@@ -333,6 +333,59 @@ function questãoAsserção() {
     boxPraticarRespostaUnica.classList.add('disappear');
     boxPraticarRespostasMultiplas.classList.add('hidden-div');
     boxPraticarRespostasMultiplas.classList.add('disappear');
+    
+    var Text1 = document.getElementById("text-1");
+    var Text2 = document.getElementById("text-2");
+    var Text3 = document.getElementById("text-3");
+    var Text4 = document.getElementById("text-4");
+    var Text5 = document.getElementById("text-5");
+    var Botao1 = document.getElementById("botão-1");
+    var Botao2 = document.getElementById("botão-2");
+    var Botao3 = document.getElementById("botão-3");
+    var Botao4 = document.getElementById("botão-4");
+    var Botao5 = document.getElementById("botão-5");
+    var Botao0 = document.getElementById("botão-0");
+    var opçãoMenu = document.getElementById("opções-menu");
+
+    const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+    function adjustLayout() {
+      if (mediaMobile.matches) {
+        // Ajuste para dispositivos móveis
+        Text1.style.display = "none";
+        Botao1.style.width = "70px";
+        Botao1.style.height = "70px";
+        Botao1.style.padding = "10px";
+        Text2.style.display = "none";
+        Botao2.style.width = "70px";
+        Botao2.style.height = "70px";
+        Botao2.style.padding = "10px";
+        Text3.style.display = "none";
+        Botao3.style.width = "70px";
+        Botao3.style.height = "70px";
+        Botao3.style.padding = "10px";
+        Text4.style.display = "none";
+        Botao4.style.width = "70px";
+        Botao4.style.height = "70px";
+        Botao4.style.padding = "10px";
+        Text5.style.display = "none";
+        Botao5.style.width = "70px";
+        Botao5.style.height = "70px";
+        Botao5.style.padding = "10px";
+        opçãoMenu.style.marginLeft = "5px";
+        Botao2.style.borderRight = "none";
+        Botao2.style.borderTop = "none";
+        Botao1.style.borderTop = "none";
+        Botao4.style.borderRight = "none";
+        Botao0.style.borderRight = "3px solid #343434" 
+        opçãoMenu.style.left = "50%";
+        opçãoMenu.style.transform = "translateX(-50%)"
+      }
+    }
+    mediaMobile.addEventListener('change', adjustLayout);
+
+    // Chama a função inicialmente
+    adjustLayout();
   }
 };
 
@@ -567,6 +620,21 @@ function voltarMenu() {
     botão3.style = "pointer-events: auto";
     botão4.style = "pointer-events: auto";
     botão5.style = "pointer-events: auto";
+
+    var Text1 = document.getElementById("text-1");
+    const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+    function adjustLayout() {
+      if (mediaMobile.matches) {
+        // Ajuste para dispositivos móveis
+        Text1.style.display = "block";
+      }
+    }
+
+    mediaMobile.addEventListener('change', adjustLayout);
+
+    // Chama a função inicialmente
+    adjustLayout();
   }
 };
 
@@ -1094,3 +1162,20 @@ function checkboxRespostasMultiplas5(checkbox) {
     console.log('ESTOU CHECADO');
   }
 }
+/*
+// AJUSTES DE RESPONSIVIDADE PARA MOBILE
+var Text1 = document.getElementById("text-1");
+const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+function adjustLayout() {
+  if (mediaMobile.matches) {
+    // Ajuste para dispositivos móveis
+      Text1.style.display = "none";
+      document.body.style.backgroundColor = "lightblue";
+  }
+}
+
+mediaMobile.addEventListener('change', adjustLayout);
+
+// Chama a função inicialmente
+adjustLayout();*/
