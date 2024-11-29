@@ -207,13 +207,14 @@
               suas novas habilidades respondendo a uma nova questão. E aí, vamos estudar?</p>
           </div>
           <div id="imegem-home-mobile">
-            <p id="page-content-mobile" style="display: none;">Avaliações e exames em diferentes contextos utilizam uma variedade de tipos de
+            <p id="page-content-mobile" style="display: none;">Avaliações e exames em diferentes contextos utilizam uma
+              variedade de tipos de
               questões objetivas em sua elaboração. Cada tipo possui um objetivo avaliativo específico e demanda
               diferentes habilidades e estratégias para sua resolução. Agora, navegue entre os tipos de questão para
               conhecer um pouco mais sobre estratégias de como resolvê-las. E, claro, tire um tempinho para praticar
               suas novas habilidades respondendo a uma nova questão. E aí, vamos estudar?</p>
-              <img class="ilustração-home" src="assets/rea-questões-objetivas---home.png"
-            alt="ilustração página inicial questões objetivas">
+            <img class="ilustração-home" src="assets/rea-questões-objetivas---home.png"
+              alt="ilustração página inicial questões objetivas">
           </div>
         </div>
         <button id="iniciar">VAMOS LÁ!</button>
@@ -267,7 +268,8 @@
       <div id="asserção" class="hidden-div">
         <div id="menu-asserção">
           <section id="botão-inicio">
-            <div id="botão-0" class="bloco-0" onmouseover="invertInicio()" onmouseout="convertInicio()" onclick="voltarMenu()">
+            <div id="botão-0" class="bloco-0" onmouseover="invertInicio()" onmouseout="convertInicio()"
+              onclick="voltarMenu()">
               <img id="inicio-1" src="assets/rea questões objetivas - home ícone.svg" alt="icone de inicio">
               <img id="inicio-2" class="hidden-div" src="assets/rea questões objetivas - home ícon invertido.svg"
                 alt="icone de inicio invertido">
@@ -279,12 +281,24 @@
           <div id="pink">
             <img id="questão-asserção" src="assets/1. asserção razão.svg" alt="icone questão asserção-razão">
             <p id="titulo-asserção">ASSERÇÃO-RAZÃO</p>
-            <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO <img id="abrir-sobre" src="assets/simbolo abrir.png" alt="simbolo abrir sobre" style="display: none;"></button>
+            <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO <img id="abrir-sobre-asserção"
+                src="assets/simbolo abrir.png" alt="simbolo abrir sobre" style="display: none;"></button>
           </div>
+          <section id="modal-asserção-mobile" style="display: none;">
+            <div id="dark-gray">
+              <p id="texto-modal-asserção">Além de avaliar as proposições isoladamente, o desafio é analisar as possíveis
+                relações entre elas.
+                Trata-se de um exercício de inferência na leitura. Deve-se colocar em jogo as informações explícitas
+                nas proposições e seus conhecimentos prévios sobre o tema, de modo a verificar se a segunda proposição
+                explica ou justifica a primeira. Devido a esta complexidade de habilidades mobilizadas, este tipo de
+                questão é bastante utilizado em avaliações como o ENADE.</p>
+            </div>
+          </section>
           <div id="gray">
             <p id="dica-asserção">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
-              resolução (símbolo <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                alt="icone cursor">) e ter o feedback sobre ela.</p>
+              resolução (símbolo <span class="highlight-pink"> <img class="imagem-cursor"
+                  src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></span> ) e ter o feedback sobre
+              ela.</p>
           </div>
           <article>
             <section id="conteudo-asserção">
@@ -292,40 +306,42 @@
                 <h class="titulo-secundário"> QUESTÃO</h>
                 <p class="textos">Leia, a seguir, uma análise do historiador Jacques Le Goff a respeito do tempo na
                   Idade Média:</p>
-                <p id="sublinhado-rosa-1" class="textos-sublinhado" onclick="estrategia1Appear()"><i>Da mesma forma que
-                    o
-                    camponês, o mercador
-                    está submetido, na sua atividade profissional, em primeiro lugar, ao tempo meteorológico, ao ciclo
-                    das estações, à imprevisibilidade das intempéries e dos cataclismos naturais. Neste aspecto, e
-                    durante muito tempo, ele só necessitou de submissão à ordem da natureza e de Deus e só teve, como
-                    meio de ação, a oração e as práticas supersticiosas. Mas quando se organiza uma rede comercial, o
-                    tempo torna-se objeto de medida. A demora de uma viagem, por mar ou por terra, de um lugar para
-                    outro, o problema dos preços que, no decorrer de uma mesma operação comercial, e mais ainda quando o
-                    circuito se complica, sobem ou descem, aumentam ou diminuem os lucros, a duração do trabalho
-                    artesanal ou operário (o mercador é também quase sempre um dador de trabalho) - tudo isso se impõe
-                    cada vez mais à sua atenção e se torna objeto de regulamentação cada vez mais minuciosa. <img
-                      class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                      alt="icone cursor"></i><strong> 1</strong></p>
+                <p id="sublinhado-rosa-1" class="textos-sublinhado" onclick="estrategia1Appear()"> Da mesma forma que
+                  o
+                  camponês, o mercador
+                  está submetido, na sua atividade profissional, em primeiro lugar, ao tempo meteorológico, ao ciclo
+                  das estações, à imprevisibilidade das intempéries e dos cataclismos naturais. Neste aspecto, e
+                  durante muito tempo, ele só necessitou de submissão à ordem da natureza e de Deus e só teve, como
+                  meio de ação, a oração e as práticas supersticiosas. Mas quando se organiza uma rede comercial, o
+                  tempo torna-se objeto de medida. A demora de uma viagem, por mar ou por terra, de um lugar para
+                  outro, o problema dos preços que, no decorrer de uma mesma operação comercial, e mais ainda quando o
+                  circuito se complica, sobem ou descem, aumentam ou diminuem os lucros, a duração do trabalho
+                  artesanal ou operário (o mercador é também quase sempre um dador de trabalho) - tudo isso se impõe
+                  cada vez mais à sua atenção e se torna objeto de regulamentação cada vez mais minuciosa. <span
+                    class="highlight-pink"><img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                      alt="icone cursor"><strong> 1</strong></span></p>
                 <p id="bibliografia-asserção" class="textos">LE GOFF, Jacques. <strong>Para um novo conceito de Idade
                     Média: Tempo, Trabalho e
                     Cultura no ocidente.</strong>Lisboa: Editorial Estampa, 1979.p. 51. (Adaptado).</p>
                 <p id="sublinhado-rosa-2" class="textos-sublinhado" onclick="estrategia2Appear()">Com base no trecho e
                   em
                   seus conhecimentos
-                  sobre concepções do tempo, avalie as proposições e a relação entre elas: <img class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 2</strong></p>
+                  sobre concepções do tempo, avalie as proposições e a relação entre elas: <span
+                    class="highlight-pink"><img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                      alt="icone cursor"><strong> 2</strong></span></p>
                 <p class="textos"><strong>I.A concepção de tempo dos mercadores transformou-se ao longo da Idade Média
                     deixando de ser apenas uma noção meteorológica e ligada com a natureza.</strong></p>
-                <p id="sublinhado-rosa-3" class="textos-sublinhado" onclick="estrategia3Appear()">PORQUE <img
-                    class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong>
-                    3</strong></p>
+                <p id="sublinhado-rosa-3" class="textos-sublinhado" onclick="estrategia3Appear()">PORQUE <span
+                    class="highlight-pink"><img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                      alt="icone cursor"><strong>
+                      3</strong></span></p>
                 <p class="textos"><strong>II.A noção de tempo enquanto medida tornou-se essencial para a organização de
                     atividades econômicas dos mercadores como, entre outras, o estabelecimento de rotas comerciais, a
                     definição de preços e cálculo do custo da mão-de-obra.</strong></p>
                 <p id="sublinhado-rosa-4" class="textos-sublinhado" onclick="estrategia4Appear()">Assinale a opção
-                  correta: <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                    alt="icone cursor"><strong>
-                    4</strong></p>
+                  correta: <span class="highlight-pink"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong>
+                      4</strong></span></p>
                 <p class="textos">As asserções I e II são proposições verdadeiras, e a II é uma justificativa da I.<br>
                   As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa da I. <br>
                   A asserção I é uma proposição verdadeira, e a II é uma proposição falsa. <br>
@@ -333,9 +349,9 @@
                   As asserções I e II são proposições falsas.</p>
                 <p id="sublinhado-rosa-5" class="textos-sublinhado" onclick="estrategia5Appear()">Qual será a
                   alternativa
-                  correta? <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                    alt="icone cursor"><strong>
-                    5</strong></p>
+                  correta? <span class="highlight-pink"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong>
+                      5</strong></span></p>
               </div>
               <div id="pink-right">
                 <h class="titulo-secundário">ESTRATÉGIAS</h>

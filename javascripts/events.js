@@ -333,7 +333,7 @@ function questãoAsserção() {
     boxPraticarRespostaUnica.classList.add('disappear');
     boxPraticarRespostasMultiplas.classList.add('hidden-div');
     boxPraticarRespostasMultiplas.classList.add('disappear');
-    
+
     var Text1 = document.getElementById("text-1");
     var Text2 = document.getElementById("text-2");
     var Text3 = document.getElementById("text-3");
@@ -377,7 +377,7 @@ function questãoAsserção() {
         Botao2.style.borderTop = "none";
         Botao1.style.borderTop = "none";
         Botao4.style.borderRight = "none";
-        Botao0.style.borderRight = "3px solid #343434" 
+        Botao0.style.borderRight = "3px solid #343434"
         opçãoMenu.style.left = "50%";
         opçãoMenu.style.transform = "translateX(-50%)"
       }
@@ -733,36 +733,126 @@ function voltarEstrategiasRespostasMultiplas() {
 //FUNÇÕES APARECER ESTRATÉGIAS ASSERÇÃO
 
 function estrategia1Appear() {
-  estrategia1.style.display = "block";
-  sublinhadoRosa1.style.backgroundColor = "#FFB5FF"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategia1.style.display = "block";
+    }
+    else {
+      estrategia1.style.display = "block";
+      sublinhadoRosa1.style.backgroundColor = "#FFB5FF"
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 function estrategia2Appear() {
-  estrategia2.style.display = "block";
-  sublinhadoRosa2.style.backgroundColor = "#FFB5FF"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategia2.style.display = "block";
+    }
+    else {
+      estrategia2.style.display = "block";
+      sublinhadoRosa2.style.backgroundColor = "#FFB5FF"
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 function estrategia3Appear() {
-  estrategia3.style.display = "block";
-  sublinhadoRosa3.style.backgroundColor = "#FFB5FF"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategia3.style.display = "block";
+    }
+    else {
+      estrategia3.style.display = "block";
+      sublinhadoRosa3.style.backgroundColor = "#FFB5FF"
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 function estrategia4Appear() {
-  estrategia4.style.display = "block";
-  sublinhadoRosa4.style.backgroundColor = "#FFB5FF"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategia4.style.display = "block";
+    }
+    else {
+      estrategia4.style.display = "block";
+      sublinhadoRosa4.style.backgroundColor = "#FFB5FF"
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 function estrategia5Appear() {
-  estrategia5.style.display = "block";
-  sublinhadoRosa5.style.backgroundColor = "#FFB5FF"
-  respostaAsserção.style.display = "block";
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategia5.style.display = "block";
+      respostaAsserção.style.display = "block";
+    }
+    else {
+      estrategia5.style.display = "block";
+      sublinhadoRosa5.style.backgroundColor = "#FFB5FF"
+      respostaAsserção.style.display = "block";
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 // FUNÇÃO ABRIR POP-UP SOBRE O TIPO DE QUESTÃO
 
+let ModalAsserçãoMobile = document.getElementById("modal-asserção-mobile");
+let AbrirSobreAsserção = document.getElementById("abrir-sobre-asserção");
+var PopUpAberto=0;
+
 function sobreAsserção() {
-  modalAsserção.style.display = "block";
-  modalBackground.style.display = "block";
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+  function ModalAsserçãoResponsivo() {
+    if (mediaMobile.matches && PopUpAberto==0) {
+      ModalAsserçãoMobile.style.display = "block";
+      AbrirSobreAsserção.style.transform = "rotate(360deg)";
+      PopUpAberto+=1;
+    }
+    else if (mediaMobile.matches && PopUpAberto==1) {
+      ModalAsserçãoMobile.style.display = "none";
+      AbrirSobreAsserção.style.transform = "rotate(180deg)";
+      PopUpAberto-=1;
+    }
+    else {
+      modalAsserção.style.display = "block";
+      modalBackground.style.display = "block";
+    }
+  }
+  mediaMobile.addEventListener('change', ModalAsserçãoResponsivo);
+
+  // Chama a função inicialmente
+  ModalAsserçãoResponsivo();
 }
 
 //FUNÇÕES APARECER ESTRATÉGIAS LACUNA

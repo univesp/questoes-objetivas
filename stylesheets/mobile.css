@@ -1,126 +1,168 @@
-@media only screen and (max-width: 1000px){
-    .page-title{
+@media only screen and (max-width: 1000px) {
+    .page-title {
         font-size: 40px;
     }
-    .container{
+
+    .container {
         max-width: fit-content;
         /*gap: 150px;*/
         width: 100vw;
         margin-left: 0px;
     }
 
-    nav > .container{
+    nav>.container {
         padding-left: 20px;
     }
 
-    .logo{
+    .logo {
         margin-right: 150px;
     }
-    .home-page{
+
+    .home-page {
         flex-direction: column;
         gap: 30px;
         margin-top: 0px;
     }
-    .page-content{
+
+    .page-content {
         display: none;
     }
-    #page-content-mobile{
+
+    #page-content-mobile {
         display: block !important;
         padding: 0px 50px 0px 50px;
         font-family: "Open Sans", sans-serif;
         margin-top: 20px;
         text-align: center;
-        width:fit-content;
+        width: fit-content;
         font-size: 20px;
     }
-    #imegem-home-mobile{
+
+    #imegem-home-mobile {
         display: flex;
         flex-direction: column-reverse;
     }
-    .ilustração-home{
+
+    .ilustração-home {
         position: relative;
         width: 300px;
         left: 50%;
         transform: translateX(-50%);
 
     }
-    .home-page-content{
+
+    .home-page-content {
         padding-left: 0px;
     }
-    #iniciar{
+
+    #iniciar {
         margin-top: 30px;
     }
-    .black, .retangulo, .linhas{
+
+    .black,
+    .retangulo,
+    .linhas {
         display: none;
     }
-    #opções-menu{
+
+    #opções-menu {
         position: relative;
         flex-wrap: wrap;
         padding-right: 0px;
         margin-bottom: 30px;
         align-items: center;
     }
-    .bloco-1, .bloco-2, .bloco-3, .bloco-4, .bloco-5{
+
+    .bloco-1,
+    .bloco-2,
+    .bloco-3,
+    .bloco-4,
+    .bloco-5 {
         width: 150px;
         height: 150px;
     }
-    .imagens{
+
+    .imagens {
         margin-left: 30px;
     }
-    .menu-title{
+
+    .menu-title {
         font-size: 25px;
         text-align: center;
         padding: 0px 10px 10px 10px;
     }
-    #box{
+
+    #box {
         background-color: #CFFFDD;
         border: none;
     }
-    .bloco-3, .bloco-5{
+
+    .bloco-3,
+    .bloco-5 {
         border-left: 3px solid #343434;
     }
 
-    .bloco-3, .bloco-4, .bloco-5{
+    .bloco-3,
+    .bloco-4,
+    .bloco-5 {
         border-top: none;
     }
 
-    #asserção-1, #asserção-2{
+    #asserção-1,
+    #asserção-2 {
         width: 70px;
         height: 70px;
     }
-    #lacuna-1, #lacuna-2{
+
+    #lacuna-1,
+    #lacuna-2 {
         width: 70px;
         height: 70px;
     }
-    #associação-1, #associação-2{
+
+    #associação-1,
+    #associação-2 {
         width: 70px;
         height: 70px;
     }
-    #resposta-unica-1, #resposta-unica-2{
+
+    #resposta-unica-1,
+    #resposta-unica-2 {
         width: 70px;
         height: 70px;
     }
-    #multiplas-1, #multiplas-2{
+
+    #multiplas-1,
+    #multiplas-2 {
         width: 70px;
         height: 70px;
     }
-    #text-1, #text-2, #text-3, #text-4, #text-5{
+
+    #text-1,
+    #text-2,
+    #text-3,
+    #text-4,
+    #text-5 {
         font-size: 12px;
         padding-top: 5px;
     }
-    #box{
+
+    #box {
         height: auto;
     }
-    #box-asserção{
+
+    #box-asserção {
         width: 100vw;
         margin-left: -15px;
         border: none;
     }
-    #menu-asserção{
+
+    #menu-asserção {
         flex-wrap: wrap;
         margin-left: -30px;
     }
-    .bloco-0{
+
+    .bloco-0 {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -128,11 +170,13 @@
         height: fit-content;
         padding: 5px;
     }
-    #text-0{
+
+    #text-0 {
         width: 30%;
         font-size: 20px;
     }
-    #botão-inicio{
+
+    #botão-inicio {
         position: relative;
         width: 350px;
         margin-left: 5px;
@@ -140,49 +184,62 @@
         transform: translateX(-50%);
 
     }
-    #inicio-1,  #inicio-2 {
+
+    #inicio-1,
+    #inicio-2 {
         /*
         position: absolute;
         left: 20px;*/
         height: 50px;
         width: 50px;
     }
-    #pink{
+
+    #pink {
         flex-wrap: wrap;
         padding: 0px;
         border: 3px solid #343434;
     }
-    #titulo-asserção{
+
+    #titulo-asserção {
         font-size: 22px;
     }
-    #sobre-asserção{
+
+    #sobre-asserção {
         left: 0px;
         width: 100vw;
         display: flex;
+        padding: 5px 10px 5px 70px;
     }
-    #questão-asserção{
+
+    #questão-asserção {
         height: 60px;
         width: 60px;
         margin-left: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    #dica-asserção{
+
+    #dica-asserção {
         padding-right: 10px;
     }
-    #pink-right{
+
+    #pink-right {
         display: none;
     }
-    #conteudo-principal-asserção{
+
+    #conteudo-principal-asserção {
         width: 100vw;
     }
-    #resposta-asserção{
+
+    #resposta-asserção {
         padding-right: 30px;
     }
-    #vamos-praticar{
+
+    #vamos-praticar {
         padding: 0px;
     }
-    #abrir-sobre{
+
+    #abrir-sobre-asserção {
         display: block !important;
         position: relative;
         left: 20px;
@@ -190,5 +247,21 @@
         height: auto;
         transform: rotate(180deg);
         top: -5px;
+    }
+
+    .textos-sublinhado:hover {
+        background-color: white;
+    }
+
+    #dark-gray {
+        background-color: #4d4d4d;
+    }
+
+    #texto-modal-asserção {
+        color: white;
+        padding: 20px;
+        text-align: left;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
     }
 }

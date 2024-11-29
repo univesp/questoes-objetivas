@@ -1625,3 +1625,8 @@ input[type="checkbox"]:checked+label::before {
 #cursor-3-resposta-unica{
   margin-left: 20px;
 }
+.highlight-pink{
+  background-color: #FFB5FF;
+  border: 5px solid #FFB5FF;
+  border-radius: 7px;
+}
