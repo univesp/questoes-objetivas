@@ -1630,3 +1630,11 @@ input[type="checkbox"]:checked+label::before {
   border: 5px solid #FFB5FF;
   border-radius: 7px;
 }
+#highlight-pink-inicio{
+  background-color: #FFB5FF;
+  border: 5px solid #FFB5FF;
+  border-radius: 7px;
+}
+#estratégias-asserção-mobile{
+  display: none;
+}

@@ -281,12 +281,13 @@
           <div id="pink">
             <img id="questão-asserção" src="assets/1. asserção razão.svg" alt="icone questão asserção-razão">
             <p id="titulo-asserção">ASSERÇÃO-RAZÃO</p>
-            <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO <img id="abrir-sobre-asserção"
-                src="assets/simbolo abrir.png" alt="simbolo abrir sobre" style="display: none;"></button>
+            <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO <img style="display: none"
+                id="abrir-sobre-asserção" src="assets/simbolo abrir.png" alt="simbolo abrir sobre"></button>
           </div>
           <section id="modal-asserção-mobile" style="display: none;">
             <div id="dark-gray">
-              <p id="texto-modal-asserção">Além de avaliar as proposições isoladamente, o desafio é analisar as possíveis
+              <p id="texto-modal-asserção">Além de avaliar as proposições isoladamente, o desafio é analisar as
+                possíveis
                 relações entre elas.
                 Trata-se de um exercício de inferência na leitura. Deve-se colocar em jogo as informações explícitas
                 nas proposições e seus conhecimentos prévios sobre o tema, de modo a verificar se a segunda proposição
@@ -296,7 +297,7 @@
           </section>
           <div id="gray">
             <p id="dica-asserção">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
-              resolução (símbolo <span class="highlight-pink"> <img class="imagem-cursor"
+              resolução (símbolo <span id="highlight-pink-inicio"> <img class="imagem-cursor"
                   src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></span> ) e ter o feedback sobre
               ela.</p>
           </div>
@@ -389,7 +390,7 @@
               </div>
             </section>
             <button id="vamos-praticar" onmouseover="invertPraticar()" onmouseout="convertPraticar()"
-              onclick="vamosPraticarAsserção()"><img id="img-praticar" class="img-vamos-praticar"
+              onclick="vamosPraticarAsserção()" style="display: none;"><img id="img-praticar" class="img-vamos-praticar"
                 src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
                 id="img-praticar-invertido" class="img-vamos-praticar" src="assets/vamos praticar - invertido.svg"
                 alt="icone vamos praticar invertido">
@@ -401,10 +402,24 @@
           <div id="pink">
             <img id="questão-asserção" src="assets/1. asserção razão.svg" alt="icone questão asserção-razão">
             <p id="titulo-asserção">ASSERÇÃO-RAZÃO</p>
-            <button id="sobre-asserção" onclick="sobreAsserção()">SOBRE ESTE TIPO DE QUESTÃO</button>
+            <button id="sobre-asserção" onclick="sobreAsserçãoPraticar()">SOBRE ESTE TIPO DE QUESTÃO <img style="display: none;"
+                id="abrir-sobre-asserção-praticar" src="assets/simbolo abrir.png" alt="simbolo abrir sobre"></button>
           </div>
+          <section id="modal-asserção-mobile-praticar" style="display: none;">
+            <div id="dark-gray">
+              <p id="texto-modal-asserção">Além de avaliar as proposições isoladamente, o desafio é analisar as
+                possíveis
+                relações entre elas.
+                Trata-se de um exercício de inferência na leitura. Deve-se colocar em jogo as informações explícitas
+                nas proposições e seus conhecimentos prévios sobre o tema, de modo a verificar se a segunda proposição
+                explica ou justifica a primeira. Devido a esta complexidade de habilidades mobilizadas, este tipo de
+                questão é bastante utilizado em avaliações como o ENADE.</p>
+            </div>
+          </section>
           <div id="gray">
-            <p id="dica-asserção">Agora é com você!</p>
+            <p id="dica-asserção">Agora é com você! <br>
+              <span id="estratégias-asserção-mobile">Comece avaliando as asserções individualmente. Elas são verdadeiras ou falsas dentro do contexto e dos conceitos estudados? Se as duas forem consideradas verdadeiras e coerentes entre si, tente ligá-las usando "porque", "em razão de" ou "por meio de". Se fizer sentido em termos conceituais, a segunda pode ser considerada uma justificativa para a primeira.</span>
+            </p>
           </div>
           <article>
             <section id="conteudo-asserção">

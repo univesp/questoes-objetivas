@@ -156,88 +156,242 @@ let boxPraticarRespostasMultiplas = document.getElementById('box-praticar-respos
 
 //Função para inverter imagem menu ao passar o mouse
 function invertAsserção() {
-  asserção1.classList.add('hidden-div');
-  asserção2.classList.remove('hidden-div');
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      asserção1.classList.add('hidden-div');
+      asserção2.classList.remove('hidden-div');
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para converter a imagem ao passar o mouse
 function convertAsserção() {
-  asserção1.classList.remove('hidden-div');
-  asserção2.classList.add('hidden-div');
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      asserção1.classList.remove('hidden-div');
+      asserção2.classList.add('hidden-div');
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para inverter imagem menu ao passar o mouse
 function invertLacuna() {
-  lacuna1.classList.add('hidden-div');
-  lacuna2.classList.remove('hidden-div');
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      lacuna1.classList.add('hidden-div');
+      lacuna2.classList.remove('hidden-div');
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para converter a imagem ao passar o mouse
 function convertLacuna() {
-  lacuna1.classList.remove('hidden-div');
-  lacuna2.classList.add('hidden-div');
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      lacuna1.classList.remove('hidden-div');
+      lacuna2.classList.add('hidden-div');
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para inverter imagem menu ao passar o mouse
 function invertAssociação() {
-  associação1.classList.add('hidden-div');
-  associação2.classList.remove('hidden-div');
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      associação1.classList.add('hidden-div');
+      associação2.classList.remove('hidden-div');
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para converter a imagem ao passar o mouse
 function convertAssociação() {
-  associação1.classList.remove('hidden-div');
-  associação2.classList.add('hidden-div');
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      associação1.classList.remove('hidden-div');
+      associação2.classList.add('hidden-div');
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para inverter imagem menu ao passar o mouse
 function invertRespostaUnica() {
-  respostaUnica1.classList.add('hidden-div');
-  respostaUnica2.classList.remove('hidden-div');
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      respostaUnica1.classList.add('hidden-div');
+      respostaUnica2.classList.remove('hidden-div');
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para converter a imagem ao passar o mouse
 function convertRespostaUnica() {
-  respostaUnica1.classList.remove('hidden-div');
-  respostaUnica2.classList.add('hidden-div');
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      respostaUnica1.classList.remove('hidden-div');
+      respostaUnica2.classList.add('hidden-div');
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para inverter imagem menu ao passar o mouse
 function invertMultiplas() {
-  multiplas1.classList.add('hidden-div');
-  multiplas2.classList.remove('hidden-div');
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      multiplas1.classList.add('hidden-div');
+      multiplas2.classList.remove('hidden-div');
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para converter a imagem ao passar o mouse
 function convertMultiplas() {
-  multiplas1.classList.remove('hidden-div');
-  multiplas2.classList.add('hidden-div');
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      multiplas1.classList.remove('hidden-div');
+      multiplas2.classList.add('hidden-div');
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para inverter imagem menu ao passar o mouse
 function invertPraticar() {
-  praticar1.style.display = "none";
-  praticar2.style.display = "block";
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      praticar1.style.display = "none";
+      praticar2.style.display = "block";
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para converter a imagem ao passar o mouse
 function convertPraticar() {
-  praticar1.style.display = "block";
-  praticar2.style.display = "none";
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      praticar1.style.display = "block";
+      praticar2.style.display = "none";
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para inverter imagem menu ao passar o mouse
 function invertInicio() {
-  inicio1.style.display = "none";
-  inicio2.style.display = "block";
-  text.style.color = "#343434";
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      inicio1.style.display = "none";
+      inicio2.style.display = "block";
+      text.style.color = "#343434";
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para converter a imagem ao passar o mouse
 function convertInicio() {
-  inicio1.style.display = "block";
-  inicio2.style.display = "none";
-  text.style.color = "#ffffff";
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      inicio1.style.display = "block";
+      inicio2.style.display = "none";
+      text.style.color = "#ffffff";
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para inverter imagem menu ao passar o mouse
@@ -732,22 +886,33 @@ function voltarEstrategiasRespostasMultiplas() {
 
 //FUNÇÕES APARECER ESTRATÉGIAS ASSERÇÃO
 
+var AsserçãoEstrategiaCheck1 = 0;
+var AsserçãoEstrategiaCheck2 = 0;
+var AsserçãoEstrategiaCheck3 = 0;
+var AsserçãoEstrategiaCheck4 = 0;
+var AsserçãoEstrategiaCheck5 = 0;
+
 function estrategia1Appear() {
   const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
 
   function adjustLayout() {
     if (mediaMobile.matches) {
       estrategia1.style.display = "block";
+      estrategia1.parentElement.removeChild(estrategia1); //Remove a estratégia do elemento pai atual
+      sublinhadoRosa1.appendChild(estrategia1); //Adiciona a estratégia no local adequado para versão mobile 
+      AsserçãoEstrategiaCheck1 += 1;
     }
     else {
       estrategia1.style.display = "block";
       sublinhadoRosa1.style.backgroundColor = "#FFB5FF"
+      AsserçãoEstrategiaCheck1 += 1;
     }
   }
   mediaMobile.addEventListener('change', adjustLayout);
 
   // Chama a função inicialmente
   adjustLayout();
+  BotãoPraticarAsserção();
 }
 
 function estrategia2Appear() {
@@ -756,16 +921,21 @@ function estrategia2Appear() {
   function adjustLayout() {
     if (mediaMobile.matches) {
       estrategia2.style.display = "block";
+      estrategia2.parentElement.removeChild(estrategia2); //Remove a estratégia do elemento pai atual
+      sublinhadoRosa2.appendChild(estrategia2); //Adiciona a estratégia no local adequado para versão mobile 
+      AsserçãoEstrategiaCheck2 += 1;
     }
     else {
       estrategia2.style.display = "block";
       sublinhadoRosa2.style.backgroundColor = "#FFB5FF"
+      AsserçãoEstrategiaCheck2 += 1;
     }
   }
   mediaMobile.addEventListener('change', adjustLayout);
 
   // Chama a função inicialmente
   adjustLayout();
+  BotãoPraticarAsserção();
 }
 
 function estrategia3Appear() {
@@ -774,16 +944,21 @@ function estrategia3Appear() {
   function adjustLayout() {
     if (mediaMobile.matches) {
       estrategia3.style.display = "block";
+      estrategia3.parentElement.removeChild(estrategia3); //Remove a estratégia do elemento pai atual
+      sublinhadoRosa3.appendChild(estrategia3); //Adiciona a estratégia no local adequado para versão mobile 
+      AsserçãoEstrategiaCheck3 += 1;
     }
     else {
       estrategia3.style.display = "block";
       sublinhadoRosa3.style.backgroundColor = "#FFB5FF"
+      AsserçãoEstrategiaCheck3 += 1;
     }
   }
   mediaMobile.addEventListener('change', adjustLayout);
 
   // Chama a função inicialmente
   adjustLayout();
+  BotãoPraticarAsserção();
 }
 
 function estrategia4Appear() {
@@ -792,16 +967,21 @@ function estrategia4Appear() {
   function adjustLayout() {
     if (mediaMobile.matches) {
       estrategia4.style.display = "block";
+      estrategia4.parentElement.removeChild(estrategia4); //Remove a estratégia do elemento pai atual
+      sublinhadoRosa4.appendChild(estrategia4); //Adiciona a estratégia no local adequado para versão mobile 
+      AsserçãoEstrategiaCheck4 += 1;
     }
     else {
       estrategia4.style.display = "block";
       sublinhadoRosa4.style.backgroundColor = "#FFB5FF"
+      AsserçãoEstrategiaCheck4 += 1;
     }
   }
   mediaMobile.addEventListener('change', adjustLayout);
 
   // Chama a função inicialmente
   adjustLayout();
+  BotãoPraticarAsserção();
 }
 
 function estrategia5Appear() {
@@ -810,39 +990,71 @@ function estrategia5Appear() {
   function adjustLayout() {
     if (mediaMobile.matches) {
       estrategia5.style.display = "block";
+      estrategia5.parentElement.removeChild(estrategia5); //Remove a estratégia do elemento pai atual
+      sublinhadoRosa5.appendChild(estrategia5); //Adiciona a estratégia no local adequado para versão mobile 
       respostaAsserção.style.display = "block";
+      AsserçãoEstrategiaCheck5 += 1;
     }
     else {
       estrategia5.style.display = "block";
       sublinhadoRosa5.style.backgroundColor = "#FFB5FF"
       respostaAsserção.style.display = "block";
+      AsserçãoEstrategiaCheck5 += 1;
     }
   }
   mediaMobile.addEventListener('change', adjustLayout);
 
   // Chama a função inicialmente
   adjustLayout();
+  BotãoPraticarAsserção();
 }
 
 // FUNÇÃO ABRIR POP-UP SOBRE O TIPO DE QUESTÃO
 
 let ModalAsserçãoMobile = document.getElementById("modal-asserção-mobile");
+let ModalAsserçãoMobilePraticar = document.getElementById("modal-asserção-mobile-praticar");
 let AbrirSobreAsserção = document.getElementById("abrir-sobre-asserção");
-var PopUpAberto=0;
+let AbrirSobreAsserçãoPraticar = document.getElementById("abrir-sobre-asserção-praticar");
+var PopUpAberto = 0;
 
 function sobreAsserção() {
   const mediaMobile = window.matchMedia("(max-width: 1000px)");
 
   function ModalAsserçãoResponsivo() {
-    if (mediaMobile.matches && PopUpAberto==0) {
+    if (mediaMobile.matches && PopUpAberto == 0) {
       ModalAsserçãoMobile.style.display = "block";
       AbrirSobreAsserção.style.transform = "rotate(360deg)";
-      PopUpAberto+=1;
+      PopUpAberto += 1;
     }
-    else if (mediaMobile.matches && PopUpAberto==1) {
+    else if (mediaMobile.matches && PopUpAberto == 1) {
       ModalAsserçãoMobile.style.display = "none";
       AbrirSobreAsserção.style.transform = "rotate(180deg)";
-      PopUpAberto-=1;
+      PopUpAberto -= 1;
+    }
+    else {
+      modalAsserção.style.display = "block";
+      modalBackground.style.display = "block";
+    }
+  }
+  mediaMobile.addEventListener('change', ModalAsserçãoResponsivo);
+
+  // Chama a função inicialmente
+  ModalAsserçãoResponsivo();
+}
+
+function sobreAsserçãoPraticar() {
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+  function ModalAsserçãoResponsivo() {
+    if (mediaMobile.matches && PopUpAberto == 0) {
+      ModalAsserçãoMobilePraticar.style.display = "block";
+      AbrirSobreAsserçãoPraticar.style.transform = "rotate(360deg)";
+      PopUpAberto += 1;
+    }
+    else if (mediaMobile.matches && PopUpAberto == 1) {
+      ModalAsserçãoMobilePraticar.style.display = "none";
+      AbrirSobreAsserçãoPraticar.style.transform = "rotate(180deg)";
+      PopUpAberto -= 1;
     }
     else {
       modalAsserção.style.display = "block";
@@ -1252,20 +1464,13 @@ function checkboxRespostasMultiplas5(checkbox) {
     console.log('ESTOU CHECADO');
   }
 }
-/*
-// AJUSTES DE RESPONSIVIDADE PARA MOBILE
-var Text1 = document.getElementById("text-1");
-const mediaMobile = window.matchMedia("(max-width: 1000px)");
 
-function adjustLayout() {
-  if (mediaMobile.matches) {
-    // Ajuste para dispositivos móveis
-      Text1.style.display = "none";
-      document.body.style.backgroundColor = "lightblue";
+//FUNÇÕES PARA OS BOTÕES DE PRATICAR APARECER APÓS CLICAR EM TODAS AS ESTRATÉGIAS
+
+let BotãoVamosPraticarAsserção = document.getElementById("vamos-praticar");
+
+function BotãoPraticarAsserção() {
+  if (AsserçãoEstrategiaCheck1 == 1 && AsserçãoEstrategiaCheck2 == 1 && AsserçãoEstrategiaCheck3 == 1 && AsserçãoEstrategiaCheck4 == 1 && AsserçãoEstrategiaCheck5 == 1) {
+    BotãoVamosPraticarAsserção.style.display = "flex";
   }
 }
-
-mediaMobile.addEventListener('change', adjustLayout);
-
-// Chama a função inicialmente
-adjustLayout();*/

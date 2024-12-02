@@ -249,6 +249,16 @@
         top: -5px;
     }
 
+    #abrir-sobre-asserção-praticar {
+        display: block !important;
+        position: relative;
+        left: 20px;
+        width: 30px;
+        height: auto;
+        transform: rotate(180deg);
+        top: -5px;
+    }
+
     .textos-sublinhado:hover {
         background-color: white;
     }
@@ -263,5 +273,84 @@
         text-align: left;
         font-family: "Open Sans", sans-serif;
         font-size: 16px;
+        margin-bottom: -10px;
+    }
+
+    .textos-estratégias {
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    .highlight-pink {
+        margin-top: 10px;
+        display: block;
+        width: fit-content;
+    }
+
+    .bloco-0:hover {
+        background-color: #343434;
+        color: inherit;
+    }
+
+    .bloco-1:hover {
+        background-color: #FF8BFF;
+        color: inherit;
+    }
+
+    .bloco-2:hover {
+        background-color: #F2FF53;
+        color: inherit;
+    }
+
+    .bloco-3:hover {
+        background-color: #5EF267;
+        color: inherit;
+    }
+
+    .bloco-4:hover {
+        background-color: #4DDFFF;
+        color: inherit;
+    }
+
+    .bloco-5:hover {
+        background-color: #B9BEFF;
+        color: inherit;
+    }
+
+    #sobre-asserção:hover {
+        background-color: #343434;
+        color: white;
+    }
+
+    #vamos-praticar:hover {
+        background-color: #343434;
+        color: white;
+    }
+
+    #iniciar:hover {
+        background-color: #343434;
+        color: white;
+    }
+
+    #box-praticar-asserção {
+        width: 100vw;
+        margin-left: -15px;
+        border: none;
+    }
+
+    #estratégias-asserção-mobile {
+        display: block;
+    }
+
+    #alternativa-1-asserção,
+    #alternativa-2-asserção,
+    #alternativa-3-asserção,
+    #alternativa-4-asserção,
+    #alternativa-5-asserção {
+        height: fit-content;
+    }
+    #resposta-praticar-asserção{
+        padding-right: 30px;
     }
 }
