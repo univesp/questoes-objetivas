@@ -402,8 +402,9 @@
           <div id="pink">
             <img id="questão-asserção" src="assets/1. asserção razão.svg" alt="icone questão asserção-razão">
             <p id="titulo-asserção">ASSERÇÃO-RAZÃO</p>
-            <button id="sobre-asserção" onclick="sobreAsserçãoPraticar()">SOBRE ESTE TIPO DE QUESTÃO <img style="display: none;"
-                id="abrir-sobre-asserção-praticar" src="assets/simbolo abrir.png" alt="simbolo abrir sobre"></button>
+            <button id="sobre-asserção" onclick="sobreAsserçãoPraticar()">SOBRE ESTE TIPO DE QUESTÃO <img
+                style="display: none;" id="abrir-sobre-asserção-praticar" src="assets/simbolo abrir.png"
+                alt="simbolo abrir sobre"></button>
           </div>
           <section id="modal-asserção-mobile-praticar" style="display: none;">
             <div id="dark-gray">
@@ -418,7 +419,10 @@
           </section>
           <div id="gray">
             <p id="dica-asserção">Agora é com você! <br>
-              <span id="estratégias-asserção-mobile">Comece avaliando as asserções individualmente. Elas são verdadeiras ou falsas dentro do contexto e dos conceitos estudados? Se as duas forem consideradas verdadeiras e coerentes entre si, tente ligá-las usando "porque", "em razão de" ou "por meio de". Se fizer sentido em termos conceituais, a segunda pode ser considerada uma justificativa para a primeira.</span>
+              <span class="estratégias-mobile">Comece avaliando as asserções individualmente. Elas são verdadeiras
+                ou falsas dentro do contexto e dos conceitos estudados? Se as duas forem consideradas verdadeiras e
+                coerentes entre si, tente ligá-las usando "porque", "em razão de" ou "por meio de". Se fizer sentido em
+                termos conceituais, a segunda pode ser considerada uma justificativa para a primeira.</span>
             </p>
           </div>
           <article>
@@ -556,12 +560,24 @@
           <div id="yellow">
             <img id="questão-lacuna" src="assets/2. lacuna.svg" alt="icone questão lacuna">
             <p id="titulo-lacuna">LACUNA</p>
-            <button id="sobre-lacuna" onclick="sobreLacuna()">SOBRE ESTE TIPO DE QUESTÃO</button>
+            <button id="sobre-lacuna" onclick="sobreLacuna()">SOBRE ESTE TIPO DE QUESTÃO <img style="display: none"
+                id="abrir-sobre-lacuna" src="assets/simbolo abrir.png" alt="simbolo abrir sobre"></button>
           </div>
+          <section id="modal-lacuna-mobile" style="display: none;">
+            <div id="dark-gray">
+              <p id="texto-modal-lacuna">É apresentada uma sentença ou parágrafo com uma ou mais palavras ou termos
+                faltantes,
+                representados geralmente por um espaço vazio ou uma lacuna. O objetivo é utilizar seus conhecimentos
+                sobre o
+                tema para identificar quais das palavras ou termos apresentados nas alternativas completam as lacunas
+                adequadamente e na ordem de leitura da sentença ou parágrafo.</p>
+            </div>
+          </section>
           <div id="gray">
             <p id="dica-lacuna">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
-              resolução (símbolo <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                alt="icone cursor">) e ter o feedback sobre ela.</p>
+              resolução (símbolo <span id="highlight-yellow-inicio"><img class="imagem-cursor"
+                  src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></span>) e ter o feedback sobre
+              ela.</p>
           </div>
           <article>
             <section id="conteudo-lacuna">
@@ -571,35 +587,38 @@
                 <img id="img-lacuna" src="assets/imagem questão lacuna.png"
                   alt="ilustração em preto e branco. No centro há a silhueta de duas figuras humanas segurando guarda-chuvas abertos. A da esquerda parece vestir calça e terno e traz uma das mãos viradas para o alto, a outra mão segura seu guarda-chuva aberto sobre si. A figura da direita veste um vestido ou sobretudo e saia e sapatos de salto. Uma das mãos segura o guarda-chuva sobre si e ela está virada para a direita, como se caminhasse para a direita, se afastando da outra figura. Há dois balões de fala com o seguinte texto: primeiro balão de fala “O tempo está estranho, melhor levarmos o guarda-chuva...”; e segundo balão de fala “Então é melhor nos apressarmos! Quero chegar a tempo no trabalho”.  "
                   onclick="estrategiaLacuna1Appear()">
-                <div id="cursor-1-lacuna">
-                  <img id="" class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg" alt="icone cursor">
-                  <p id=""><strong> 1</strong></p>
-                </div>
+                <span id="cursor-1-lacuna" class="highlight-yellow" onclick="estrategiaLacuna1Appear()">
+                  <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg" alt="icone cursor">
+                  <strong> 1</strong></span>
+                <p id="sublinhado-amarelo-1"></p>
                 <p id="sublinhado-amarelo-2" class="textos-sublinhado-lacuna" onclick="estrategiaLacuna2Appear()">A
                   palavra <strong>tempo</strong> é
                   empregada com dois significados <strong>[preencher
                     1]</strong> nas falas dos personagens. Enquanto no primeiro balão de fala a palavra tempo remete à
                   (ao) <strong>[preencher 2]</strong>, no segundo balão o termo assume o significado de
-                  <strong>[preencher 3]</strong>. <img class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 2</strong>
+                  <strong>[preencher 3]</strong>. <span class="highlight-yellow"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 2</strong></span>
                 </p>
                 <p id="sublinhado-amarelo-3" class="textos-sublinhado-lacuna" onclick="estrategiaLacuna3Appear()">
                   Assinale a alternativa que apresenta
                   palavras ou termos que corretamente completam as lacunas do trecho anterior, de acordo com sua ordem
-                  de leitura: <br><img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                    alt="icone cursor"> <strong> 3</strong></p>
+                  de leitura: <br><span class="highlight-yellow"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"> <strong> 3</strong></span>
+                </p>
                 <p id="sublinhado-amarelo-4" class="textos-sublinhado-lacuna" onclick="estrategiaLacuna4Appear()">(a) 1
                   –
                   iguais; 2 – estado da atmosfera; 3
                   – clima. <br>(b) 1 – iguais; 2 – duração; 3 – inflexões de um verbo. <br>(c) 1 – diferentes; 2 –
                   estado da atmosfera; 3 – prazo. <br>(d) 1 – diferentes; 2 – linguagem poética; 3 – estado da
-                  atmosfera. <img id="cursor-opções-lacuna" class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg"><strong> 4</strong><br>(e) 1 – diferentes; 2 –
+                  atmosfera. <span id="cursor-opções-lacuna" class="highlight-yellow"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg"><strong> 4</strong></span><br>(e) 1 – diferentes;
+                  2 –
                   ritmo; 3 – clima.
                 </p>
                 <p id="sublinhado-amarelo-5" class="textos-sublinhado-lacuna" onclick="estrategiaLacuna5Appear()">Qual
-                  será a alternativa correta? <img class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"> <strong> 5</strong></p>
+                  será a alternativa correta? <span class="highlight-yellow"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"> <strong> 5</strong></span>
+                </p>
               </div>
               <div id="yellow-right">
                 <h class="titulo-secundário">ESTRATÉGIAS</h>
@@ -641,9 +660,9 @@
               </div>
             </section>
             <button id="vamos-praticar-lacuna" onmouseover="invertPraticarLacuna()" onmouseout="convertPraticarLacuna()"
-              onclick="vamosPraticarLacuna()"><img id="img-praticar-lacuna" class="img-vamos-praticar"
-                src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
-                id="img-praticar-lacuna-invertido" class="img-vamos-praticar"
+              onclick="vamosPraticarLacuna()" style="display: none;"><img id="img-praticar-lacuna"
+                class="img-vamos-praticar" src="assets/rea questões objetivas - vamos praticar.svg"
+                alt="icone vamos praticar"><img id="img-praticar-lacuna-invertido" class="img-vamos-praticar"
                 src="assets/vamos praticar - invertido.svg" alt="icone vamos praticar invertido">
               <p id="texto-praticar">VAMOS PRATICAR?</p>
             </button>
@@ -653,11 +672,20 @@
           <div id="yellow">
             <img id="questão-lacuna" src="assets/2. lacuna.svg" alt="icone questão lacuna">
             <p id="titulo-lacuna">LACUNA</p>
-            <button id="sobre-lacuna" onclick="sobreLacuna()">SOBRE ESTE TIPO DE QUESTÃO</button>
+            <button id="sobre-lacuna" onclick="sobreLacunaPraticar()">SOBRE ESTE TIPO DE QUESTÃO <img
+                style="display: none" id="abrir-sobre-lacuna-praticar" src="assets/simbolo abrir.png"
+                alt="simbolo abrir sobre"></button>
           </div>
-          <div id="gray">
-            <p id="dica-lacuna">Agora é com você!</p>
-          </div>
+          <section id="modal-lacuna-mobile-praticar" style="display: none;">
+            <div id="dark-gray">
+              <p id="texto-modal-lacuna">É apresentada uma sentença ou parágrafo com uma ou mais palavras ou termos
+                faltantes,
+                representados geralmente por um espaço vazio ou uma lacuna. O objetivo é utilizar seus conhecimentos
+                sobre o
+                tema para identificar quais das palavras ou termos apresentados nas alternativas completam as lacunas
+                adequadamente e na ordem de leitura da sentença ou parágrafo.</p>
+            </div>
+          </section>
           <article>
             <section id="conteudo-lacuna">
               <div id="conteudo-principal-lacuna">
@@ -763,12 +791,26 @@
           <div id="green">
             <img id="questão-associação" src="assets/3. associação.svg" alt="icone questão associação">
             <p id="titulo-associação">ASSOCIAÇÃO</p>
-            <button id="sobre-associação" onclick="sobreAssociação()">SOBRE ESTE TIPO DE QUESTÃO</button>
+            <button id="sobre-associação" onclick="sobreAssociação()">SOBRE ESTE TIPO DE QUESTÃO<img
+                style="display: none" id="abrir-sobre-associação" src="assets/simbolo abrir.png"
+                alt="simbolo abrir sobre"></button>
           </div>
+          <section id="modal-associação-mobile" style="display: none;">
+            <div id="dark-gray">
+              <p id="texto-modal-associação">Duas listas de dados são apresentadas para serem utilizadas na resolução da
+                questão. O
+                desafio consiste em combinar itens dessas duas listas de acordo com a demanda ou regra exposta no
+                enunciado.
+                Note que não é obrigatório que cada elemento de uma das listas se relacione a um elemento da outra e que
+                mais
+                de um item de uma lista pode ter correspondência na outra.</p>
+            </div>
+          </section>
           <div id="gray">
             <p id="dica-associação">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
-              resolução (símbolo <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                alt="icone cursor">) e ter o feedback sobre ela.</p>
+              resolução (símbolo <span id="highlight-green-inicio"><img class="imagem-cursor"
+                  src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></span>) e ter o feedback sobre
+              ela.</p>
           </div>
           <article>
             <section id="conteudo-associação">
@@ -778,13 +820,13 @@
                   A
                   comunidade científica calcula que o planeta Terra possui 4,54 bilhões de anos. De modo a melhor
                   estudar esse grande intervalo de tempo, os cientistas o dividiram em unidades menores: éons, eras,
-                  períodos e épocas. <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                    alt="icone cursor"><strong> 1</strong>
+                  períodos e épocas. <span class="highlight-green"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 1</strong><span>
                 </p>
                 <p id="sublinhado-verde-2" class="textos-sublinhado-associação" onclick="estrategiaAssociação2Appear()">
                   As
-                  quatro grandes eras do nosso planeta são: <img class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 2</strong>
+                  quatro grandes eras do nosso planeta são: <span class="highlight-green"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 2</strong></span>
                 </p>
                 <p class="textos">A. Pré-Cambriana (entre 4.566 milhões de anos e 542 milhões de anos atrás). <br>B.
                   Paleozóica (entre 542 milhões de anos e 245 milhões de anos atrás). <br>C. Mesozóica (entre 245
@@ -799,19 +841,21 @@
                   milhões e 144 milhões de anos atrás).</p>
                 <p id="sublinhado-verde-3" class="textos-sublinhado-associação" onclick="estrategiaAssociação3Appear()">
                   Relacione corretamente o surgimento das formas de vida (I, II, III, IV) às eras geológicas do planeta
-                  (A, B, C e D): <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"><strong>
-                    3</strong></p>
+                  (A, B, C e D): <span class="highlight-green"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg"><strong>
+                      3</strong></span></p>
                 <p id="sublinhado-verde-4" class="textos-sublinhado-associação" onclick="estrategiaAssociação4Appear()">
                   (a) A-II; B-I; C-IV;
                   D-III. <br>(b) A-I; B-II; C-III; D-IV. <br>(c) A-II; B-III; C-IV;
-                  D-I. <img id="cursor-4-associação" class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor">
-                  <strong> 4</strong> <br>(d) A-IV; B-III; C-I; D-III. <br>(e) A-III; B-IV; C-I; D-II.
+                  D-I. <span class="highlight-green"><img id="cursor-4-associação" class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor">
+                    <strong> 4</strong></span> <br>(d) A-IV; B-III; C-I; D-III. <br>(e) A-III; B-IV; C-I; D-II.
                 </p>
                 <p id="sublinhado-verde-5" class="textos-sublinhado-associação" onclick="estrategiaAssociação5Appear()">
                   Qual
-                  será a alternativa correta? <img class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"> <strong> 5</strong></p>
+                  será a alternativa correta? <span class="highlight-green"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"> <strong> 5</strong></span>
+                </p>
               </div>
               <div id="green-right">
                 <h class="titulo-secundário">ESTRATÉGIAS</h>
@@ -852,7 +896,7 @@
               </div>
             </section>
             <button id="vamos-praticar-associação" onmouseover="invertPraticarAssociação()"
-              onmouseout="convertPraticarAssociação()" onclick="vamosPraticarAssociação()"><img
+              onmouseout="convertPraticarAssociação()" onclick="vamosPraticarAssociação()" style="display: none;"><img
                 id="img-praticar-associação" class="img-vamos-praticar"
                 src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
                 id="img-praticar-associação-invertido" class="img-vamos-praticar"

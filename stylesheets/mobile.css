@@ -339,7 +339,7 @@
         border: none;
     }
 
-    #estratégias-asserção-mobile {
+    .estratégias-mobile {
         display: block;
     }
 
@@ -350,7 +350,276 @@
     #alternativa-5-asserção {
         height: fit-content;
     }
-    #resposta-praticar-asserção{
+
+    #resposta-praticar-asserção {
         padding-right: 30px;
     }
+
+    #box-lacuna {
+        width: 100vw;
+        margin-left: -15px;
+        border: none;
+    }
+
+    #menu-lacuna {
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+
+    #yellow {
+        flex-wrap: wrap;
+        padding: 0px;
+        border: 3px solid #343434;
+    }
+
+    #titulo-lacuna {
+        font-size: 22px;
+    }
+
+    #sobre-lacuna {
+        margin-left: 0px;
+        width: 100vw;
+        display: flex;
+        padding: 5px 10px 5px 70px;
+    }
+
+    #questão-lacuna {
+        height: 60px;
+        width: 60px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #dica-lacuna {
+        padding-right: 10px;
+    }
+
+    #yellow-right {
+        display: none;
+    }
+
+    #conteudo-principal-lacuna {
+        width: 100vw;
+    }
+
+    #resposta-lacuna {
+        padding-right: 30px;
+    }
+
+    #img-lacuna {
+        width: 300px;
+        position: relative;
+        left: 10%;
+    }
+
+    #cursor-1-lacuna {
+        left: 20px;
+        top: 5px;
+    }
+
+    #sobre-lacuna:hover {
+        background-color: #343434;
+        color: white;
+    }
+
+    #texto-modal-lacuna {
+        color: white;
+        padding: 20px;
+        text-align: left;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        margin-bottom: -10px;
+    }
+
+    #abrir-sobre-lacuna {
+        display: block !important;
+        position: relative;
+        left: 20px;
+        width: 30px;
+        height: auto;
+        transform: rotate(180deg);
+        top: -5px;
+    }
+
+    .highlight-pink {
+        margin-top: 10px;
+        display: block;
+        width: fit-content;
+    }
+
+    .highlight-yellow {
+        margin-top: 10px;
+        display: block;
+        width: fit-content;
+    }
+
+    #cursor-opções-lacuna {
+        margin-left: 0px;
+    }
+
+    #vamos-praticar-lacuna {
+        padding: 0px;
+    }
+
+
+    #vamos-praticar-lacuna:hover {
+        background-color: #343434;
+        color: white;
+    }
+
+    .textos-sublinhado-lacuna:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .textos-estratégias-lacuna {
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    #estratégia-lacuna-1{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #box-praticar-lacuna {
+        width: 100vw;
+        margin-left: -15px;
+        border: none;
+    }
+
+    #estratégias-lacuna-mobile {
+        display: block;
+    }
+
+    #alternativa-1-lacuna,
+    #alternativa-2-lacuna,
+    #alternativa-3-lacuna,
+    #alternativa-4-lacuna,
+    #alternativa-5-lacuna {
+        height: fit-content;
+    }
+
+    #resposta-praticar-lacuna {
+        padding-right: 30px;
+    }
+
+    #abrir-sobre-lacuna-praticar {
+        display: block !important;
+        position: relative;
+        left: 20px;
+        width: 30px;
+        height: auto;
+        transform: rotate(180deg);
+        top: -5px;
+    }
+    #box-associação {
+        width: 100vw;
+        margin-left: -15px;
+        border: none;
+    }
+
+    #menu-associação {
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+
+    #green {
+        flex-wrap: wrap;
+        padding: 0px;
+        border: 3px solid #343434;
+    }
+
+    #titulo-associação {
+        font-size: 22px;
+    }
+
+    #sobre-associação {
+        margin-left: 0px;
+        width: 100vw;
+        display: flex;
+        padding: 5px 10px 5px 70px;
+    }
+
+    #questão-associação {
+        height: 60px;
+        width: 60px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #dica-associação {
+        padding-right: 10px;
+    }
+
+    #green-right {
+        display: none;
+    }
+
+    #conteudo-principal-associação {
+        width: 100vw;
+    }
+
+    #resposta-associação {
+        padding-right: 30px;
+    }
+
+    .highlight-green {
+        margin-top: 10px;
+        display: block;
+        width: fit-content;
+    }
+
+    .textos-sublinhado-associação:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    #cursor-4-associação{
+        margin-left: 0px;
+    }
+
+    #vamos-praticar-associação {
+        padding: 0px;
+    }
+
+    #vamos-praticar-associação:hover {
+        background-color: #343434;
+        color: white;
+    }
+
+    #texto-modal-associação{
+        color: white;
+        padding: 20px;
+        text-align: left;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        margin-bottom: -10px;
+    }
+
+    #abrir-sobre-associação {
+        display: block !important;
+        position: relative;
+        left: 20px;
+        width: 30px;
+        height: auto;
+        transform: rotate(180deg);
+        top: -5px;
+    }
+
+    #sobre-associação:hover {
+        background-color: #343434;
+        color: white;
+    }
+
+    
+    .textos-estratégias-associação {
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
 }

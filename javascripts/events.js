@@ -396,26 +396,70 @@ function convertInicio() {
 
 //Função para inverter imagem menu ao passar o mouse
 function invertPraticarLacuna() {
-  praticarLacuna1.style.display = "none";
-  praticarLacuna2.style.display = "block";
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      praticarLacuna1.style.display = "none";
+      praticarLacuna2.style.display = "block";
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para converter a imagem ao passar o mouse
 function convertPraticarLacuna() {
-  praticarLacuna1.style.display = "block";
-  praticarLacuna2.style.display = "none";
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      praticarLacuna1.style.display = "block";
+      praticarLacuna2.style.display = "none";
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para inverter imagem menu ao passar o mouse
 function invertPraticarAssociação() {
-  praticarAssociação1.style.display = "none";
-  praticarAssociação2.style.display = "block";
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      praticarAssociação1.style.display = "none";
+      praticarAssociação2.style.display = "block";
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para converter a imagem ao passar o mouse
 function convertPraticarAssociação() {
-  praticarAssociação1.style.display = "block";
-  praticarAssociação2.style.display = "none";
+  const mediaDesktop = window.matchMedia("(min-width: 1000px)");
+
+  function adjustLayout() {
+    if (mediaDesktop.matches) {
+      // Ajuste para dispositivos móveis
+      praticarAssociação1.style.display = "block";
+      praticarAssociação2.style.display = "none";
+    }
+  }
+  mediaDesktop.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
 }
 
 //Função para inverter imagem menu ao passar o mouse
@@ -582,6 +626,59 @@ function questãoLacuna() {
     boxPraticarRespostaUnica.classList.add('disappear');
     boxPraticarRespostasMultiplas.classList.add('hidden-div');
     boxPraticarRespostasMultiplas.classList.add('disappear');
+
+    var Text1 = document.getElementById("text-1");
+    var Text2 = document.getElementById("text-2");
+    var Text3 = document.getElementById("text-3");
+    var Text4 = document.getElementById("text-4");
+    var Text5 = document.getElementById("text-5");
+    var Botao1 = document.getElementById("botão-1");
+    var Botao2 = document.getElementById("botão-2");
+    var Botao3 = document.getElementById("botão-3");
+    var Botao4 = document.getElementById("botão-4");
+    var Botao5 = document.getElementById("botão-5");
+    var Botao0 = document.getElementById("botão-0");
+    var opçãoMenu = document.getElementById("opções-menu");
+
+    const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+    function adjustLayout() {
+      if (mediaMobile.matches) {
+        // Ajuste para dispositivos móveis
+        Text1.style.display = "none";
+        Botao1.style.width = "70px";
+        Botao1.style.height = "70px";
+        Botao1.style.padding = "10px";
+        Text2.style.display = "none";
+        Botao2.style.width = "70px";
+        Botao2.style.height = "70px";
+        Botao2.style.padding = "10px";
+        Text3.style.display = "none";
+        Botao3.style.width = "70px";
+        Botao3.style.height = "70px";
+        Botao3.style.padding = "10px";
+        Text4.style.display = "none";
+        Botao4.style.width = "70px";
+        Botao4.style.height = "70px";
+        Botao4.style.padding = "10px";
+        Text5.style.display = "none";
+        Botao5.style.width = "70px";
+        Botao5.style.height = "70px";
+        Botao5.style.padding = "10px";
+        opçãoMenu.style.marginLeft = "5px";
+        Botao2.style.borderRight = "none";
+        Botao2.style.borderTop = "none";
+        Botao1.style.borderTop = "none";
+        Botao4.style.borderRight = "none";
+        Botao0.style.borderRight = "3px solid #343434"
+        opçãoMenu.style.left = "50%";
+        opçãoMenu.style.transform = "translateX(-50%)"
+      }
+    }
+    mediaMobile.addEventListener('change', adjustLayout);
+
+    // Chama a função inicialmente
+    adjustLayout();
   }
 };
 
@@ -624,6 +721,59 @@ function questãoAssociação() {
     boxPraticarRespostaUnica.classList.add('disappear');
     boxPraticarRespostasMultiplas.classList.add('hidden-div');
     boxPraticarRespostasMultiplas.classList.add('disappear');
+
+    var Text1 = document.getElementById("text-1");
+    var Text2 = document.getElementById("text-2");
+    var Text3 = document.getElementById("text-3");
+    var Text4 = document.getElementById("text-4");
+    var Text5 = document.getElementById("text-5");
+    var Botao1 = document.getElementById("botão-1");
+    var Botao2 = document.getElementById("botão-2");
+    var Botao3 = document.getElementById("botão-3");
+    var Botao4 = document.getElementById("botão-4");
+    var Botao5 = document.getElementById("botão-5");
+    var Botao0 = document.getElementById("botão-0");
+    var opçãoMenu = document.getElementById("opções-menu");
+
+    const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+    function adjustLayout() {
+      if (mediaMobile.matches) {
+        // Ajuste para dispositivos móveis
+        Text1.style.display = "none";
+        Botao1.style.width = "70px";
+        Botao1.style.height = "70px";
+        Botao1.style.padding = "10px";
+        Text2.style.display = "none";
+        Botao2.style.width = "70px";
+        Botao2.style.height = "70px";
+        Botao2.style.padding = "10px";
+        Text3.style.display = "none";
+        Botao3.style.width = "70px";
+        Botao3.style.height = "70px";
+        Botao3.style.padding = "10px";
+        Text4.style.display = "none";
+        Botao4.style.width = "70px";
+        Botao4.style.height = "70px";
+        Botao4.style.padding = "10px";
+        Text5.style.display = "none";
+        Botao5.style.width = "70px";
+        Botao5.style.height = "70px";
+        Botao5.style.padding = "10px";
+        opçãoMenu.style.marginLeft = "5px";
+        Botao2.style.borderRight = "none";
+        Botao2.style.borderTop = "none";
+        Botao1.style.borderTop = "none";
+        Botao4.style.borderRight = "none";
+        Botao0.style.borderRight = "3px solid #343434"
+        opçãoMenu.style.left = "50%";
+        opçãoMenu.style.transform = "translateX(-50%)"
+      }
+    }
+    mediaMobile.addEventListener('change', adjustLayout);
+
+    // Chama a função inicialmente
+    adjustLayout();
   }
 };
 
@@ -665,6 +815,59 @@ function questãoRespostaUnica() {
     boxPraticarAssociação.classList.add('disappear');
     boxPraticarRespostasMultiplas.classList.add('hidden-div');
     boxPraticarRespostasMultiplas.classList.add('disappear');
+
+    var Text1 = document.getElementById("text-1");
+    var Text2 = document.getElementById("text-2");
+    var Text3 = document.getElementById("text-3");
+    var Text4 = document.getElementById("text-4");
+    var Text5 = document.getElementById("text-5");
+    var Botao1 = document.getElementById("botão-1");
+    var Botao2 = document.getElementById("botão-2");
+    var Botao3 = document.getElementById("botão-3");
+    var Botao4 = document.getElementById("botão-4");
+    var Botao5 = document.getElementById("botão-5");
+    var Botao0 = document.getElementById("botão-0");
+    var opçãoMenu = document.getElementById("opções-menu");
+
+    const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+    function adjustLayout() {
+      if (mediaMobile.matches) {
+        // Ajuste para dispositivos móveis
+        Text1.style.display = "none";
+        Botao1.style.width = "70px";
+        Botao1.style.height = "70px";
+        Botao1.style.padding = "10px";
+        Text2.style.display = "none";
+        Botao2.style.width = "70px";
+        Botao2.style.height = "70px";
+        Botao2.style.padding = "10px";
+        Text3.style.display = "none";
+        Botao3.style.width = "70px";
+        Botao3.style.height = "70px";
+        Botao3.style.padding = "10px";
+        Text4.style.display = "none";
+        Botao4.style.width = "70px";
+        Botao4.style.height = "70px";
+        Botao4.style.padding = "10px";
+        Text5.style.display = "none";
+        Botao5.style.width = "70px";
+        Botao5.style.height = "70px";
+        Botao5.style.padding = "10px";
+        opçãoMenu.style.marginLeft = "5px";
+        Botao2.style.borderRight = "none";
+        Botao2.style.borderTop = "none";
+        Botao1.style.borderTop = "none";
+        Botao4.style.borderRight = "none";
+        Botao0.style.borderRight = "3px solid #343434"
+        opçãoMenu.style.left = "50%";
+        opçãoMenu.style.transform = "translateX(-50%)"
+      }
+    }
+    mediaMobile.addEventListener('change', adjustLayout);
+
+    // Chama a função inicialmente
+    adjustLayout();
   }
 };
 
@@ -706,6 +909,59 @@ function questãoMultiplas() {
     boxPraticarAssociação.classList.add('disappear');
     boxPraticarRespostaUnica.classList.add('hidden-div');
     boxPraticarRespostaUnica.classList.add('disappear');
+
+    var Text1 = document.getElementById("text-1");
+    var Text2 = document.getElementById("text-2");
+    var Text3 = document.getElementById("text-3");
+    var Text4 = document.getElementById("text-4");
+    var Text5 = document.getElementById("text-5");
+    var Botao1 = document.getElementById("botão-1");
+    var Botao2 = document.getElementById("botão-2");
+    var Botao3 = document.getElementById("botão-3");
+    var Botao4 = document.getElementById("botão-4");
+    var Botao5 = document.getElementById("botão-5");
+    var Botao0 = document.getElementById("botão-0");
+    var opçãoMenu = document.getElementById("opções-menu");
+
+    const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+    function adjustLayout() {
+      if (mediaMobile.matches) {
+        // Ajuste para dispositivos móveis
+        Text1.style.display = "none";
+        Botao1.style.width = "70px";
+        Botao1.style.height = "70px";
+        Botao1.style.padding = "10px";
+        Text2.style.display = "none";
+        Botao2.style.width = "70px";
+        Botao2.style.height = "70px";
+        Botao2.style.padding = "10px";
+        Text3.style.display = "none";
+        Botao3.style.width = "70px";
+        Botao3.style.height = "70px";
+        Botao3.style.padding = "10px";
+        Text4.style.display = "none";
+        Botao4.style.width = "70px";
+        Botao4.style.height = "70px";
+        Botao4.style.padding = "10px";
+        Text5.style.display = "none";
+        Botao5.style.width = "70px";
+        Botao5.style.height = "70px";
+        Botao5.style.padding = "10px";
+        opçãoMenu.style.marginLeft = "5px";
+        Botao2.style.borderRight = "none";
+        Botao2.style.borderTop = "none";
+        Botao1.style.borderTop = "none";
+        Botao4.style.borderRight = "none";
+        Botao0.style.borderRight = "3px solid #343434"
+        opçãoMenu.style.left = "50%";
+        opçãoMenu.style.transform = "translateX(-50%)"
+      }
+    }
+    mediaMobile.addEventListener('change', adjustLayout);
+
+    // Chama a função inicialmente
+    adjustLayout();
   }
 };
 
@@ -1069,71 +1325,344 @@ function sobreAsserçãoPraticar() {
 
 //FUNÇÕES APARECER ESTRATÉGIAS LACUNA
 
+var LacunaEstrategiaCheck1 = 0;
+var LacunaEstrategiaCheck2 = 0;
+var LacunaEstrategiaCheck3 = 0;
+var LacunaEstrategiaCheck4 = 0;
+var LacunaEstrategiaCheck5 = 0;
+
 function estrategiaLacuna1Appear() {
-  estrategiaLacuna1.style.display = "block";
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategiaLacuna1.style.display = "block";
+      estrategiaLacuna1.parentElement.removeChild(estrategiaLacuna1); //Remove a estratégia do elemento pai atual2
+      sublinhadoAmarelo1.appendChild(estrategiaLacuna1); //Adiciona a estratégia no local adequado para versão mobile 
+      LacunaEstrategiaCheck1 += 1;
+    }
+    else {
+      estrategiaLacuna1.style.display = "block";
+      sublinhadoAmarelo1.style.backgroundColor = "#F9FFB5"
+      LacunaEstrategiaCheck1 += 1;
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
+  BotãoPraticarLacuna();
 }
 
 function estrategiaLacuna2Appear() {
-  estrategiaLacuna2.style.display = "block";
-  sublinhadoAmarelo2.style.backgroundColor = "#F9FFB5"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategiaLacuna2.style.display = "block";
+      estrategiaLacuna2.parentElement.removeChild(estrategiaLacuna2); //Remove a estratégia do elemento pai atual2
+      sublinhadoAmarelo2.appendChild(estrategiaLacuna2); //Adiciona a estratégia no local adequado para versão mobile 
+      LacunaEstrategiaCheck2 += 1;
+    }
+    else {
+      estrategiaLacuna2.style.display = "block";
+      sublinhadoAmarelo2.style.backgroundColor = "#F9FFB5"
+      LacunaEstrategiaCheck2 += 1;
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
+  BotãoPraticarLacuna();
 }
 
 function estrategiaLacuna3Appear() {
-  estrategiaLacuna3.style.display = "block";
-  sublinhadoAmarelo3.style.backgroundColor = "#F9FFB5"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategiaLacuna3.style.display = "block";
+      estrategiaLacuna3.parentElement.removeChild(estrategiaLacuna3); //Remove a estratégia do elemento pai atual2
+      sublinhadoAmarelo3.appendChild(estrategiaLacuna3); //Adiciona a estratégia no local adequado para versão mobile 
+      LacunaEstrategiaCheck3 += 1;
+    }
+    else {
+      estrategiaLacuna3.style.display = "block";
+      sublinhadoAmarelo3.style.backgroundColor = "#F9FFB5"
+      LacunaEstrategiaCheck3 += 1;
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
+  BotãoPraticarLacuna();
 }
 
 function estrategiaLacuna4Appear() {
-  estrategiaLacuna4.style.display = "block";
-  sublinhadoAmarelo4.style.backgroundColor = "#F9FFB5"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategiaLacuna4.style.display = "block";
+      estrategiaLacuna4.parentElement.removeChild(estrategiaLacuna4); //Remove a estratégia do elemento pai atual2
+      sublinhadoAmarelo4.appendChild(estrategiaLacuna4); //Adiciona a estratégia no local adequado para versão mobile 
+      LacunaEstrategiaCheck4 += 1;
+    }
+    else {
+      estrategiaLacuna4.style.display = "block";
+      sublinhadoAmarelo4.style.backgroundColor = "#F9FFB5"
+      LacunaEstrategiaCheck4 += 1;
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
+  BotãoPraticarLacuna();
 }
 
 function estrategiaLacuna5Appear() {
-  estrategiaLacuna5.style.display = "block";
-  sublinhadoAmarelo5.style.backgroundColor = "#F9FFB5"
-  respostaLacuna.style.display = "block";
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategiaLacuna5.style.display = "block";
+      estrategiaLacuna5.parentElement.removeChild(estrategiaLacuna5); //Remove a estratégia do elemento pai atual2
+      sublinhadoAmarelo5.appendChild(estrategiaLacuna5); //Adiciona a estratégia no local adequado para versão mobile 
+      respostaLacuna.style.display = "block";
+      LacunaEstrategiaCheck5 += 1;
+    }
+    else {
+      estrategiaLacuna5.style.display = "block";
+      sublinhadoAmarelo5.style.backgroundColor = "#F9FFB5"
+      respostaLacuna.style.display = "block";
+      LacunaEstrategiaCheck5 += 1;
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
+  BotãoPraticarLacuna();
 }
 
 // FUNÇÃO ABRIR POP-UP SOBRE O TIPO DE QUESTÃO
 
+let ModalLacunaMobile = document.getElementById("modal-lacuna-mobile");
+let AbrirSobreLacuna = document.getElementById("abrir-sobre-lacuna");
+let ModalLacunaMobilePraticar = document.getElementById("modal-lacuna-mobile-praticar")
+let AbrirSobreLacunaPraticar = document.getElementById("abrir-sobre-lacuna-praticar");
+var PopUpAberto = 0;
+
 function sobreLacuna() {
-  modalLacuna.style.display = "block";
-  modalBackground.style.display = "block";
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+  function ModalLacunaResponsivo() {
+    if (mediaMobile.matches && PopUpAberto == 0) {
+      ModalLacunaMobile.style.display = "block";
+      AbrirSobreLacuna.style.transform = "rotate(360deg)";
+      PopUpAberto += 1;
+    }
+    else if (mediaMobile.matches && PopUpAberto == 1) {
+      ModalLacunaMobile.style.display = "none";
+      AbrirSobreLacuna.style.transform = "rotate(180deg)";
+      PopUpAberto -= 1;
+    }
+    else {
+      modalLacuna.style.display = "block";
+      modalBackground.style.display = "block";
+    }
+  }
+  mediaMobile.addEventListener('change', ModalLacunaResponsivo);
+
+  // Chama a função inicialmente
+  ModalLacunaResponsivo();
 }
+
+function sobreLacunaPraticar() {
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+  function ModalLacunaResponsivo() {
+    if (mediaMobile.matches && PopUpAberto == 0) {
+      ModalLacunaMobilePraticar.style.display = "block";
+      AbrirSobreLacunaPraticar.style.transform = "rotate(360deg)";
+      PopUpAberto += 1;
+    }
+    else if (mediaMobile.matches && PopUpAberto == 1) {
+      ModalLacunaMobilePraticar.style.display = "none";
+      AbrirSobreLacunaPraticar.style.transform = "rotate(180deg)";
+      PopUpAberto -= 1;
+    }
+    else {
+      modalLacuna.style.display = "block";
+      modalBackground.style.display = "block";
+    }
+  }
+  mediaMobile.addEventListener('change', ModalLacunaResponsivo);
+
+  // Chama a função inicialmente
+  ModalLacunaResponsivo();
+}
+
 
 //FUNÇÕES APARECER ESTRATÉGIAS ASSOCIAÇÃO
 
+var AssociaçãoEstrategiaCheck1 = 0;
+var AssociaçãoEstrategiaCheck2 = 0;
+var AssociaçãoEstrategiaCheck3 = 0;
+var AssociaçãoEstrategiaCheck4 = 0;
+var AssociaçãoEstrategiaCheck5 = 0;
+
 function estrategiaAssociação1Appear() {
-  estrategiaAssociação1.style.display = "block";
-  sublinhadoVerde1.style.backgroundColor = "#B5FBB9"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategiaAssociação1.style.display = "block";
+      estrategiaAssociação1.parentElement.removeChild(estrategiaAssociação1); //Remove a estratégia do elemento pai atual2
+      sublinhadoVerde1.appendChild(estrategiaAssociação1); //Adiciona a estratégia no local adequado para versão mobile 
+      AssociaçãoEstrategiaCheck1 += 1;
+    }
+    else {
+      estrategiaAssociação1.style.display = "block";
+      sublinhadoVerde1.style.backgroundColor = "#B5FBB9"
+      AssociaçãoEstrategiaCheck1 += 1;
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
+  BotãoPraticarAssociação();
 }
 
 function estrategiaAssociação2Appear() {
-  estrategiaAssociação2.style.display = "block";
-  sublinhadoVerde2.style.backgroundColor = "#B5FBB9"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategiaAssociação2.style.display = "block";
+      estrategiaAssociação2.parentElement.removeChild(estrategiaAssociação2); //Remove a estratégia do elemento pai atual2
+      sublinhadoVerde2.appendChild(estrategiaAssociação2); //Adiciona a estratégia no local adequado para versão mobile 
+      AssociaçãoEstrategiaCheck2 += 1;
+    }
+    else {
+      estrategiaAssociação2.style.display = "block";
+      sublinhadoVerde2.style.backgroundColor = "#B5FBB9"
+      AssociaçãoEstrategiaCheck1 += 1;
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
+  BotãoPraticarAssociação();
 }
 
 function estrategiaAssociação3Appear() {
-  estrategiaAssociação3.style.display = "block";
-  sublinhadoVerde3.style.backgroundColor = "#B5FBB9"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategiaAssociação3.style.display = "block";
+      estrategiaAssociação3.parentElement.removeChild(estrategiaAssociação3); //Remove a estratégia do elemento pai atual2
+      sublinhadoVerde3.appendChild(estrategiaAssociação3); //Adiciona a estratégia no local adequado para versão mobile 
+      AssociaçãoEstrategiaCheck3 += 1;
+    }
+    else {
+      estrategiaAssociação3.style.display = "block";
+      sublinhadoVerde3.style.backgroundColor = "#B5FBB9"
+      AssociaçãoEstrategiaCheck3 += 1;
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
+  BotãoPraticarAssociação();
 }
 
 function estrategiaAssociação4Appear() {
-  estrategiaAssociação4.style.display = "block";
-  sublinhadoVerde4.style.backgroundColor = "#B5FBB9"
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategiaAssociação4.style.display = "block";
+      estrategiaAssociação4.parentElement.removeChild(estrategiaAssociação4); //Remove a estratégia do elemento pai atual2
+      sublinhadoVerde4.appendChild(estrategiaAssociação4); //Adiciona a estratégia no local adequado para versão mobile 
+      AssociaçãoEstrategiaCheck4 += 1;
+    }
+    else {
+      estrategiaAssociação4.style.display = "block";
+      sublinhadoVerde4.style.backgroundColor = "#B5FBB9"
+      AssociaçãoEstrategiaCheck4 += 1;
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
+  BotãoPraticarAssociação();
 }
 
 function estrategiaAssociação5Appear() {
-  estrategiaAssociação5.style.display = "block";
-  sublinhadoVerde5.style.backgroundColor = "#B5FBB9"
-  respostaAssociação.style.display = "block";
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");//Ajusta a versão responsiva para mobile não acionar o hover
+
+  function adjustLayout() {
+    if (mediaMobile.matches) {
+      estrategiaAssociação5.style.display = "block";
+      estrategiaAssociação5.parentElement.removeChild(estrategiaAssociação5); //Remove a estratégia do elemento pai atual2
+      sublinhadoVerde5.appendChild(estrategiaAssociação5); //Adiciona a estratégia no local adequado para versão mobile 
+      AssociaçãoEstrategiaCheck5 += 1;
+    }
+    else {
+      estrategiaAssociação5.style.display = "block";
+      sublinhadoVerde5.style.backgroundColor = "#B5FBB9"
+      respostaAssociação.style.display = "block";
+      AssociaçãoEstrategiaCheck5 += 1;
+    }
+  }
+  mediaMobile.addEventListener('change', adjustLayout);
+
+  // Chama a função inicialmente
+  adjustLayout();
+  BotãoPraticarAssociação();
 }
 
 // FUNÇÃO ABRIR POP-UP SOBRE O TIPO DE QUESTÃO
 
+let ModalAssociaçãoMobile = document.getElementById("modal-associação-mobile");
+let ModalAssociaçãoMobilePraticar = document.getElementById("modal-associação-mobile-praticar");
+let AbrirSobreAssociação = document.getElementById("abrir-sobre-associação");
+let AbrirSobreAssociaçãoPraticar = document.getElementById("abrir-sobre-associação-praticar");
+var PopUpAberto = 0;
+
 function sobreAssociação() {
-  modalAssociação.style.display = "block";
-  modalBackground.style.display = "block";
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+  function ModalAssociaçãoResponsivo() {
+    if (mediaMobile.matches && PopUpAberto == 0) {
+      ModalAssociaçãoMobile.style.display = "block";
+      AbrirSobreAssociação.style.transform = "rotate(360deg)";
+      PopUpAberto += 1;
+    }
+    else if (mediaMobile.matches && PopUpAberto == 1) {
+      ModalAssociaçãoMobile.style.display = "none";
+      AbrirSobreAssociação.style.transform = "rotate(180deg)";
+      PopUpAberto -= 1;
+    }
+    else {
+      modalAssociação.style.display = "block";
+      modalBackground.style.display = "block";
+    }
+  }
+  mediaMobile.addEventListener('change', ModalAssociaçãoResponsivo);
+
+  // Chama a função inicialmente
+  ModalAssociaçãoResponsivo();
+  BotãoPraticarAssociação();
 }
 
 //FUNÇÕES APARECER RESPOSTA UNICA
@@ -1472,5 +2001,21 @@ let BotãoVamosPraticarAsserção = document.getElementById("vamos-praticar");
 function BotãoPraticarAsserção() {
   if (AsserçãoEstrategiaCheck1 == 1 && AsserçãoEstrategiaCheck2 == 1 && AsserçãoEstrategiaCheck3 == 1 && AsserçãoEstrategiaCheck4 == 1 && AsserçãoEstrategiaCheck5 == 1) {
     BotãoVamosPraticarAsserção.style.display = "flex";
+  }
+}
+
+let BotãoVamosPraticarLacuna = document.getElementById("vamos-praticar-lacuna");
+
+function BotãoPraticarLacuna() {
+  if (LacunaEstrategiaCheck1 == 1 && LacunaEstrategiaCheck2 == 1 && LacunaEstrategiaCheck3 == 1 && LacunaEstrategiaCheck4 == 1 && LacunaEstrategiaCheck5 == 1) {
+    BotãoVamosPraticarLacuna.style.display = "flex";
+  }
+}
+
+let BotãoVamosPraticarAssociação = document.getElementById("vamos-praticar-associação");
+
+function BotãoPraticarAssociação() {
+  if (AssociaçãoEstrategiaCheck1 == 1 && AssociaçãoEstrategiaCheck2 == 1 && AssociaçãoEstrategiaCheck3 == 1 && AssociaçãoEstrategiaCheck4 == 1 && AssociaçãoEstrategiaCheck5 == 1) {
+    BotãoVamosPraticarAssociação.style.display = "flex";
   }
 }
