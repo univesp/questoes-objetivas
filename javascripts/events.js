@@ -1551,7 +1551,7 @@ function estrategiaAssociação2Appear() {
     else {
       estrategiaAssociação2.style.display = "block";
       sublinhadoVerde2.style.backgroundColor = "#B5FBB9"
-      AssociaçãoEstrategiaCheck1 += 1;
+      AssociaçãoEstrategiaCheck2 += 1;
     }
   }
   mediaMobile.addEventListener('change', adjustLayout);
@@ -1662,7 +1662,31 @@ function sobreAssociação() {
 
   // Chama a função inicialmente
   ModalAssociaçãoResponsivo();
-  BotãoPraticarAssociação();
+}
+
+function sobreAssociaçãoPraticar() {
+  const mediaMobile = window.matchMedia("(max-width: 1000px)");
+
+  function ModalAssociaçãoResponsivo() {
+    if (mediaMobile.matches && PopUpAberto == 0) {
+      ModalAssociaçãoMobilePraticar.style.display = "block";
+      AbrirSobreAssociaçãoPraticar.style.transform = "rotate(360deg)";
+      PopUpAberto += 1;
+    }
+    else if (mediaMobile.matches && PopUpAberto == 1) {
+      ModalAssociaçãoMobilePraticar.style.display = "none";
+      AbrirSobreAssociaçãoPraticar.style.transform = "rotate(180deg)";
+      PopUpAberto -= 1;
+    }
+    else {
+      modalAssociação.style.display = "block";
+      modalBackground.style.display = "block";
+    }
+  }
+  mediaMobile.addEventListener('change', ModalAssociaçãoResponsivo);
+
+  // Chama a função inicialmente
+  ModalAssociaçãoResponsivo();
 }
 
 //FUNÇÕES APARECER RESPOSTA UNICA

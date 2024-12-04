@@ -11,7 +11,9 @@
     }
 
     nav>.container {
-        padding-left: 20px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .logo {
@@ -340,7 +342,7 @@
     }
 
     .estratégias-mobile {
-        display: block;
+        display: block !important;
     }
 
     #alternativa-1-asserção,
@@ -490,8 +492,8 @@
         border: none;
     }
 
-    #estratégias-lacuna-mobile {
-        display: block;
+    .estratégias-lacuna-mobile{
+        display: block !important;
     }
 
     #alternativa-1-lacuna,
@@ -622,4 +624,27 @@
         margin-bottom: -10px;
     }
 
+    #box-praticar-associação {
+        width: 100vw;
+        margin-left: -15px;
+        border: none;
+    }
+
+    .estratégias-associação-mobile {
+        display: block !important;
+    }
+
+    #resposta-praticar-associação {
+        padding-right: 30px;
+    }
+
+    #abrir-sobre-associação-praticar {
+        display: block !important;
+        position: relative;
+        left: 20px;
+        width: 30px;
+        height: auto;
+        transform: rotate(180deg);
+        top: -5px;
+    }
 }

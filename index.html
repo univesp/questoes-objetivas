@@ -419,7 +419,8 @@
           </section>
           <div id="gray">
             <p id="dica-asserção">Agora é com você! <br>
-              <span class="estratégias-mobile">Comece avaliando as asserções individualmente. Elas são verdadeiras
+              <span class="estratégias-mobile" style="display: none;">Comece avaliando as asserções individualmente.
+                Elas são verdadeiras
                 ou falsas dentro do contexto e dos conceitos estudados? Se as duas forem consideradas verdadeiras e
                 coerentes entre si, tente ligá-las usando "porque", "em razão de" ou "por meio de". Se fizer sentido em
                 termos conceituais, a segunda pode ser considerada uma justificativa para a primeira.</span>
@@ -686,6 +687,15 @@
                 adequadamente e na ordem de leitura da sentença ou parágrafo.</p>
             </div>
           </section>
+          <div id="gray">
+            <p id="dica-lacuna">Agora é com você! <br>
+              <span class="estratégias-lacuna-mobile" style="display: none;">Ao ler o texto da questão, anote
+                palavras-chave ligadas ao assunto discutido. Antes de partir para as alternativas, pense em como essas
+                palavras-chave podem ajudar a completar o texto para que ele fique conceitualmente correto. Analisando
+                as alternativas, selecione a que traz as opções compatíveis com o seu raciocínio. Se não houver uma
+                correspondência, revise sua interpretação e explore novas possibilidades.</span>
+            </p>
+          </div>
           <article>
             <section id="conteudo-lacuna">
               <div id="conteudo-principal-lacuna">
@@ -909,10 +919,30 @@
           <div id="green">
             <img id="questão-associação" src="assets/3. associação.svg" alt="icone questão associação">
             <p id="titulo-associação">ASSOCIAÇÃO</p>
-            <button id="sobre-associação" onclick="sobreAssociação()">SOBRE ESTE TIPO DE QUESTÃO</button>
+            <button id="sobre-associação" onclick="sobreAssociaçãoPraticar()">SOBRE ESTE TIPO DE QUESTÃO<img
+              style="display: none" id="abrir-sobre-associação-praticar" src="assets/simbolo abrir.png"
+              alt="simbolo abrir sobre"></button>
           </div>
+          <section id="modal-associação-mobile-praticar" style="display: none;">
+            <div id="dark-gray">
+              <p id="texto-modal-associação">Duas listas de dados são apresentadas para serem utilizadas na resolução da
+                questão. O
+                desafio consiste em combinar itens dessas duas listas de acordo com a demanda ou regra exposta no
+                enunciado.
+                Note que não é obrigatório que cada elemento de uma das listas se relacione a um elemento da outra e que
+                mais
+                de um item de uma lista pode ter correspondência na outra.</p>
+            </div>
+          </section>
           <div id="gray">
-            <p id="dica-associação">Agora é com você!</p>
+            <p id="dica-associação">Agora é com você! <br>
+              <span class="estratégias-associação-mobile" style="display: none;">Reflita sobre a relação de cada uma das
+                listas com os dados e conceitos disponíveis na questão. Em seguida, verifique qual é o critério de
+                combinação estabelecido no comando e anote os itens da lista de referência na ordem já estabelecida no
+                critério. Partindo desses passos, tente formar os pares, indo das combinações mais fáceis para as mais
+                difíceis. Eliminar as alternativas que você tem certeza de que estão incorretas pode ser bastante útil
+                para evitar confusões.</span>
+            </p>
           </div>
           <article>
             <section id="conteudo-associação">
