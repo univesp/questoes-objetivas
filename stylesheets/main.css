@@ -1303,6 +1303,7 @@ input[type="checkbox"]:checked+label::before {
 #bibliografia-resposta-unica {
   text-align: right;
   padding-right: 10px;
+  word-break: break-all;
 }
 
 #imagem-praticar-resposta-unica{
@@ -1621,10 +1622,10 @@ input[type="checkbox"]:checked+label::before {
 #cursor-4-associação{
   margin-left: 30px;
 }
-
+/*
 #cursor-3-resposta-unica{
   margin-left: 20px;
-}
+}*/
 .highlight-pink{
   background-color: #FFB5FF;
   border: 5px solid #FFB5FF;
@@ -1657,4 +1658,24 @@ input[type="checkbox"]:checked+label::before {
   background-color: #B5FBB9;
   border: 5px solid #B5FBB9;
   border-radius: 7px;
+}
+
+.highlight-blue{
+  background-color: #B5F2FF;
+  border: 5px solid #B5F2FF;
+  border-radius: 7px;
+}
+.highlight-blue-q3{
+  background-color: #B5F2FF;
+  border: 5px solid #B5F2FF;
+  border-radius: 7px;
+}
+#highlight-blue-inicio{
+  background-color: #B5F2FF;
+  border: 5px solid #B5F2FF;
+  border-radius: 7px;
+}
+
+#dica-ampliar-img{
+  display: none;
 }

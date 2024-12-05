@@ -587,7 +587,10 @@
                 <p class="textos"><i>Observe a seguinte situação:</i></p>
                 <img id="img-lacuna" src="assets/imagem questão lacuna.png"
                   alt="ilustração em preto e branco. No centro há a silhueta de duas figuras humanas segurando guarda-chuvas abertos. A da esquerda parece vestir calça e terno e traz uma das mãos viradas para o alto, a outra mão segura seu guarda-chuva aberto sobre si. A figura da direita veste um vestido ou sobretudo e saia e sapatos de salto. Uma das mãos segura o guarda-chuva sobre si e ela está virada para a direita, como se caminhasse para a direita, se afastando da outra figura. Há dois balões de fala com o seguinte texto: primeiro balão de fala “O tempo está estranho, melhor levarmos o guarda-chuva...”; e segundo balão de fala “Então é melhor nos apressarmos! Quero chegar a tempo no trabalho”.  "
-                  onclick="estrategiaLacuna1Appear()">
+                  onclick="zoomImagemMobile()">
+                <img id="img-lacuna-mobile" style="display: none;" src="assets/imagem questão lacuna mobile.png"
+                  alt="ilustração em preto e branco. No centro há a silhueta de duas figuras humanas segurando guarda-chuvas abertos. A da esquerda parece vestir calça e terno e traz uma das mãos viradas para o alto, a outra mão segura seu guarda-chuva aberto sobre si. A figura da direita veste um vestido ou sobretudo e saia e sapatos de salto. Uma das mãos segura o guarda-chuva sobre si e ela está virada para a direita, como se caminhasse para a direita, se afastando da outra figura. Há dois balões de fala com o seguinte texto: primeiro balão de fala “O tempo está estranho, melhor levarmos o guarda-chuva...”; e segundo balão de fala “Então é melhor nos apressarmos! Quero chegar a tempo no trabalho”. ">
+                <p id="dica-ampliar-img" class="textos" style="display: none;"><i>Clique na imagem para ampliar</i></p>
                 <span id="cursor-1-lacuna" class="highlight-yellow" onclick="estrategiaLacuna1Appear()">
                   <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg" alt="icone cursor">
                   <strong> 1</strong></span>
@@ -920,8 +923,8 @@
             <img id="questão-associação" src="assets/3. associação.svg" alt="icone questão associação">
             <p id="titulo-associação">ASSOCIAÇÃO</p>
             <button id="sobre-associação" onclick="sobreAssociaçãoPraticar()">SOBRE ESTE TIPO DE QUESTÃO<img
-              style="display: none" id="abrir-sobre-associação-praticar" src="assets/simbolo abrir.png"
-              alt="simbolo abrir sobre"></button>
+                style="display: none" id="abrir-sobre-associação-praticar" src="assets/simbolo abrir.png"
+                alt="simbolo abrir sobre"></button>
           </div>
           <section id="modal-associação-mobile-praticar" style="display: none;">
             <div id="dark-gray">
@@ -1053,12 +1056,34 @@
             <img id="questão-resposta-unica" src="assets/4. resposta única e complementação.svg"
               alt="icone questão resposta unica e complementação">
             <p id="titulo-resposta-unica">RESPOSTA ÚNICA E COMPLEMENTAÇÃO</p>
-            <button id="sobre-resposta-unica" onclick="sobreRespostaUnica()">SOBRE ESTE TIPO DE QUESTÃO</button>
+            <button id="sobre-resposta-unica" onclick="sobreRespostaUnica()">SOBRE ESTE TIPO DE QUESTÃO <img
+                style="display: none" id="abrir-sobre-resposta-unica" src="assets/simbolo abrir.png"
+                alt="simbolo abrir sobre"></button>
           </div>
+          <section id="modal-resposta-unica-mobile" style="display: none;">
+            <div id="dark-gray">
+              <p id="texto-modal-resposta-unica">Este tipo de questão é bastante comum em provas e exames de cursos em
+                diferentes níveis de escolaridade, concursos públicos, processos seletivos e ENADE. Nela há apenas uma
+                alternativa que responde corretamente ao comando apresentado. <br><br>
+                Questões desse tipo também podem se apresentar em formatos diferentes, a depender do comando:
+              <ul id="texto-modal-resposta-unica">
+                <li>(...) considerando este contexto e seus conhecimentos sobre maneiras convencionais de medir a
+                  passagem do tempo
+
+                  <strong>assinale a alternativa que apresenta corretamente a duração aproximada de cada estação do
+                    ano:</strong>
+                </li>
+                <li>(...) considerando este contexto e seus conhecimentos sobre maneiras convencionais de medir a
+                  passagem do tempo, <strong>a duração aproximada de cada estação do ano é de:</strong></li>
+              </ul>
+              </p>
+            </div>
+          </section>
           <div id="gray">
             <p id="dica-resposta-unica">Observe a questão e passe o mouse em seus elementos para conhecer estratégias de
-              resolução (símbolo <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                alt="icone cursor">) e ter o feedback sobre ela.</p>
+              resolução (símbolo <span id="highlight-blue-inicio"><img class="imagem-cursor"
+                  src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></span>) e ter o feedback sobre
+              ela.</p>
           </div>
           <article>
             <section id="conteudo-resposta-unica">
@@ -1073,27 +1098,29 @@
                     Asteca, constituído de um ciclo de 365 dias baseado na observação do Sol. De certa maneira,
                     calendários como este, denominados como “agrícolas”, possibilitam também a compreensão das estações
                     do
-                    ano.</i> <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                    alt="icone cursor"><strong> 1</strong>
+                    ano.</i> <span class="highlight-blue"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 1</strong></span>
                 </p>
                 <p id="sublinhado-azul-2" class="textos-sublinhado-resposta-unica"
                   onclick="estrategiaRespostaUnica2Appear()">
                   Considerando este contexto e seus conhecimentos sobre maneiras convencionais de medir a passagem do
-                  tempo, qual a duração aproximada de cada estação do ano? <img class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 2</strong>
+                  tempo, qual a duração aproximada de cada estação do ano? <span class="highlight-blue"><img
+                      class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong>
+                      2</strong></span>
                 </p>
                 <p id="sublinhado-azul-3" class="textos-sublinhado-resposta-unica"
                   onclick="estrategiaRespostaUnica3Appear()">
-                  (a) 1 mês. <br>(b) 42 dias.<br>(c) 3 meses. <br>(d) 1 semestre e meio. <img
-                    id="cursor-3-resposta-unica" class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                    alt="icone cursor"><strong> 3</strong><br>(e) 1440
+                  (a) 1 mês. <br>(b) 42 dias.<br>(c) 3 meses. <br>(d) 1 semestre e meio. <span
+                    class="highlight-blue-q3"><img id="cursor-3-resposta-unica" class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong>
+                      3</strong></span><br>(e) 1440
                   horas.
                 </p>
                 <p id="sublinhado-azul-4" class="textos-sublinhado-resposta-unica"
                   onclick="estrategiaRespostaUnica4Appear()">
                   Qual
-                  será a alternativa correta? <img class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 4</strong></p>
+                  será a alternativa correta? <span class="highlight-blue"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 4</strong></span></p>
               </div>
               <div id="blue-right">
                 <h class="titulo-secundário">ESTRATÉGIAS</h>
@@ -1131,8 +1158,8 @@
               </div>
             </section>
             <button id="vamos-praticar-resposta-unica" onmouseover="invertPraticarRespostaUnica()"
-              onmouseout="convertPraticarRespostaUnica()" onclick="vamosPraticarRespostaUnica()"><img
-                id="img-praticar-resposta-unica" class="img-vamos-praticar"
+              onmouseout="convertPraticarRespostaUnica()" onclick="vamosPraticarRespostaUnica()"
+              style="display: none;"><img id="img-praticar-resposta-unica" class="img-vamos-praticar"
                 src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
                 id="img-praticar-resposta-unica-invertido" class="img-vamos-praticar"
                 src="assets/vamos praticar - invertido.svg" alt="icone vamos praticar invertido">
@@ -1145,10 +1172,36 @@
             <img id="questão-resposta-unica" src="assets/4. resposta única e complementação.svg"
               alt="icone questão resposta unica e complementação">
             <p id="titulo-resposta-unica">RESPOSTA ÚNICA E COMPLEMENTAÇÃO</p>
-            <button id="sobre-resposta-unica" onclick="sobreRespostaUnica()">SOBRE ESTE TIPO DE QUESTÃO</button>
+            <button id="sobre-resposta-unica" onclick="sobreRespostaUnicaPraticar()">SOBRE ESTE TIPO DE QUESTÃO <img
+                style="display: none" id="abrir-sobre-resposta-unica-praticar" src="assets/simbolo abrir.png"
+                alt="simbolo abrir sobre"></button>
           </div>
+          <section id="modal-resposta-unica-mobile-praticar" style="display: none;">
+            <div id="dark-gray">
+              <p id="texto-modal-resposta-unica">Este tipo de questão é bastante comum em provas e exames de cursos em
+                diferentes níveis de escolaridade, concursos públicos, processos seletivos e ENADE. Nela há apenas uma
+                alternativa que responde corretamente ao comando apresentado. <br><br>
+                Questões desse tipo também podem se apresentar em formatos diferentes, a depender do comando:
+              <ul id="texto-modal-resposta-unica">
+                <li>(...) considerando este contexto e seus conhecimentos sobre maneiras convencionais de medir a
+                  passagem do tempo
+
+                  <strong>assinale a alternativa que apresenta corretamente a duração aproximada de cada estação do
+                    ano:</strong>
+                </li>
+                <li>(...) considerando este contexto e seus conhecimentos sobre maneiras convencionais de medir a
+                  passagem do tempo, <strong>a duração aproximada de cada estação do ano é de:</strong></li>
+              </ul>
+              </p>
+            </div>
+          </section>
           <div id="gray">
-            <p id="dica-resposta-unica">Agora é com você!</p>
+            <p id="dica-resposta-unica">Agora é com você! <br> <span class="estratégias-resposta-unica-mobile"
+                style="display: none;">Usando seus conhecimentos prévios e os dados oferecidos pela própria questão,
+                reflita sobre a coerência de cada uma das alternativas. Verifique se elas trazem informações 100%
+                corretas e se efetivamente respondem ao que é pedido. Se ficar em dúvida sobre mais de uma alternativa,
+                elimine aquelas que contradizem os dados e conceitos fornecidos pela questão ou cuja veracidade implica
+                na veracidade de uma alternativa já considerada incorreta.</span></p>
           </div>
           <article>
             <section id="conteudo-resposta-unica">

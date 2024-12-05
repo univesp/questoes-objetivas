@@ -410,9 +410,16 @@
     }
 
     #img-lacuna {
-        width: 300px;
+        width: 100%;
         position: relative;
-        left: 10%;
+    }
+
+    #img-lacuna-mobile{
+        width: 300px;
+    }
+
+    #dica-ampliar-img{
+        display: block !important;
     }
 
     #cursor-1-lacuna {
@@ -646,5 +653,145 @@
         height: auto;
         transform: rotate(180deg);
         top: -5px;
+    }
+
+    #box-resposta-unica {
+        width: 100vw;
+        margin-left: -15px;
+        border: none;
+    }
+
+    #menu-resposta-unica{
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+
+    #blue {
+        flex-wrap: wrap;
+        padding: 0px;
+        border: 3px solid #343434;
+    }
+
+    #titulo-resposta-unica {
+        font-size: 22px;
+    }
+
+    #sobre-resposta-unica {
+        margin-left: 0px;
+        width: 100vw;
+        display: flex;
+        padding: 5px 10px 5px 70px;
+    }
+
+    #questão-resposta-unica {
+        height: 60px;
+        width: 60px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #dica-resposta-unica {
+        padding-right: 10px;
+    }
+
+    #blue-right {
+        display: none;
+    }
+
+    #conteudo-principal-resposta-unica {
+        width: 100vw;
+    }
+
+    #resposta-resposta-unica {
+        padding-right: 30px;
+    }
+
+    #titulo-resposta-unica{
+        font-size: 16px;
+    }
+
+    #texto-modal-resposta-unica {
+        color: white;
+        padding: 20px;
+        text-align: left;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        margin-bottom: -10px;
+    }
+
+    #abrir-sobre-resposta-unica {
+        display: block !important;
+        position: relative;
+        left: 20px;
+        width: 30px;
+        height: auto;
+        transform: rotate(180deg);
+        top: -5px;
+    }
+
+    #sobre-resposta-unica:hover {
+        background-color: #343434;
+        color: white;
+    }
+
+    .highlight-blue {
+        margin-top: 10px;
+        display: block;
+        width: fit-content;
+    }
+
+    .highlight-blue-q3 {
+        margin-top: 10px;
+        width: fit-content;
+    }
+
+    .textos-sublinhado-resposta-unica:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    #vamos-praticar-resposta-unica:hover {
+        background-color: #343434;
+        color: white;
+    }
+
+    .textos-estratégias-resposta-unica {
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    #vamos-praticar-resposta-unica {
+        padding: 0px;
+    }
+
+    #box-praticar-resposta-unica {
+        width: 100vw;
+        margin-left: -15px;
+        border: none;
+    }
+
+    .estratégias-resposta-unica-mobile {
+        display: block !important;
+    }
+
+    #resposta-praticar-resposta-unica {
+        padding-right: 30px;
+    }
+
+    #abrir-sobre-resposta-unica-praticar {
+        display: block !important;
+        position: relative;
+        left: 20px;
+        width: 30px;
+        height: auto;
+        transform: rotate(180deg);
+        top: -5px;
+    }
+
+    #imagem-praticar-resposta-unica {
+        width: 100%;
+        margin-left: 0px;
     }
 }
