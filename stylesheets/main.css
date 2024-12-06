@@ -1676,6 +1676,21 @@ input[type="checkbox"]:checked+label::before {
   border-radius: 7px;
 }
 
+.highlight-purple{
+  background-color: #D5D3FF;
+  border: 5px solid #D5D3FF;
+  border-radius: 7px;
+}
+#highlight-purple-inicio{
+  background-color: #D5D3FF;
+  border: 5px solid #D5D3FF;
+  border-radius: 7px;
+}
+
 #dica-ampliar-img{
   display: none;
+}
+
+#link-respostas-multiplas{
+  word-break: break-all;
 }

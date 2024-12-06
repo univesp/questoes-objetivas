@@ -1352,13 +1352,38 @@
               alt="icone questão respostas multiplas">
             <p id="titulo-respostas-multiplas">RESPOSTAS MÚLTIPLAS</p>
             <button id="sobre-respostas-multiplas" onclick="sobreRespostasMultiplas()">SOBRE ESTE TIPO DE
-              QUESTÃO</button>
+              QUESTÃO <img style="display: none" id="abrir-sobre-respostas-multiplas" src="assets/simbolo abrir.png"
+                alt="simbolo abrir sobre"></button>
           </div>
+          <section id="modal-respostas-multiplas-mobile" style="display: none;">
+            <div id="dark-gray">
+              <p id="texto-modal-respostas-multiplas">Este tipo de questão é bastante
+                comum em vestibulares, concursos públicos,
+                processos
+                seletivos e ENADE. Nela, são apresentadas diferentes afirmações relacionadas a um assunto, cuja
+                veracidade
+                deve ser avaliada.</p>
+              <p id="texto-modal-respostas-multiplas">
+                Existe uma variação desse modelo na qual as alternativas apresentam a sequência ordenada
+                das afirmações avaliadas em verdadeiras (V) ou falsas (F). </p>
+              <p id="texto-modal-respostas-multiplas">Por exemplo:</p>
+              <p id="texto-modal-respostas-multiplas">Assinale a alternativa que apresenta a correta avaliação das
+                afirmações:
+              </p>
+              <p id="texto-modal-respostas-multiplas">a) I-V; II-V; III-V <br> b) I-V; II-V; III-F <br> c) I-V; II-F;
+                III-F
+                <br> d)
+                I-F; II-V;
+                III-F <br> e) I-F; II-F; III-V
+              </p>
+            </div>
+          </section>
           <div id="gray">
             <p id="dica-respostas-multiplas">Observe a questão e passe o mouse em seus elementos para conhecer
               estratégias de
-              resolução (símbolo <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
-                alt="icone cursor">) e ter o feedback sobre ela.</p>
+              resolução (símbolo <span id="highlight-purple-inicio"><img class="imagem-cursor"
+                  src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"></span> ) e ter o feedback sobre
+              ela.</p>
           </div>
           <article>
             <section id="conteudo-respostas-multiplas">
@@ -1373,20 +1398,22 @@
                     Penzias foram então conversar com colegas da Universidade de Princeton, que contaram que esse ruído,
                     uma espécie de eco da grande exploração que originou o Universo, já havia sido previsto por
                     cientistas em 1948, mas até então ninguém havia conseguido prová-lo. A descoberta acidental rendeu a
-                    dupla de físicos norte-americanos o Prêmio Nobel em 1979”.</i> <img class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 1</strong>
+                    dupla de físicos norte-americanos o Prêmio Nobel em 1979”.</i> <span class="highlight-purple"><img
+                      class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong>
+                      1</strong></span>
                 </p>
                 <p id="bibliografia-respostas-multiplas">SOUZA, Marcelle. <strong>14 bilhões de anos:</strong> como os
                   cientistas
-                  calculam a idade do Universo? Disponível em: <a
+                  calculam a idade do Universo? Disponível em: <a id="link-respostas-multiplas"
                     href="https://www.uol.com.br/tilt/noticias/redacao/2021/12/02/14-bilhoes-de-anos-como-os-cientistas-calculam-a-idade-do-universo.htm"
                     target="_blank">https://www.uol.com.br/tilt/noticias/redacao/2021/12/02/14-bilhoes-de-anos-como-os-cientistas-calculam-a-idade-do-universo.htm</a>
                 </p>
                 <p id="sublinhado-roxo-2" class="textos-sublinhado-respostas-multiplas"
                   onclick="estrategiaRespostasMultiplas2Appear()">
-                  Com base no texto e em seus conhecimentos sobre o assunto, avalie as afirmações a seguir. <img
-                    class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong>
-                    2</strong>
+                  Com base no texto e em seus conhecimentos sobre o assunto, avalie as afirmações a seguir. <span
+                    class="highlight-purple"><img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"
+                      alt="icone cursor"><strong>
+                      2</strong></span>
                 </p>
                 <p id="sublinhado-roxo-3" class=""><strong>
                     <ul id="lista-respostas-multiplas" onclick="estrategiaRespostasMultiplas3Appear()">
@@ -1399,8 +1426,9 @@
                         descoberta de um ruído que vinha do espaço e não desaparecia.</li>
                       <li> A existência dos "ecos do Big Bang" já havia sido provada em 1948, rendendo a seus
                         descobridores
-                        o Prêmio Nobel daquele ano. <img class="imagem-cursor"
-                          src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 3</strong></li>
+                        o Prêmio Nobel daquele ano. <span class="highlight-purple"><img class="imagem-cursor"
+                            src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong>
+                            3</strong></span></li>
                     </ul>
                   </strong>
                 </p>
@@ -1410,13 +1438,14 @@
                   (b) I e II, apenas. <br>
                   (c) I, apenas. <br>
                   (d) II, apenas. <br>
-                  (e) III, apenas. <img class="imagem-cursor" src="assets/rea questões objetivas - cursor.svg"><strong>
-                    4</strong></p>
+                  (e) III, apenas. <span class="highlight-purple"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg"><strong>
+                      4</strong></span></p>
                 <p id="sublinhado-roxo-5" class="textos-sublinhado-respostas-multiplas"
                   onclick="estrategiaRespostasMultiplas5Appear()">
                   Qual
-                  será a alternativa correta? <img class="imagem-cursor"
-                    src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 5</strong></p>
+                  será a alternativa correta? <span class="highlight-purple"><img class="imagem-cursor"
+                      src="assets/rea questões objetivas - cursor.svg" alt="icone cursor"><strong> 5</strong></span></p>
               </div>
               <div id="purple-right">
                 <h class="titulo-secundário">ESTRATÉGIAS</h>
@@ -1456,8 +1485,8 @@
               </div>
             </section>
             <button id="vamos-praticar-respostas-multiplas" onmouseover="invertPraticarRespostasMultiplas()"
-              onmouseout="convertPraticarRespostasMultiplas()" onclick="vamosPraticarRespostasMultiplas()"><img
-                id="img-praticar-respostas-multiplas" class="img-vamos-praticar"
+              onmouseout="convertPraticarRespostasMultiplas()" onclick="vamosPraticarRespostasMultiplas()"
+              style="display: none;"><img id="img-praticar-respostas-multiplas" class="img-vamos-praticar"
                 src="assets/rea questões objetivas - vamos praticar.svg" alt="icone vamos praticar"><img
                 id="img-praticar-respostas-multiplas-invertido" class="img-vamos-praticar"
                 src="assets/vamos praticar - invertido.svg" alt="icone vamos praticar invertido">
@@ -1470,11 +1499,39 @@
             <img id="questão-respostas-multiplas" src="assets/5. respostas múltiplas.svg"
               alt="icone questão respostas multiplas">
             <p id="titulo-respostas-multiplas">RESPOSTAS MULTIPLAS</p>
-            <button id="sobre-respostas-multiplas" onclick="sobreRespostasMultiplas()">SOBRE ESTE TIPO DE
-              QUESTÃO</button>
+            <button id="sobre-respostas-multiplas" onclick="sobreRespostasMultiplasPraticar()">SOBRE ESTE TIPO DE
+              QUESTÃO <img style="display: none" id="abrir-sobre-respostas-multiplas-praticar"
+                src="assets/simbolo abrir.png" alt="simbolo abrir sobre"></button>
           </div>
+          <section id="modal-respostas-multiplas-mobile-praticar" style="display: none;">
+            <div id="dark-gray">
+              <p id="texto-modal-respostas-multiplas">Este tipo de questão é bastante
+                comum em vestibulares, concursos públicos,
+                processos
+                seletivos e ENADE. Nela, são apresentadas diferentes afirmações relacionadas a um assunto, cuja
+                veracidade
+                deve ser avaliada.</p>
+              <p id="texto-modal-respostas-multiplas">
+                Existe uma variação desse modelo na qual as alternativas apresentam a sequência ordenada
+                das afirmações avaliadas em verdadeiras (V) ou falsas (F). </p>
+              <p id="texto-modal-respostas-multiplas">Por exemplo:</p>
+              <p id="texto-modal-respostas-multiplas">Assinale a alternativa que apresenta a correta avaliação das
+                afirmações:
+              </p>
+              <p id="texto-modal-respostas-multiplas">a) I-V; II-V; III-V <br> b) I-V; II-V; III-F <br> c) I-V; II-F;
+                III-F
+                <br> d)
+                I-F; II-V;
+                III-F <br> e) I-F; II-F; III-V
+              </p>
+            </div>
+          </section>
           <div id="gray">
-            <p id="dica-respostas-multiplas">Agora é com você!</p>
+            <p id="dica-respostas-multiplas">Agora é com você!<br> <span class="estratégias-resposta-unica-mobile"
+                style="display: none;">Avalie cada uma das afirmações individualmente frente aos conteúdos e conceitos
+                mobilizados pela questão. Teste a coerência entre as afirmações consideradas verdadeiras. A contradição
+                entre elas pode ser um sinal de que alguma avaliação está equivocada. Lembre-se de descartar
+                alternativas com base nas avaliações que você já tem mais certeza.</span></p>
           </div>
           <article>
             <section id="conteudo-respostas-multiplas">
